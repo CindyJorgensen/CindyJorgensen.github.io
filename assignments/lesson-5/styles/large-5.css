@@ -1,0 +1,267 @@
+
+/* To import google font */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
+
+/* To run media query for small screens */
+@media screen and (min-width: 416px ) {
+    body { width: 75% }
+
+    div .weather5Day { display: contents;}
+
+body {
+    background-color: #e7ece7;
+    margin: 1em;
+	font-size: 1em;
+	color: #000000;
+    }
+
+
+    /* HEADER - 
+    * Formatting for header informaiton */
+
+	header {
+        margin: auto;
+		background-color: #274c77;
+		border: 1px solid #bbb;
+		box-shadow: 0 0 30px #777;
+		text-align: center;
+		font-family: 'Libre Baskerville', serif;
+		color:#e7ecef;
+    }
+    
+
+	h1, h2, h3, h4, h5, h6 {
+			font-family: 'Libre Baskerville', serif;
+			background-color: none;
+			color: #274c77;
+		}
+	header img, .siteHeading {
+			color: #e7ecef;
+			display: inline-block;
+            vertical-align: middle;
+            height: 50%;
+            width: auto;
+			margin: 0px;
+			font-size: 40px;
+		}
+
+h1 {font-size: 30px;}
+h2 {font-size: 25px;}
+h3 {font-size: 20px;}
+h4 {font-size: 15px;}
+h5 {font-size: 10px;}
+
+			.motto { 
+				color: #a3cef1;
+				font-size: 12px;
+				padding: 8px;
+			}
+
+/* MAIN - 
+* Formatting for main informaiton */
+
+	main {
+        font-family: 'Nunito', sans-serif;
+		margin: 10px;}
+
+	/* Styling the navigation menu */
+		/* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+		div .menuCenter {
+            width: 800px;
+            margin: auto;
+            border: 2px dashed #fff;
+        }
+		nav ul {
+			list-style-type: none;
+			padding: 1%;
+			overflow: hidden;
+			background-color: #6096ba;
+            font-size: 125%;
+    	}
+
+        li {
+            display: inline;
+        }
+
+		/* These lines format the font color, container size and remove the hyperlink underline */
+
+		li a, .dropbtn {
+			color:#274c77;
+			text-align: center;
+            text-decoration: none;
+            padding: .5em;
+		}
+
+	.dropdown:hover .dropdown-content a:hover {
+		background-color: #4c7894;
+		text-decoration: none;
+		color: #e7ecef;}
+
+	.dropdown:hover .dropdown-content {
+	display: block;
+	}
+    
+    /* Image and text overlay */
+    .imageTown, .weatherTitle, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
+       position: absolute;
+    }
+
+    /* Container box for image with text overlay */
+    .flexContainer {
+        display: flex;   }
+    }
+
+    .flexCenter {
+        justify-content: left;    
+        margin: 0 15px;     }
+
+    .fullwidth {
+        height: 75vw; 
+        overflow: hidden;   }
+
+    .itemCenter {
+        align-items: left;    }
+
+    .fullHeight {
+        height: 50vh;
+        overflow: hidden;     }
+
+    .centerImage {
+        background: url('images/PrestonID.jpg') center;
+        background-size: cover;    }
+
+    .weatherTitle {
+        position: absolute;
+        left: 20%;
+        height: 50%;
+        width: 27%;
+        background-color: rgba(0,100,0, 0.9);
+        margin: 10px;
+        align-items: initial;
+    }
+
+    div .weatherTitle h3 {
+        font-weight: bold;
+        color: #8b8c89;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    h3 span.spacer {
+        padding: 0 5px;
+    }
+
+    /* Weather Summary content area */
+
+    .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherTitle, .weatherWindChill, .weatherWindSpeed {
+        color: #e7ecef;
+    }
+
+    div .weatherCurrent { 
+        margin: 10px;
+        top: 3em;}
+
+    div .weatherHigh { 
+        margin: 10px;
+        top: 5em;}
+
+    div .weatherWindChill {
+        margin: 10px;
+        top: 7em;}
+
+    div .weatherHumidity {
+        margin: 10px;
+        top: 9em;}
+
+    div .weatherWindSpeed {
+        margin: 10px;
+        top: 11em;}
+
+    div .forecast {
+        float: left;
+        margin: 0 10px;
+    }
+
+    /* Weather for 5 Day Forecast section and comments */
+    div .weather5Day {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+        align-content:center;
+    }
+
+    h3 .weatherTableTitle {
+        text-align: center;
+        font-size: 150%;
+        text-emphasis: bold;
+    }
+
+    /* Weather images for webpage provided by openclipart.org - Public Domain */
+    table {
+        margin: auto;
+        justify-content: center;
+        text-align: align;
+        color: #8b8c89;
+        width: 60%;
+        padding: 2px;
+    }   
+
+    th {
+        background-color: #274c77;
+        border: 1.5px solid #8b8c89;
+        margin: 0;
+        padding: 0;
+    }
+
+    tbody {
+        border: 1.5px solid #8b8c89;
+    }
+    .weatherImage {
+        height: auto;
+        width: 50px;
+        align-content: center;
+    
+    }
+    td .weathTemp {
+        height: 200%;
+        width: 200%;
+        align-content: center;
+    }
+ 	/* Article format to include a lighter obaque background with a border */
+
+	article {
+		margin: 10px auto;
+		background-color: #bec9db;
+		border: 1px solid #000;
+		box-shadow: 0 0 30px #777;
+		text-align: left;
+        padding: 10px;
+	}
+
+	/* Style format for address/contact */
+    .contactMe {
+		margin: 10px;
+		background-color: #6096ba;
+        color: #e7ecef;
+    }
+        
+	/* Style format for footer */
+    footer 
+    {
+		margin: 0;
+		padding: 10px 12px;
+		background-color: #6096ba;
+        color: #e7ecef;
+    }
+
+        /* Map */
+    div .mapouter, div .gmap_canvas 
+    {
+        width: 300;
+        height: 144;
+        overflow: scroll;
+        text-align: right;
+        overflow: hidden;
+        background: none !important;}

@@ -2,19 +2,22 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Weekend Warrior Weather</title>
+
         <!-- This the normalize.css file link that must be first before any other links!-->
         <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
 
         <!-- This is the link to the CSS file that will be used to format the small and large css files-->
         <link href="styles/large-5.css" type="text/css" rel="stylesheet" />
         <link href="styles/small-5.css" type="text/css" rel="stylesheet" />
+
     </head>
 
     <body>
         <!-- Specific to mobile devices -->
         <header>
-                <img src="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png" alt="The world logo">
+                <img id="homeTown" src="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png" alt="The world logo">
                 <section class="siteHeading">
                     <h1 style="color: #e7ecef">Weekend Warrior Weather</h1>
                     <div class="motto"> "Climate is what we expect, weather is what we get." - Mark Twain</div>
@@ -22,92 +25,88 @@
 
         </header>
 
-        <nav>
-            <ul>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Menu</a>
-                    <div class="dropdown-content">
-                        <a href="../../index.html">Home</a>
-                        <a href="#">Soda Springs</a>
-                        <a href="#">Fish Haven</a>
-                        <a href="#">Storm Center</a>
-                        <a href="#">Gallery</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
+        <div class="menuCenter">
+            <nav>
+                <ul>
+                    <li class="dropdown"><a href="../../index.html">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>  
+                </ul>
+            </nav>
+        </div>
         <main>
-            
-            <h1>Preston</h1>
-           <hr>
-            <section>
-                <!-- Weather Summary Area -->
-                <h3>Weather Summary</h3>
-                <h4>Forecast for Preston</h4>
-                <table>
+            <div>
+                <h1>Preston</h1>
+                <hr>
+                <div class="flexContainer flexCenter itemCenter fullWidth centerImage">
+                                      
+                    <img src="images/PrestonID.jpg" alt="country living">
 
-                    <thead>
-                        <tr>
-                        <th>Day of Week</th>
-                        <th>High</th>
-                        <th>Low</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                    <div class="weatherTitle">
+                        <h3><span class="townDiv">Weather Summary</span></h3>
+                    
+                        <div class="weatherCurrent">Currently: </div>
+                        <div class="weatherHigh">High: </div>
+                        <div class="weatherWindChill">Wind Chill: </div>
+                        <div class="weatherHumidity">Humidity: </div>
+                        <div class="weatherWindSpeed">Wind Speed: </div>
+                    </div>
+                </div>
+                
+                <div class="weather5Day">
+
+                 <!--Weather Information Contact for Full-size computer screens and laptops only.-->
+                 <h3 class="weatherTableTitle">5 Day Forecast</h3>
+                 <table>
+                    <tbody class="weatherBorder">
                         <tr>
                             <th>Sunday</th>
-                            <td>40&deg;</td>
-                            <td>34&deg;</td>
-                        </tr>
-                        <tr>
                             <th>Monday</th>
-                            <td>40&deg;</td>
-                            <td>31&deg;</td>
-                        </tr>
-                        <tr>
                             <th>Tuesday</th>
-                            <td>35&deg;</td>
-                            <td>18&deg;</td>
-                        </tr>
-                        <tr>
                             <th>Wednesday</th>
-                            <td>27&deg;</td>
-                            <td>8&deg;</td>
-                        </tr>
-                        <tr>
                             <th>Thursday</th>
-                            <td>23&deg;</td>
-                            <td>10&deg;</td>
                         </tr>
                         <tr>
-                            <th>Friday</th>
-                            <td>28&deg;</td>
-                            <td>17&deg;</td>
+                            <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" /></td>
+                            <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" /></td>
+                            <td> <img class="weatherImage" src="images/snowy_sivvus_weather_symbols.png" /></td>
+                            <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" /></td>
+                            <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" /></td>
                         </tr>
                         <tr>
-                            <th>Saturday</th>
-                            <td>32&deg;</td>
-                            <td>11&deg;</td>
+                            <td class="weathTemp">40&deg;</td>
+                            <td class="weathTemp">32&deg;</td>
+                            <td class="weathTemp">27&deg;</td>
+                            <td class="weathTemp">35&deg;</td>
+                            <td class="weathTemp">10&deg;</td>
                         </tr>
-                    </tbody>
-                </table>
+                     </tbody>
+                 </table>
+                </div>
 
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </section>
+                <div class="section2">
+                    <section>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation `ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </section>
+                </div>
+                 <br><br>
 
-            <br><br>
-
-            <hr />
+                 <hr />
 
                 <!-- Article informaiton is applied here with image etc.-->
-            <article>
-                <h3>Article Title</h3>
-                <img src="images/Test_WeatherImageArticle.jpeg" alt="Blowing and drifting snow on roadway" />
+                <article>
+                    <div class="section3">
+                        <h3>Article Title</h3>
+                        <img src="images/Test_WeatherImageArticle.jpeg" alt="Blowing and drifting snow on roadway" />
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
-        </main>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </article>
+            </main>
+        </div>
 
         <address class="contactMe">
             Written by <a href="mailto:cljorgensen.pta@outlook.com">Cindy Jorgensen</a>
@@ -122,22 +121,7 @@
             </p>
             
             <!--The div element for the map -->
-            <div id="map"></div>
-            <script>
-                // Initialize and add the map
-                function initMap() {
-                  // The location of Uluru
-                  var uluru = {lat: 42.1692763, lng: -112.3655674};
-                  // The map, centered at Uluru
-                  var map = new google.maps.Map(
-                      document.getElementById('map'), {zoom: 4, center: uluru});
-                  // The marker, positioned at Uluru
-                  var marker = new google.maps.Marker({position: uluru, map: map});
-                }
-                    </script>
-                    <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_2y_ZgH-k0MZsvu45Qcu8w6DDm3bieCY&callback=initMap">
-                    </script>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="144" id="gmap_canvas" src="https://maps.google.com/maps?q=Preston%2C%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/internetagentur/">internetagentur</a></div><style>.mapouter{text-align:right;height:144px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:144px;width:300px;}</style></div>
         </footer>
     </body>
 </html>

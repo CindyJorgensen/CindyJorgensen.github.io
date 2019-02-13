@@ -4,25 +4,31 @@
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
 @import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
 
-/* To run media query for small screens 
-@media screen and (max-width: 415px ) */
+/* To run media query for small screens */
+@media screen and (max-width: 415px ) {
+    body { width: 100% }
 
 body {
-	background-color: #e7ece7;
-	margin: 10px;
-	font-size: 16px;
+    background-color: #e7ece7;
+    margin: 1em;
+	font-size: 1em;
 	color: #000000;
     }
 
+
+    /* HEADER - 
+    * Formatting for header informaiton */
+
 	header {
-		margin: 10px auto;
+        margin: auto;
 		background-color: #274c77;
 		border: 1px solid #bbb;
 		box-shadow: 0 0 30px #777;
 		text-align: center;
 		font-family: 'Libre Baskerville', serif;
 		color:#e7ecef;
-	}
+    }
+    
 
 	h1, h2, h3, h4, h5, h6 {
 			font-family: 'Libre Baskerville', serif;
@@ -34,7 +40,9 @@ body {
 			display: inline-block;
 			vertical-align: middle;
 			margin: 0px;
-			font-size: 40px;
+            font-size: 40px;
+            height: 50%;
+            width: auto;
 		}
 
 h1 {font-size: 30px;}
@@ -49,8 +57,11 @@ h5 {font-size: 10px;}
 				padding: 8px;
 			}
 
+/* MAIN - 
+* Formatting for main informaiton */
+
 	main {
-		font-family: 'Nunito', sans-serif;
+        font-family: 'Nunito', sans-serif;
 		margin: 10px;}
 
 	/* Styling the navigation menu */
@@ -60,37 +71,23 @@ h5 {font-size: 10px;}
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			overflow: hidden;
-			background-color: #6096ba;
-			font-size: 125%;
-	}
+            background-color: #6096ba;
+            text-align: center;
+    	}
+
+        li {
+            float:none;
+            border: .25px solid #8b8c89;
+        }
 
 		/* These lines format the font color, container size and remove the hyperlink underline */
 
 		li a, .dropbtn {
-			display: block;
 			color:#274c77;
-			text-align: center;
-			padding: 10px 12px;
-			text-decoration: none;
+            text-decoration: none;
+            padding: .5em;
+            margin: auto;
 		}
-/*
-	nav ul li { float: left;} 
-	li a:hover, .dropdown:hover .dropbtn{
-		background-color: #4c7894;}
-
-	li.dropdown {
-		display: inline-block; }
-
-	.dropdown-content {
-		display: block;
-		position: absolute;
-		background-color: #6096ba;
-		min-width: 160px;
-		box-shadow: 0px 8px 8px;
-		z-index: 1;
-		font-family: 'Libre Baskerville', serif;
-		color: #020202;}*/
 
 	.dropdown:hover .dropdown-content a:hover {
 		background-color: #4c7894;
@@ -100,16 +97,130 @@ h5 {font-size: 10px;}
 	.dropdown:hover .dropdown-content {
 	display: block;
 	}/* - Attempting
-	*/
+    */
+    
+    /* Image and text overlay */
+    .imageTown, .weatherTitle, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
+       position: absolute;
+    }
 
-	/* Creates a uniform table with better spacing and allows a paragraph of content to sit on the side of the "weather summary" */
-	table {
-		float: left;}
+    div .imageTown {
+        box-sizing: border-box;
+        background-color: rgba(255,0,0, 0.2);
+    }
 
-	th {
-		columns: 2;
-		text-align: right;}
-	
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }        
+    
+    div .weatherTitle {
+        top: 0;
+        height: 75%;
+        width: 35%;
+        background-color: rgba(0,100,0, 0.8);
+    }
+
+    div .weatherTitle h3 {
+        font-weight: bold;
+        color: #8b8c89;
+        padding: 1%;
+        margin: 3%;
+        font-size: 80%;
+    }
+
+    h3 span.spacer {
+        padding: 0 5px;
+    }
+
+    /* Weather Summary content area */
+
+/* Image and text overlay */
+.imageTown, .weatherTitle, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
+    position: absolute;
+ }
+
+ /* Container box for image with text overlay */
+ .flexContainer {
+     display: flex;   }
+ }
+
+ .flexCenter {
+     justify-content: center;    }
+
+ .fullwidth {
+     height: 50vw; 
+     overflow: hidden;   }
+
+ .itemCenter {
+     align-items: left;    }
+
+ .fullHeight {
+     height: 25vh;
+     overflow: hidden;     }
+
+ .centerImage {
+     background: url('images/PrestonID.jpg') center;
+     background-size: cover;    }
+
+div .weatherTitle {
+     position: absolute;
+     left: 20%;
+     height: 50%;
+     width: 27%;
+     background-color: rgba(0,100,0, 0.9);
+     margin: 5%;
+     align-items: initial;
+ }
+
+ div .weatherTitle h3 {
+     font-weight: bold;
+     color: #8b8c89;
+     padding: 10px;
+     margin: 5px;
+ }
+
+ h3 span.spacer {
+     padding: 0 5px;
+ }
+
+ /* Weather Summary content area */
+
+ .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherTitle, .weatherWindChill, .weatherWindSpeed {
+     color: #e7ecef;
+ }
+
+ div .weatherCurrent { 
+     margin: 10px;
+     top: 3em;}
+
+ div .weatherHigh { 
+     margin: 10px;
+     top: 5em;}
+
+ div .weatherWindChill {
+     margin: 10px;
+     top: 7em;}
+
+ div .weatherHumidity {
+     margin: 10px;
+     top: 9em;}
+
+ div .weatherWindSpeed {
+     margin: 10px;
+     top: 11em;}
+
+ div .forecast {
+     float: left;
+     margin: 0 10px;
+ }
+    
+    /* Hide content for 5 Day Forecast, as per instructions */
+    div .weather5Day {
+        display: none;
+    }
+
 	/* Article format to include a lighter obaque background with a border */
 
 	article {
@@ -126,13 +237,9 @@ h5 {font-size: 10px;}
 	.contactMe {
 		margin: 10px;
 		background-color: #6096ba;
-        color: #e7ecef;}
+        color: #e7ecef;
+    }
         
-       /* Set the size of the div element that contains the map */
-       #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
 	/* Style format for footer */
 	footer {
 		margin: 0;
@@ -141,3 +248,12 @@ h5 {font-size: 10px;}
         color: #e7ecef;
     }
 
+        /* Map */
+        div .mapouter, div .gmap_canvas 
+        {
+            width: 300;
+            height: 144;
+            overflow: scroll;
+            text-align: right;
+            overflow: hidden;
+            background: none !important;}
