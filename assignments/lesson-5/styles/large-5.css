@@ -1,77 +1,24 @@
 
-/* To import google font */
+ /*
 
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
-@import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
+ /* To run media query for large screens */
+@media screen and (min-width: 501px ) {
+    body, header, nav, main, address, footer { 
+        width: 1024px;
+        margin: auto;   }
 
-/* To run media query for small screens */
-@media screen and (min-width: 416px ) {
-    body { width: 75% }
+    div .weather5Day { 
+        display: block; }
 
-    div .weather5Day { display: block;}
+    div h1 {
+        text-align: center;}
 
-body {
-    background-color: #e7ece7;
-    margin: 1em;
-	font-size: 1em;
-	color: #000000;
-    }
-
-
-    /* HEADER - 
-    * Formatting for header informaiton */
-
-	header {
-        margin: auto;
-		background-color: #274c77;
-		border: 1px solid #bbb;
-		box-shadow: 0 0 30px #777;
-		text-align: center;
-		font-family: 'Libre Baskerville', serif;
-		color:#e7ecef;
-    }
-    
-
-	h1, h2, h3, h4, h5, h6 {
-			font-family: 'Libre Baskerville', serif;
-			background-color: none;
-			color: #274c77;
-		}
-	header img, .siteHeading {
-			color: #e7ecef;
-			display: inline-block;
-            vertical-align: middle;
-            height: 50%;
-            width: auto;
-			margin: 0px;
-			font-size: 40px;
-		}
-
-h1 {font-size: 30px;}
-h2 {font-size: 25px;}
-h3 {font-size: 20px;}
-h4 {font-size: 15px;}
-h5 {font-size: 10px;}
-
-			.motto { 
-				color: #a3cef1;
-				font-size: 12px;
-				padding: 8px;
-			}
-
-/* MAIN - 
-* Formatting for main informaiton */
-
-	main {
-        font-family: 'Nunito', sans-serif;
-		margin: 10px;}
 
 	/* Styling the navigation menu */
 		/* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
 		div .menuCenter {
             width: 800px;
             margin: auto;
-            border: 2px dashed #fff;
         }
 
         nav {
@@ -106,45 +53,46 @@ h5 {font-size: 10px;}
 	.dropdown:hover .dropdown-content {
 	display: block;
 	}
-    
-    /* Image and text overlay */
+}
+    /*Image and text overlay */
     .imageTown, .weatherSummaryBox, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
-       position: absolute;
-       justify-content: flex-start;
-    }
+        position: absolute;
+        justify-content: flex-start;    }
 
-    /* Container box for image with text overlay */
-    .flexContainer {
-        display: flex;   }
+        /* Container box for image with text overlay */
+        .flexContainer {
+            display: flex;   }
 
-    .flexCenter {
-        justify-content: center;    }
+        .flexCenter {
+            justify-content: center;    }
 
-    .fullwidth {
-        width: 100vw; 
-        overflow: hidden;   }
+        .fullwidth {
+            width: 100vw; 
+            overflow: hidden;   }
 
-    .itemCenter {
-        align-items: left;    }
+        .itemCenter {
+            align-items: left;    }
 
-    .fullHeight {
-        height: 25vh;
-        overflow: hidden;     }
+        .fullHeight {
+            height: 100vh;
+            overflow: hidden;     }
 
-    .centerImage {
-        background: url('images/PrestonID.jpg') center;
-        background-size: cover;    }
+        .centerImage {
+            background: url('images/PrestonID.png') center;
+            background-size: cover;    }
+
+        @media screen and (min-width: 501px) {
+            .weatherSummaryBox {
+                height: 25%;
+                width: 30%; }   }
 
     .weatherSummaryBox {
-        position:absolute;
-        justify-content: none;
-        left: 5%;
-        bottom: 20%;
-        height: 35%;
-        width: 25%;
+        float: relative;
+        left: 12.5%;
         background-color: rgba(0,100,0, 0.9);
         align-items: initial;
-    }
+        font-size: 80%;
+    } 
 
     div .weatherSummaryBox h3 {
         font-weight: bold;
@@ -152,7 +100,7 @@ h5 {font-size: 10px;}
         padding: 10px;
         margin: 5px;
     }
-
+box-shadow: 
     h3 span.spacer {
         padding: 0 5px;
     }
@@ -164,7 +112,7 @@ h5 {font-size: 10px;}
     }
 
     div .weatherCurrent { 
-        margin: 10px;
+        margin: 2%;
         top: 3em;}
 
     div .weatherHigh { 
@@ -185,8 +133,7 @@ h5 {font-size: 10px;}
 
     div .forecast {
         float: left;
-        margin: 0 10px;
-    }
+        margin: 0 10px;     }
 
     /* Weather for 5 Day Forecast section and comments */
     div .weather5Day {
@@ -242,7 +189,11 @@ h5 {font-size: 10px;}
 		box-shadow: 0 0 30px #777;
 		text-align: left;
         padding: 10px;
-	}
+    }
+    
+    img #imageArticle  {
+        float: none;
+        display: inline; }
 
 	/* Style format for address/contact */
     /*.contactMe {
@@ -268,8 +219,6 @@ h5 {font-size: 10px;}
         width: 300px;
         height: 144px;
         overflow: scroll;
-        text-align: right;
-        overflow: hidden;
         background: none !important;
         justify-content: center;}
     
@@ -282,4 +231,4 @@ h5 {font-size: 10px;}
 		background-color: #6096ba;
         color: #e7ecef;
     }
-
+    */
