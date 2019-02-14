@@ -8,7 +8,7 @@
 @media screen and (min-width: 416px ) {
     body { width: 75% }
 
-    div .weather5Day { display: contents;}
+    div .weather5Day { display: block;}
 
 body {
     background-color: #e7ece7;
@@ -73,6 +73,10 @@ h5 {font-size: 10px;}
             margin: auto;
             border: 2px dashed #fff;
         }
+
+        nav {
+            text-align: center;
+        }
 		nav ul {
 			list-style-type: none;
 			padding: 1%;
@@ -104,45 +108,45 @@ h5 {font-size: 10px;}
 	}
     
     /* Image and text overlay */
-    .imageTown, .weatherTitle, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
+    .imageTown, .weatherSummaryBox, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
        position: absolute;
+       justify-content: flex-start;
     }
 
     /* Container box for image with text overlay */
     .flexContainer {
         display: flex;   }
-    }
 
     .flexCenter {
-        justify-content: left;    
-        margin: 0 15px;     }
+        justify-content: center;    }
 
     .fullwidth {
-        height: 75vw; 
+        width: 100vw; 
         overflow: hidden;   }
 
     .itemCenter {
         align-items: left;    }
 
     .fullHeight {
-        height: 50vh;
+        height: 25vh;
         overflow: hidden;     }
 
     .centerImage {
         background: url('images/PrestonID.jpg') center;
         background-size: cover;    }
 
-    .weatherTitle {
-        position: absolute;
-        left: 20%;
-        height: 50%;
-        width: 27%;
+    .weatherSummaryBox {
+        position:absolute;
+        justify-content: none;
+        left: 5%;
+        bottom: 20%;
+        height: 35%;
+        width: 25%;
         background-color: rgba(0,100,0, 0.9);
-        margin: 10px;
         align-items: initial;
     }
 
-    div .weatherTitle h3 {
+    div .weatherSummaryBox h3 {
         font-weight: bold;
         color: #8b8c89;
         padding: 10px;
@@ -241,11 +245,34 @@ h5 {font-size: 10px;}
 	}
 
 	/* Style format for address/contact */
-    .contactMe {
+    /*.contactMe {
+        position: realative;
 		margin: 10px;
 		background-color: #6096ba;
         color: #e7ecef;
+        width: 75vw;
+        height: 45vh;
+    } */
+
+    .contactInfo {
+        position: relative;
+        width: 45vw;
+        height: auto;
+        padding: 1em;
     }
+
+    /* Map */
+    div .mapouter, .gmap_canvas 
+    {
+        position: relative;
+        width: 300px;
+        height: 144px;
+        overflow: scroll;
+        text-align: right;
+        overflow: hidden;
+        background: none !important;
+        justify-content: center;}
+    
         
 	/* Style format for footer */
     footer 
@@ -256,12 +283,3 @@ h5 {font-size: 10px;}
         color: #e7ecef;
     }
 
-        /* Map */
-    div .mapouter, div .gmap_canvas 
-    {
-        width: 300;
-        height: 144;
-        overflow: scroll;
-        text-align: right;
-        overflow: hidden;
-        background: none !important;}
