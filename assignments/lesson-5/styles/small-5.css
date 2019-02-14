@@ -1,0 +1,80 @@
+
+/* To import google font */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
+
+/* To run media query for small screens */
+@media screen and (max-width: 415px ) {
+    body { width: 100% }
+
+    div .weather5Day { display: none;}
+}
+
+
+    /* HEADER - 
+    * Formatting for header informaiton */
+
+
+	header img, .siteHeading {
+			color: #e7ecef;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0px;
+            font-size: 40px;
+            height: 50%;
+            width: auto;
+		}
+
+/* MAIN - 
+* Formatting for main informaiton */
+
+	main {
+        font-family: 'Nunito', sans-serif;
+		margin: 10px;}
+
+	/* Styling the navigation menu */
+		/* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+		
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+            background-color: #6096ba;
+            text-align: center;
+    	}
+
+        li {
+            float:none;
+            border: .25px solid #8b8c89;
+        }
+
+		/* These lines format the font color, container size and remove the hyperlink underline */
+
+		li a, .dropbtn {
+			color:#274c77;
+            text-decoration: none;
+            padding: .5em;
+            margin: auto;
+		}
+
+	.dropdown:hover .dropdown-content a:hover {
+		background-color: #4c7894;
+		text-decoration: none;
+		color: #e7ecef;}
+
+	.dropdown:hover .dropdown-content {
+	display: block;
+	}/* - Attempting
+    */
+    
+   
+        /* Map */
+        div .mapouter, div .gmap_canvas 
+        {
+            width: 300;
+            height: 144;
+            overflow: scroll;
+            text-align: right;
+            overflow: hidden;
+            background: none !important;}
