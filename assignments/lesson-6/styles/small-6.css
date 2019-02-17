@@ -106,10 +106,10 @@ footer {
             padding: .5em;
 		}
         nav ul li a.active {
-            background-color: #000;
+            background-color: rgba(39,76,119, .5);
             width: auto;
             color: #e7ecef;
-            padding: 0;
+            padding: 2%;
             margin: 0;     }
 
         nav ul li a:hover {
