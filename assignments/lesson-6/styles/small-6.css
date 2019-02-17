@@ -15,9 +15,9 @@ body {
 
 header {
     margin: 5px;
+    padding: .5rem;
     background-color: #274c77;
     border: 1px solid #bbb;
-    box-shadow: 0 0 30px #777;
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     color: #e7ecef;    }
@@ -109,7 +109,6 @@ footer {
             background-color: rgba(39,76,119, .5);
             width: auto;
             color: #e7ecef;
-            padding: 2%;
             margin: 0;     }
 
         nav ul li a:hover {
