@@ -27,6 +27,7 @@
 
         <nav class="clearfix">
             <button onclick="toggleMenu()"> &equiv; </button>
+             <script src="scripts/hamburger.js"> </script>
             <ul id="menuCenter" class="hide">
                 <li><a href="../../index.html">  Home</a></li>
                 <li><a class="active" href="#">Preston</a></li>
@@ -70,11 +71,11 @@
                             <th>Thursday</th>
                         </tr>
                         <tr>
-                            <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" /></td>
-                            <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" /></td>
-                            <td> <img class="weatherImage" src="images/snowy_sivvus_weather_symbols.png" /></td>
-                            <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" /></td>
-                            <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" /></td>
+                            <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" alt="sunny" /></td>
+                            <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" alt="cloudy" /></td>
+                            <td> <img class="weatherImage" src="images/snowy_sivvus_weather_symbols.png" alt="snow" /></td>
+                            <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" alt="sunny"  /></td>
+                            <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" alt="cloudy"  /></td>
                         </tr>
                         <tr>
                             <td class="weathTemp">40&deg;</td>
@@ -87,11 +88,6 @@
                  </table>
                 </div>
 
-                <div class="section2">
-                    <section>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation `ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </section>
-                </div>
                  <br><br>
 
                  <hr />
@@ -105,19 +101,20 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </article>
-            </main>
-        </div>
+            </div>
+        </main>
 
         <address class="contactMe, clearfix">
-            <div class="contactInfo">
-            <h4>Weekend Warrior Weather </h4></br>
-            <!--Marker--> 121 S State Street </br>
-            Preston, ID 83263 </br>
-        </br>
-             <!--Phone Icon--> 208-555-6677 </br>
-             <!--Email Icon--> <a href="mailto:cljorgensen.pta@outlook.com">CJorgensen@weekendwarriorweather.com</a>
+            <div>
+                <p>
+                    <b>Weekend Warrior Weather </b><br>
+                    <!--Marker--> 121 S State Street <br>
+                    Preston, ID 83263 <br>
+                <br>
+                    <!--Phone Icon--> 208-555-6677 <br>
+                    <!--Email Icon--> <a href="mailto:cljorgensen.pta@outlook.com">CJorgensen@weekendwarriorweather.com</a>
+                </p>
             </div>
-        </br>
             <!--The div element for the map -->
             <div class="mapouter">
                 <div class="gmap_canvas">
@@ -129,13 +126,10 @@
         <footer>
             <p>
                 &copy; 2019 - Cindy Jorgensen - Location: Alaska -<a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
-
-                <!-- <button onclick="currentDate()">Click for current date.</button> -->
-                <div id="date"></div>
-                
+                    <br>
+                <button onclick="currentDate()">Click for current date.</button>
+                <div id="date">Date: </div>
             </p>
-            
-
         </footer>
         <script src="scripts/currentdate.js"> </script>
     </body>

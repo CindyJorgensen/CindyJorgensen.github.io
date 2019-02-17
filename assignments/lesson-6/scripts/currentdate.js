@@ -11,6 +11,3 @@ function currentDate() {
 
     var n = weekday[d.getDay()];
     document.getElementById("date").innerHTML = n;  }
-
-function toggleMenu() {
-        document.getElementById('menuCenter').classList.toggle('hide'); }
