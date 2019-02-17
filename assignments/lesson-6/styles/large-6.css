@@ -203,3 +203,7 @@
 		background-color: #6096ba;
         color: #e7ecef;
     }
+
+    div figure.centerImage {
+        background-image: url('../images/Preston1100.jpg');
+        background-size: auto;   }
