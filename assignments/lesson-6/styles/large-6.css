@@ -1,0 +1,205 @@
+
+
+ /* To run media query for large screens */
+@media screen and (min-width: 501px ) {
+    body, header, nav, main, address, footer { 
+        width: 1024px;
+        margin: auto;   }
+
+    div .weather5Day { 
+        display: block; }
+
+    header section h1 {
+        text-align: center;
+        color: #e7ecef;}
+
+
+	/* Styling the navigation menu */
+		/* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+
+        nav button {
+            display: none;  }
+            
+            nav ul {
+                margin-left: 2%;}
+            
+            nav ul.hide {
+                display: block;
+              }
+
+            nav ul li {
+                float: left;    }
+            
+            nav ul li a {
+                padding: .6rem 1 rem;
+                font-size: 125%; }
+
+
+       /* li {
+            display: inline;    }
+
+		/* These lines format the font color, container size and remove the hyperlink underline */
+
+	/*	li a {
+			color:#274c77;
+			text-align: center;
+            text-decoration: none;
+            padding: .5em;
+		}
+
+        li a:hover {
+		background-color: #4c7894;
+		text-decoration: none;
+		color: #e7ecef;} */
+
+}
+         @media screen and (min-width: 501px) {
+            .weatherSummaryBox {
+                height: 25%;
+                width: 30%; }   }
+
+    .weatherSummaryBox {
+        float: relative;
+        left: 12.5%;
+        background-color: rgba(0,100,0, 0.9);
+        align-items: initial;
+        font-size: 80%;
+    } 
+
+    div .weatherSummaryBox h3 {
+        font-weight: bold;
+        color: #8b8c89;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    h3 span.spacer {
+        padding: 0 5px;
+    }
+
+    /* Weather Summary content area */
+
+    .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherTitle, .weatherWindChill, .weatherWindSpeed {
+        color: #e7ecef;
+    }
+
+    div .weatherCurrent { 
+        margin: 2%;
+        top: 3em;}
+
+    div .weatherHigh { 
+        margin: 10px;
+        top: 5em;}
+
+    div .weatherWindChill {
+        margin: 10px;
+        top: 7em;}
+
+    div .weatherHumidity {
+        margin: 10px;
+        top: 9em;}
+
+    div .weatherWindSpeed {
+        margin: 10px;
+        top: 11em;}
+
+    div .forecast {
+        float: left;
+        margin: 0 10px;     }
+
+    /* Weather for 5 Day Forecast section and comments */
+    div .weather5Day {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+        align-content:center;
+    }
+
+    h3 .weatherTableTitle {
+        text-align: center;
+        font-size: 150%;
+        text-emphasis: bold;
+    }
+
+    /* Weather images for webpage provided by openclipart.org - Public Domain */
+    table {
+        margin: auto;
+        justify-content: center;
+        text-align: align;
+        color: #8b8c89;
+        width: 60%;
+        padding: 2px;
+    }   
+
+    th {
+        background-color: #274c77;
+        border: 1.5px solid #8b8c89;
+        margin: 0;
+        padding: 0;
+    }
+
+    tbody {
+        border: 1.5px solid #8b8c89;
+    }
+    .weatherImage {
+        height: auto;
+        width: 50px;
+        align-content: center;
+    
+    }
+    td .weathTemp {
+        height: 200%;
+        width: 200%;
+        align-content: center;
+    }
+ 	/* Article format to include a lighter obaque background with a border */
+
+	article {
+		margin: 10px auto;
+		background-color: #bec9db;
+		border: 1px solid #000;
+		box-shadow: 0 0 30px #777;
+		text-align: left;
+        padding: 10px;
+    }
+    
+    img #imageArticle  {
+        float: none;
+        display: inline; }
+
+	/* Style format for address/contact */
+    /*.contactMe {
+        position: realative;
+		margin: 10px;
+		background-color: #6096ba;
+        color: #e7ecef;
+        width: 75vw;
+        height: 45vh;
+    } */
+
+    .contactInfo {
+        position: relative;
+        width: 45vw;
+        height: auto;
+        padding: 1em;
+    }
+
+    /* Map */
+    div .mapouter, .gmap_canvas 
+    {
+        position: relative;
+        width: 300px;
+        height: 144px;
+        overflow: scroll;
+        background: none !important;
+        justify-content: center;}
+    
+        
+	/* Style format for footer */
+    footer 
+    {
+		margin: 0;
+		padding: 10px 12px;
+		background-color: #6096ba;
+        color: #e7ecef;
+    }

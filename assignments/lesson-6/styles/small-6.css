@@ -1,0 +1,227 @@
+
+/* To import google font */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
+
+
+/* Standard Formatting for body and sublevels */
+body {
+    background-color: #e7ece7;
+    margin: 10px;
+    font-size: 16px;
+    color: #000;
+        }
+
+header {
+    margin: 5px;
+    background-color: #274c77;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 30px #777;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #e7ecef;    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    background-color: none;
+    color: #274c77;     }
+
+h1 {font-size: 188%;} /* Equal to 35px */
+h2 {font-size: 157%;} /* Equal to 30px */
+h3 {font-size: 125%;} /* Equal to 25px */
+h4 {font-size: 94%;} /* Equal to 20px */
+h5 {font-size: 63%;} /* Equal to 15px */
+
+main {
+    font-family: 'Nunito', sans-serif;
+    margin: 10px;   }
+
+/* Style format for address/contact */
+address {
+    margin: 10px;
+    color: #6096ba;}
+
+/* Style format for footer */
+footer {
+    margin: 0;
+    padding: 10px 12px;
+    background-color: #6096ba;
+    color: #e7ecef; }
+
+/* To run media query for small screens*/
+@media screen and (max-width: 500px ) {
+
+
+    div .weather5Day { 
+        display: none;  }
+
+    /*Decrease the globe image to fit screen
+    and on header - create more visual appeal */
+    header img#homeTown {
+        display: center;
+        width: 10%;
+        height: 10%;  }
+
+    header section.siteHeading {
+        position: relative;
+        width: 75%;
+        color: #e7ecef;
+		display: inline-block;
+        vertical-align: middle;
+        margin: 0px;    }
+
+    header section div.motto {
+        width: 100%;
+        color: #a3cef1;
+        font-size: 70%;
+        padding: 5%;  }
+    }
+
+/* MAIN - 
+
+	/* Styling the navigation menu */
+		/* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+		
+        nav {
+            background-color: #6096ba;  }
+        
+        nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+            text-align: center;
+        }
+        
+        nav ul.hide {
+            display:none;   }
+
+        nav ul li {
+            float:none;
+        }
+
+		nav ul li a {
+            display: block;
+			color:#274c77;
+            text-decoration: none;
+            padding: .5em;
+		}
+        nav ul li a.active {
+            background-color: #000;
+            width: auto;
+            color: #e7ecef;
+            padding: 0;
+            margin: 0;     }
+
+        nav ul li a:hover {
+            background-color: #e7ecef;
+            color: #274c77; }
+
+    
+    /* ARTICLE & SECTION CONTENT PORTION */
+        /* Image and text overlay */
+        .imageTown, .weatherSummaryBox, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
+            position: absolute;
+            justify-content: flex-start;    }
+    
+            /* Container box for image with text overlay 
+
+                .flexContainer {
+                    display: flex;   }
+        
+                .flexCenter {
+                    justify-content: center;    }
+        
+                .fullwidth {
+                    width: 65vw; 
+                    overflow: hidden;   }
+        
+                .itemCenter {
+                    align-items: center;    }
+        
+                .fullHeight {
+                    height: 100vh;
+                    overflow: hidden;     }
+        
+                .centerImage {
+                    background: url('../images/Preston500.jpg') center; 
+                    background-size: cover;    } */
+        
+     /* This is set for the small screen */               
+                .weatherSummaryBox {
+                    height: 25%;
+                    width: 35%; }
+
+            .weatherSummaryBox {
+                float: relative;
+                left: 5%;
+                bottom:28.5%;
+                background-color: rgba(0,100,0, 0.9);
+                align-items: initial;
+                font-size: 80%;     }
+        
+            div h3.weatherSummaryBox {
+                font-weight: bold;
+                color: #8b8c89;
+                padding: 5%;
+                margin: 2.5%;
+            }
+        
+            h3 span.spacer {
+                padding: 0 5px;
+            }
+        
+        /* Weather Summary content area */
+    
+        .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherTitle, .weatherWindChill, .weatherWindSpeed {
+            color: #e7ecef;
+        }
+    
+        div.weatherCurrent { 
+            margin: 10px;
+            top: 5em;}
+    
+        div.weatherHigh { 
+            margin: 10px;
+            top: 7em;}
+    
+        div.weatherWindChill {
+            margin: 10px;
+            top: 9em;}
+    
+        div.weatherHumidity {
+            margin: 10px;
+            top: 11em;}
+    
+        div.weatherWindSpeed {
+            margin: 10px;
+            top: 13em;}
+    
+        div.forecast {
+            float: left;
+            margin: 0 10px;
+        }
+
+        /* CONTACT AREA CONTENT */
+        address {
+            background-color: #a3cef1; }
+            
+            div.contactInfo {
+                float: left;
+                text-align: center;
+                padding: 5%;     }
+
+            /* Map */
+             div .gmap_canvas {float:right;    } 
+
+             /* FOOTER AREA */
+             div.date {
+                 font-size: 2em;
+                 color: #fff;   }
+ 
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;    }
