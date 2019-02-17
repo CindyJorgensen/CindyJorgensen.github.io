@@ -3,6 +3,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
 @import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 
 /* Standard Formatting for body and sublevels */
@@ -121,97 +122,51 @@ footer {
     div h1 {
         text-align: center; }
 
-    /* Container box for image with text overlay */
-
-        div figure.flexContainer {
-            display: flex;
-            margin: 0;
-            padding: 0;   }
-
-        div figure.flexCenter {
-            justify-content: center;    }
-
-        div figure.fullwidth img {
-            width: 100vw; 
-            overflow: hidden;   }
-
-        div figure.itemCenter {
-            align-items: center;    }
-
-/*    div figure.fullHeight {
-        height: 100vh;
-        overflow: hidden;     }
-        
-      div figure.centerImage {
-        background-image: url('../images/Preston500.jpg');
-        background-size: auto;   } */
-
-        div figure img {
+        div img {
             width: 100%;
             margin: 0;
             padding: 0; }
 
+        /* Container holding the image and the text overlay */
+            div.flexContainer {
+            position: relative;
+            text-align: left;
+            color: #fff;    }
+
+        /* Container - text - heading */
+         span.townDiv {
+             position: absolute;
+             top: 2rem;
+             left: 1rem;
+             font-size: 95%;   }
+        
+        /*Container - text - body */
+        div.weatherCurrent,  div.weatherHigh,  div.weatherHumidity,  div.weatherWindChill, div.weatherWindSpeed {
+            position: absolute;
+            left: 1rem;
+            padding: 0;
+            margin: 0;
+            background-color: rgba (255,255,255, .7) }
+
+            /*Setting top text line for summary box */
+                div.weatherCurrent {
+                    top: 3.25rem; }
+
+                div.weatherHigh {
+                    top: 4.5rem; }
+
+                div.weatherHumidity {
+                    top: 5.75rem; }
+
+                div.weatherWindChill {
+                    top: 7rem; }
+
+                div.weatherWindSpeed {
+                    top: 8.25rem; }
+
 
     /* ARTICLE & SECTION CONTENT PORTION */
-        /* Image and text overlay */
-        .imageTown, .weatherSummaryBox, .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindChill, .weatherWindSpeed, .townDiv {
-            position: absolute;
-            justify-content: flex-start;    }
-       
-     /* This is set for the small screen */               
-            div figure    .weatherSummaryBox {
-                    height: auto;
-                    width: 35%; }
 
-            .weatherSummaryBox {
-                float: left;
-                left: 5%;
-                bottom:0%;
-                background-color: rgba(0,100,0, 0.9);
-                align-items: initial;
-                font-size: 80%;     }
-        
-            div h3.weatherSummaryBox {
-                font-weight: bold;
-                color: #8b8c89;
-                padding: 5%;
-                margin: 2.5%;
-            }
-        
-            h3 span.spacer {
-                padding: 0 5px;
-            }
-        
-        /* Weather Summary content area */
-    
-        .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherTitle, .weatherWindChill, .weatherWindSpeed {
-            color: #e7ecef;
-        }
-    
-        div.weatherCurrent { 
-            margin: 10px;
-            top: 5em;}
-    
-        div.weatherHigh { 
-            margin: 10px;
-            top: 7em;}
-    
-        div.weatherWindChill {
-            margin: 10px;
-            top: 9em;}
-    
-        div.weatherHumidity {
-            margin: 10px;
-            top: 11em;}
-    
-        div.weatherWindSpeed {
-            margin: 10px;
-            top: 13em;}
-    
-        div.forecast {
-            float: left;
-            margin: 0 10px;
-        }
 
         /* CONTACT AREA CONTENT */
         address {
