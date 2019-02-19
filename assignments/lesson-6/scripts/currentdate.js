@@ -27,7 +27,7 @@ function currentDate() {
 
     var n = weekday[d.getDay()];
     var mnth = month[d.getMonth()];
-    var day = [d.getDay()];
+    var day = [d.getDate()];
     var year = [d.getFullYear()];
     
     document.getElementById("date").innerHTML = n + ", " + day + " " + mnth + " " + year;  }

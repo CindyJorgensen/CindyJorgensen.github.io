@@ -123,38 +123,49 @@ header section.siteHeading {
             div.flexContainer {
             position: relative;
             text-align: left;
+            z-index: 0;
             color: #fff;    }
 
         /* Container - text - heading */
-         span.townDiv {
+         h3 span.townDiv {
              position: absolute;
-             top: 2rem;
-             left: 1rem;
-             font-size: 95%;   }
-        
-        /*Container - text - body */
-        div.weatherCurrent,  div.weatherHigh,  div.weatherHumidity,  div.weatherWindChill, div.weatherWindSpeed {
+                top: 10%;
+                left: 7.5%;
+                width: 32%;
+             font-size: 90%;
+             padding: 1.5%;
+             margin: 0;
+             background-color: lightblue  }
+
+        div.weatherCurrent, div.weatherHigh, div.weatherHumidity, div.weatherWindChill, div.weatherWindSpeed {
             position: absolute;
-            left: 1rem;
-            padding: 0;
+            left: 7.5%;
+            width: 33%;
+            padding: 1%;
             margin: 0;
-            background-color: rgba (255,255,255, .7) }
+            background-color: lightblue;    }
+
 
             /*Setting top text line for summary box */
                 div.weatherCurrent {
-                    top: 3.25rem; }
+                    top: 18%;
+                    font-size: 90%; }
 
                 div.weatherHigh {
-                    top: 4.5rem; }
+                    top: 27%; 
+                    font-size: 90%; }
 
                 div.weatherHumidity {
-                    top: 5.75rem; }
+                    top: 36%; 
+                    font-size: 90%; }
 
                 div.weatherWindChill {
-                    top: 7rem; }
+                    top: 45%; 
+                    font-size: 90%; }
 
                 div.weatherWindSpeed {
-                    top: 8.25rem; }
+                    top: 54%; 
+                    font-size: 90%; }
 
         /* CONTACT AREA CONTENT */
         address {
