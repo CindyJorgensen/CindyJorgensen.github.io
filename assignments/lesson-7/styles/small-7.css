@@ -1,0 +1,264 @@
+
+/* To import google font */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+
+/* Standard Formatting for body and sublevels */
+body {
+    background-color: #e7ece7;
+    margin: 10px;
+    font-size: 16px;
+    color: #000;
+        }
+
+header {
+    margin: 5px;
+    padding: .5rem;
+    background-color: #274c77;
+    border: 1px solid #bbb;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #e7ecef;    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    color: #274c77;     }
+
+h1 {font-size: 188%;} /* Equal to 35px */
+h2 {font-size: 157%;} /* Equal to 30px */
+h3 {font-size: 125%;} /* Equal to 25px */
+h4 {font-size: 94%;} /* Equal to 20px */
+h5 {font-size: 63%;} /* Equal to 15px */
+
+main {
+    font-family: 'Nunito', sans-serif;
+    margin: 10px;   }
+
+/* Style format for address/contact */
+address {
+    margin: 10px;
+    color: #6096ba;}
+
+/* Style format for footer */
+footer {
+    margin: 0;
+    padding: 10px 12px;
+    background-color: #6096ba;
+    color: #e7ecef; }
+
+main div.weather5Day { 
+        display: none;  }
+
+
+/* HEADER */
+
+    /* Container Grid */
+header.heading {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, .25fr);
+
+}
+
+    /* Grid - Content */
+        header img#homeTown {
+            grid-column-start:2;
+            grid-row-start: 1;  
+
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+            padding: 10px;
+            margin:0;
+        }
+
+        header h1.siteHeading {
+            grid-column-start:1;
+            grid-column-end:4;
+            grid-row-start: 2;
+
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+            padding: 0;
+            margin:0;
+        }
+
+        header div.motto {
+            grid-column-start:1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+
+            justify-content: center;
+            align-content: center;
+
+            font-size: 85%;
+            text-align: center;
+
+            padding: 0 20px;
+            margin:0;
+        }
+
+        /*
+section.siteHeading {
+        position: relative;
+        width: 75%;
+        color: #e7ecef;
+		display: inline-block;
+        vertical-align: middle;
+        margin: 0px;    }
+
+    header section div.motto {
+        width: 100%;
+        color: #a3cef1;
+        font-size: 70%;
+        padding: 5%;  }
+  
+*/
+
+/* MAIN - 
+
+	/* Styling the navigation menu */
+		/* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+		
+        nav {
+            background-color: #6096ba;  }
+        
+        nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+            text-align: center;
+        }
+        
+        nav ul.hide {
+            display:none;   }
+
+        nav ul li {
+            float:none;
+        }
+
+		nav ul li a {
+            display: block;
+			color:#274c77;
+            text-decoration: none;
+            padding: .5em;
+		}
+        nav ul li a.active {
+            background-color: rgba(39,76,119, .5);
+            width: auto;
+            color: #e7ecef;
+            margin: 0;     }
+
+        nav ul li a:hover {
+            background-color: #e7ecef;
+            color: #274c77; }
+
+    
+    /* MAIN SECTION FOMRATTING */
+
+    div h1 {
+        text-align: center; }
+
+        div img {
+            width: 100%;
+            margin: 0;
+            padding: 0; }
+
+        /* Container holding the image and the text overlay */
+            div.flexContainer {
+            position: relative;
+            text-align: left;
+            z-index: 0;
+            color: #fff;    }
+
+        /* Container - text - heading */
+         h3 span.townDiv {
+             position: absolute;
+                top: 10%;
+                left: 7.5%;
+                width: 32%;
+             font-size: 90%;
+             padding: 1.5%;
+             margin: 0;
+             background-color: lightblue  }
+
+        div.weatherCurrent, div.weatherHigh, div.weatherHumidity, div.weatherWindChill, div.weatherWindSpeed {
+            position: absolute;
+            left: 7.5%;
+            width: 33%;
+            padding: 1%;
+            margin: 0;
+            background-color: lightblue;    }
+
+
+            /*Setting top text line for summary box */
+                div.weatherCurrent {
+                    top: 18%;
+                    font-size: 90%; }
+
+                div.weatherHigh {
+                    top: 27%; 
+                    font-size: 90%; }
+
+                div.weatherHumidity {
+                    top: 36%; 
+                    font-size: 90%; }
+
+                div.weatherWindChill {
+                    top: 45%; 
+                    font-size: 90%; }
+
+                div.weatherWindSpeed {
+                    top: 54%; 
+                    font-size: 90%; }
+
+        /* CONTACT AREA CONTENT */
+        address {
+            background-color: #a3cef1;
+            width: 100%;
+            height: 100%;    }
+            
+            div.contactInfo {
+                text-align: center;
+                padding: 5%;
+                margin: auto;     }
+
+            /* Map */
+
+            address div iframe {
+                width:100%;
+                height: 100%;   }
+
+            address div.gmap_canvas {
+                position: relative;
+                    left: 15%;
+                width: 300px;
+                height: auto;
+                border: 1px solid #555; }
+
+             /* FOOTER AREA */
+             div.date {
+                 font-size: 2em;
+                 color: #fff;   }
+ 
+
+/* GALLERY GRID */
+main div.gallery {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;   
+
+    border: 1px dashed goldenrod;}
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;    }
