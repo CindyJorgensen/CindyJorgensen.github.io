@@ -221,19 +221,23 @@ section.siteHeading {
  
 
 /* GALLERY GRID */
+
+main.galleryPage {
+    width: 100%;
+    margin: 0;  }
+
 main div.gallery {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 375px;
     grid-template-rows: 1fr;
-    row-gap: 20px;
+    row-gap: 20px; 
 
- }
+    justify-content: center;
+    align-content: center;}
 
-    figure{
+    figure {
         grid-column-start: auto;
         grid-row-start: auto; 
-
-        margin: auto;
 
         box-shadow: 0 0 20px #777;
     }
