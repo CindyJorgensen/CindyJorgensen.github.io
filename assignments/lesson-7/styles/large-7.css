@@ -7,7 +7,7 @@
         width: 100%;
         height: 100%;  }
 
-    div .weather5Day { 
+    div.weather5Day { 
         display: block; }
 
     header section h1 {
@@ -16,13 +16,13 @@
 
 
     /* Weather for 5 Day Forecast section and comments */
-    div .weather5Day {
+    div.weather5Day {
         width: 90%;
         margin: 0;
         text-align: center;
         align-content:center;       }
 
-    h3 .weatherTableTitle {
+    h3.weatherTableTitle {
         text-align: center;
         font-size: 150%;
         text-emphasis: bold;        }
@@ -50,7 +50,7 @@
         width: 50px;
         align-content: center;      }
 
-    td .weathTemp {
+    td.weathTemp {
         height: 200%;
         width: 200%;
         align-content: center;  }

@@ -180,7 +180,7 @@ section.siteHeading {
         padding: 0; }
 
     div img.imageArticle {
-        display: flexbox;
+        display: flex;
         height: 100%; }
 
                    
