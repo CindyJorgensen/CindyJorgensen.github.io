@@ -49,10 +49,6 @@ footer {
     background-color: #6096ba;
     color: #e7ecef; }
 
-main div.weather5Day { 
-        display: none;  }
-
-
 /* HEADER */
 
     /* Container Grid */
@@ -247,3 +243,8 @@ main div.gallery {
     content: "";
     display: table;
     clear: both;    }
+
+@media screen and (max-width:500px) {
+    main div.weather5Day { 
+        display: none;  }
+    }
