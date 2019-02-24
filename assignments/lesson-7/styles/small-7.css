@@ -12,13 +12,14 @@ body {
     margin: 10px;
     font-size: 16px;
     color: #000;
+    font-family: 'Nunito', sans-serif;
         }
 
 header {
-    margin: 5px;
-    padding: .5rem;
+    margin: auto;
+    padding: 0;
     background-color: #274c77;
-    border: 1px solid #bbb;
+
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     color: #e7ecef;    }
@@ -34,7 +35,6 @@ h4 {font-size: 94%;} /* Equal to 20px */
 h5 {font-size: 63%;} /* Equal to 15px */
 
 main {
-    font-family: 'Nunito', sans-serif;
     margin: 10px;   }
 
 /* Style format for address/contact */
@@ -163,73 +163,44 @@ section.siteHeading {
     /* MAIN SECTION FOMRATTING */
 
     div h1 {
-        text-align: center; }
+        text-align: center;
+        margin: 10px;
+     }
 
-        div img {
-            width: 100%;
-            margin: 0;
-            padding: 0; }
+    img.backgroundImage {
+        position: relative;
 
-        /* Container holding the image and the text overlay */
-            div.flexContainer {
-            position: relative;
-            text-align: left;
-            z-index: 0;
-            color: #fff;    }
+        display: block;
 
-        /* Container - text - heading */
-         h3 span.townDiv {
-             position: absolute;
-                top: 10%;
-                left: 7.5%;
-                width: 32%;
-             font-size: 90%;
-             padding: 1.5%;
-             margin: 0;
-             background-color: lightblue  }
+        width: 100%;
+        height: auto;
+        overflow: hidden;
 
-        div.weatherCurrent, div.weatherHigh, div.weatherHumidity, div.weatherWindChill, div.weatherWindSpeed {
-            position: absolute;
-            left: 7.5%;
-            width: 33%;
-            padding: 1%;
-            margin: 0;
-            background-color: lightblue;    }
+        margin: auto;
+        padding: 0; }
 
+    div img.imageArticle {
+        display: flexbox;
+        height: 100%; }
 
-            /*Setting top text line for summary box */
-                div.weatherCurrent {
-                    top: 18%;
-                    font-size: 90%; }
-
-                div.weatherHigh {
-                    top: 27%; 
-                    font-size: 90%; }
-
-                div.weatherHumidity {
-                    top: 36%; 
-                    font-size: 90%; }
-
-                div.weatherWindChill {
-                    top: 45%; 
-                    font-size: 90%; }
-
-                div.weatherWindSpeed {
-                    top: 54%; 
-                    font-size: 90%; }
+                   
 
         /* CONTACT AREA CONTENT */
         address {
             background-color: #a3cef1;
             width: 100%;
-            height: 100%;    }
-            
-            div.contactInfo {
-                text-align: center;
-                padding: 5%;
-                margin: auto;     }
+            height: 100%; 
+        
+            margin: 0;
+            padding: 0;}
 
-            /* Map */
+        .nested1, .nested2, .nested3, .nested4, .nested5,
+         .nested6, .nested7 {
+                text-align: left; 
+                padding-left: 4rem;}
+
+
+        /* MAP formatting content */
 
             address div iframe {
                 width:100%;
@@ -237,10 +208,11 @@ section.siteHeading {
 
             address div.gmap_canvas {
                 position: relative;
-                    left: 15%;
+                margin: auto;
+
                 width: 300px;
                 height: auto;
-                border: 1px solid #555; }
+                border: 1px solid #555; } 
 
              /* FOOTER AREA */
              div.date {
@@ -251,11 +223,16 @@ section.siteHeading {
 /* GALLERY GRID */
 main div.gallery {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     column-gap: 10px;   
 
     border: 1px dashed goldenrod;}
+
+    figure{
+        grid-column-start: auto;
+        grid-row-start: auto; 
+    }
 /*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {
