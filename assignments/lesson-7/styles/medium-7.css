@@ -97,12 +97,9 @@ header.heading {
     /* GALLERY GRID */
     main div.gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: minmax(10px, 200px);
-        overflow: hidden;
-        row-gap: 20px;
-
- }
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 200px;
+        row-gap: 20px; }
 
 
 }  /* end of media query for 501px - 800px */

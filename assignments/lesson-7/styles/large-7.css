@@ -65,6 +65,12 @@
 		text-align: left;
         padding: 10px;      }
     
+    /* GALLERY GRID */
+    main div.gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 200px);
+        row-gap: 20px; }
 
    
 
