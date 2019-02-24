@@ -223,15 +223,24 @@ section.siteHeading {
 /* GALLERY GRID */
 main div.gallery {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    column-gap: 10px;   
+    grid-template-columns: minmax(300px, 500px);
+    grid-template-rows: minmax(10px, 300px);
+    row-gap: 10px;
 
-    border: 1px dashed goldenrod;}
+ }
 
     figure{
         grid-column-start: auto;
         grid-row-start: auto; 
+
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    
+        margin: auto;
+        padding: 10px;
+    
+        box-shadow: 0 0 20px #777;
     }
 /*----- Clearfix: Force an Element not to collapse -----*/
 
