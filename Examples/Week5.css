@@ -1,0 +1,44 @@
+.box { /* Formatting to let you visualize the content */
+    background-color: lightgreen;
+    border: .5px dashed purple; 
+    border-radius: 5px;
+    padding: 5px;  }
+
+.wrapper {
+    display: flex;  }
+
+.wrapper > div {
+    flex:1; }
+
+/* Flexbox Formats */
+    html {
+        font-family: sans-serif;
+    }
+    body {
+        margin: 0;
+    }
+    header {
+        background: purple;
+        height: 100px;
+    }
+    h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+    }
+    article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+        flex: 1 200px;   } /*This provides a minimum width */
+
+    /* Add your flexbox CSS below here */
+        section {
+            display: flex; 
+            flex-wrap: wrap;      }
+        
+        article:nth-of-type(3) {
+            /*This provides a minimum width for the three columns, but specifies that each (3) third column will be double that of the others, or have the remaining space after the minimum is given.*/
+            flex:2 200px;
+        }
