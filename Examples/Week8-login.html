@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Login In Example</title>
+    
+        <link href="Week8-login.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <form action="action_page.php">
+            <div class="imgcontainer">
+                <img src="../assignments/lesson-8/images/cloudy_sivvus_weather_symbols.png" alt="clouds" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required> <!-- for="uname" and name="uname" create a connection and are linked together-->
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbrn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </body>
+</html>
