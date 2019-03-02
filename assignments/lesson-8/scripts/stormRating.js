@@ -1,7 +1,8 @@
 
 /* Range selector slider */
+
 function adjustRating(severity) {
-    document.getElementById('ratingvalue').innerHTML=severity; }
+    document.getElementById('ratingvalue').innerHTML = severity; }
 
 /* Full name validation error message */
 var name = document.getElementById("fullName");

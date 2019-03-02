@@ -96,7 +96,12 @@ header.heading {
  
             padding: 25px;  }
 
-
+/* ----------- THANK YOU FORMATTING SECTION ----------- */
+main h2#thankYou { 
+    width:100%;
+    margin: auto;
+    font-size: 100%;
+    padding: .5rem;   }
 
 
 }  /* end of media query for 501px - 800px */

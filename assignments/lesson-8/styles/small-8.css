@@ -226,6 +226,28 @@ main div.gallery {
 
         box-shadow: 0 0 20px #777;
     }
+
+/* ------- FORM FORMATTING SECTION -------------------- */
+
+form {
+    padding: 0 15rem;
+    margin: auto;
+}
+div {
+    padding: .25rem;  }
+input, select { 
+    font-size: 80%;
+    text-align: center;}
+
+input #fullName, input #emailAddress {min-width: 75px;}
+
+span.description { font-size: 10px;}
+
+/* ----------- THANK YOU FORMATTING SECTION ----------- */
+main h2#thankYou { 
+    width:100%;
+    margin: auto;
+    font-size: 100%;   }
 /*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {
