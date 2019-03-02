@@ -21,14 +21,13 @@
 
     h3.weatherTableTitle {
         text-align: center;
-        font-size: 150%;
-        text-emphasis: bold;        }
+        font-size: 150%;  }
 
     /* Weather images for webpage provided by openclipart.org - Public Domain */
     table {
         margin: auto;
         justify-content: center;
-        text-align: align;
+        text-align: center;
         color: #8b8c89;
         width: 50%;
         padding: 2px;      }   

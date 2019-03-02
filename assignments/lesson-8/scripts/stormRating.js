@@ -2,7 +2,7 @@
 /* Range selector slider */
 
 function adjustRating(severity) {
-    document.getElementById('ratingvalue').innerHTML = severity; }
+    document.getElementById('ratingValue').innerHTML=severity; }
 
 /* Full name validation error message */
 var name = document.getElementById("fullName");

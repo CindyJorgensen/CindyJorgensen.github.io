@@ -148,7 +148,8 @@ header.heading {
             }
             .weatherSummaryBox {
                 display: grid;
-                grid-template: 1/1/1/1;                
+                grid-template-columns: repeat(2,10px);
+                grid-template-rows: repeat(6, 10px);                
             }
                 .townDiv {
                     grid-column-start: 1;
@@ -232,12 +233,14 @@ main div.gallery {
 form {
     padding: 0 15rem;
     margin: auto;
+    color: #6096ba;
 }
 div {
     padding: .25rem;  }
 input, select { 
     font-size: 80%;
-    text-align: center;}
+    text-align: center;
+    color: #000;}
 
 input #fullName, input #emailAddress {min-width: 75px;}
 

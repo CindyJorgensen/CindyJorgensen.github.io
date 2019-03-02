@@ -41,7 +41,7 @@
                 <div>
                     <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
                     <label for="fullName">Please enter your full name: <span class="description">(must be at least 5 characters)</span></label>
-                    <input type="text" id="fullName" name="fullName" required minlength="5" [A-Za-z]>
+                    <input type="text" id="fullName" name="fullName" required minlength="5" pattern=[A-Za-z]{5}>
                 </div>  
 
                 <div>
@@ -52,8 +52,8 @@
  
                 <div>
                 <!-- phone number using input of type tel and is required. -->
-                    <label for="contactNumber">Contact number <span class="description">(home, mobile, fax)</span>:</label>
-                    <input type="tel" name="contactNumber" required pattern="[0-9]{3}-[0-9]{3} -[0-9]{4}" placeholder="###-###-####">
+                    <label for="contactNumber">Contact number <span class="description">(format: ###-###-####)</span>:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" placeholder="###-###-####">
                 </div>
 
                 <div>
@@ -83,15 +83,17 @@
 
                 <div>
                 <!-- storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10. -->
-                    <label for="severity">What is the storm severity? <span class="description">(1=lowest; 10=severist)</span></label>  <br>
-                    <input type="range" name="severity" id="severity" min="1" max="10" step="1" value="5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <label for="severity">What is the storm severity? <span class="description">(1=lowest; 10=strongest)</span></label>  <br>
+                    <input type="range" name="severity" id="severity" min="1" max="10" step="1" value="5" 
+                    oninput="adjustRating(this.value)" 
+                    onchange="adjustRating(this.value)">
                     <span id="ratingValue">#</span> <br>
                 </div>
 
                 <div>
                 <!-- storm region using select with drop-down options of "Preston," Soda Springs, and "Fish Haven." Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled). The rest of the options should have relevant value attributes. -->
                     <label for="region">Select the region of the storm:</label>
-                    <select id="region" name="region" value="">
+                    <select id="region" name="region">
                             <option selected disabled value="">Select Region...</option>
                             <option value="Preston">Preston</option>
                             <option value="Soda Springs">Soda Springs</option>
@@ -101,10 +103,10 @@
 
                 <div>
                 <!-- user in-danger level using input of type radio with options and values of "yes," "maybe," and "no." -->
-                    <label for="danger">Are you in danger?</label><br>
-                    <input type="radio" id="danger" name="danger" value="no"> No <br>
-                    <input type="radio" id="danger" name="danger" value="yes"> Yes <br>
-                    <input type="radio" id="danger" name="danger" value="maybe"> Maybe
+                    <label for="danger-no">Are you in danger?</label><br>
+                    <input type="radio" id="danger-no" name="danger" value="no"> No <br>
+                    <input type="radio" id="danger-yes" name="danger" value="yes"> Yes <br>
+                    <input type="radio" id="danger-maybe" name="danger" value="maybe"> Maybe
                 </div>
 
                 <div>
@@ -145,7 +147,6 @@
 
         <script src="scripts/currentdate.js"> </script>
         <script src="scripts/hamburger.js"> </script>
-        <script src="scripts/windChill.js"></script>
         <script src="scripts/stormRating.js"></script>
     </body>
 </html>
