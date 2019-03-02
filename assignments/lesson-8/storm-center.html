@@ -84,7 +84,8 @@
                 <div>
                 <!-- storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10. -->
                     <label for="severity">What is the storm severity? (1=lowest; 10=severist)</label>   
-                    <input type="range" name="severity" id="severity" min="1" max="10">
+                    <input type="range" name="severity" id="severity" min="1" max="10" step="1" value="5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingValue">5</span>
                 </div>
 
                 <div>
@@ -108,8 +109,7 @@
                 <div>
                 <!-- additional information or comments using a textarea -->
                     <label for="comments">Comments and additional Information:</label>    
-                    <input type="text" id="comments" name="comments">
-                    <textarea rows="4" cols="50" form="stormReport"></textarea>
+                    <textarea id="comments" name="comments" rows="4" cols="50" form="stormReport"></textarea>
                 </div>
 
                 <div>
