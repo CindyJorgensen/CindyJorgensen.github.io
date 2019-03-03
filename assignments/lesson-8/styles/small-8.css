@@ -236,18 +236,14 @@ form {
     color: #6096ba;
 }
 div {
-    padding: .25rem;  }
+    padding: .5rem;  }
 
 fieldset {
     width: 90%;
     border: 2px solid #274c77;
     padding: .25rem;
 }
-    div.fieldTitle {
-        font-size: 125%;
-        padding: .5rem;
-        color: #274c77;
-    }
+
 input, select { 
     font-size: 80%;
     text-align: center;
@@ -271,8 +267,9 @@ span.description { font-size: 10px;}
 /* ----------- THANK YOU FORMATTING SECTION ----------- */
 main h2#thankYou { 
     width:100%;
-    margin: auto;
+    text-align: center;
     font-size: 100%;   }
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {
