@@ -185,7 +185,9 @@ header.heading {
         .nested1, .nested2, .nested3, .nested4, .nested5,
          .nested6, .nested7 {
                 text-align: left; 
-                padding-left: 4rem;}
+                padding-left: 4rem;
+                padding-top:0;
+                padding-bottom: 0;}
 
 
         /* MAP formatting content */
