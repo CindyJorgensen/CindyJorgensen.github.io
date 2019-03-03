@@ -233,10 +233,10 @@ main div.gallery {
 /* ------- FORM FORMATTING SECTION -------------------- */
 
 form {
-    padding: 0 2rem;
     color: #6096ba;
     width: 300px;
-    margin: auto; }
+    margin: auto;
+    font-size: 13px; }
 
     form>h1 {font-size: 90%;}
 
@@ -249,7 +249,7 @@ fieldset {
     margin: auto;   }
 
     fieldset>h2 { font-size: 75%;}
-    
+
 input, select { 
     font-size: 80%;
     text-align: center;
