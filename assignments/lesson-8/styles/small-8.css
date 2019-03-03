@@ -1,4 +1,6 @@
 
+
+/* --------------------- FORMATS FOR EVERY PAGE OF SITE --------------------*/
 /* To import google font */
 
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
@@ -239,7 +241,7 @@ div {
     padding: .5rem;  }
 
 fieldset {
-    width: 95vw;
+    width: 90vw;
     border: 2px solid #274c77;
     padding: .25rem;
 }
