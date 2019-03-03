@@ -248,7 +248,7 @@ div {
     padding: .5rem;  }
 
 fieldset {
-    border: 2px solid #274c77;
+    border: 2px ridge #274c77;
     padding: .25rem;
     margin: auto;   }
 
