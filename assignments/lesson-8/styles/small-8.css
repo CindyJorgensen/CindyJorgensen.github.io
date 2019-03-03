@@ -238,7 +238,8 @@ form {
     color: #6096ba;
     width: 300px;
     margin: auto;
-    font-size: 13px; }
+    font-size: 13px;
+    padding-bottom: 5px; }
 
     form > h1 {
         font-size: 90%;
