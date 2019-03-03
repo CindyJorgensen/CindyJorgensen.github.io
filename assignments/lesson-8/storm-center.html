@@ -42,8 +42,9 @@
                 <fieldset> <h2>Personal Information:</h2>
                     <div>
                         <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
-                        <label for="fullName">Please enter your full name: <span class="description">(must be at least 5 characters)</span></label>
+                        <label for="fullName">Please enter your full name:<br> 
                         <input type="text" id="fullName" name="fullName" minlength="5" pattern=[A-Za-z].{5,} required>
+                        <span class="description">(must be at least 5 characters)</span></label>
                     </div>  
 
                     <div>
