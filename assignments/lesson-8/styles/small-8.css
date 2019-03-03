@@ -239,7 +239,7 @@ div {
     padding: .5rem;  }
 
 fieldset {
-    width: 90%;
+    width: 90vw;
     border: 2px solid #274c77;
     padding: .25rem;
 }
