@@ -38,89 +38,95 @@
 
         <main>
             <form action="thank-you.html" method="get" id="stormReport"> <h1>Storm Report Submission Form</h1>
-                <div>
-                    <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
-                    <label for="fullName">Please enter your full name: <span class="description">(must be at least 5 characters)</span></label>
-                    <input type="text" id="fullName" name="fullName" required minlength="5" pattern=[A-Za-z].{5,}>
-                </div>  
+                <fieldset> <h2>Personal Information:</h2>
+                    <div>
+                        <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
+                        <label for="fullName">Please enter your full name: <span class="description">(must be at least 5 characters)</span></label>
+                        <input type="text" id="fullName" name="fullName" required minlength="5" pattern=[A-Za-z].{5,}>
+                    </div>  
 
-                <div>
-                    <!-- email using input of type email and use a placeholder to provide a demo email. -->
-                    <label for="emailAddress">Please enter your email address:</label>
-                    <input type="email" id="emailAddress" name="emailAddress" placeholder="yourname@example.com">
-                </div>
- 
-                <div>
-                <!-- phone number using input of type tel and is required. -->
-                    <label for="contactNumber">Contact number <span class="description">(format: ###-###-####)</span>:</label>
-                    <input type="tel" id="contactNumber" name="contactNumber" required minlenth="9" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####">
-                </div>
+                    <div>
+                        <!-- email using input of type email and use a placeholder to provide a demo email. -->
+                        <label for="emailAddress">Please enter your email address:</label>
+                        <input type="email" id="emailAddress" name="emailAddress" placeholder="yourname@example.com">
+                    </div>
+    
+                    <div>
+                    <!-- phone number using input of type tel and is required. -->
+                        <label for="contactNumber">Contact number <span class="description">(format: ###-###-####)</span>:</label>
+                        <input type="tel" id="contactNumber" name="contactNumber" required minlenth="9" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####">
+                    </div>
 
-                <div>
-                <!-- zip code using input of type number and is required. -->
-                    <label for="zipCode"> Input your five digit zip code: </label>
-                    <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{5}">
-                </div>
+                    <div>
+                    <!-- zip code using input of type number and is required. -->
+                        <label for="zipCode"> Input your five digit zip code: </label>
+                        <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{5}">
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset> 
+                    <div class="fieldTitle">Storm Information:</div>
+                    <div>
+                    <!-- storm date using input of type date -->
+                        <label for="stormDate">Date of Storm:</label>
+                        <input type="date" id="stormDate" name="stormDate">
+                    </div>
 
-                <div>
-                <!-- storm date using input of type date -->
-                    <label for="stormDate">Date of Storm:</label>
-                    <input type="date" id="stormDate" name="stormDate">
-                </div>
+                    <div>
+                    <!-- storm type using input with a list attribute using a datalist of suggestions including "Flash Flood," "Hail," "Hurricane," "Thunderstorm," and "Tornado." -->
+                        <label for="stormType">Choose a storm type:</label>
+                        <input list="storms" name="stormType" id="stormType" > 
+                            <datalist id="storms">
+                                <option value="Flash Food">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">  
+                                <option value="Tornado">
+                            </datalist>
+                    </div>
 
-                <div>
-                <!-- storm type using input with a list attribute using a datalist of suggestions including "Flash Flood," "Hail," "Hurricane," "Thunderstorm," and "Tornado." -->
-                    <label for="stormType">Choose a storm type:</label>
-                    <input list="storms" name="stormType" id="stormType" > 
-                        <datalist id="storms">
-                            <option value="Flash Food">
-                            <option value="Hail">
-                            <option value="Hurricane">
-                            <option value="Thunderstorm">  
-                            <option value="Tornado">
-                        </datalist>
-                </div>
+                    <div>
+                    <!-- storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10. -->
+                        <label for="severity">What is the storm severity?<br>
+                            <span class="description">(1=lowest; 10=strongest)</span></label>  <br>
+                        <input type="range" name="severity" id="severity" min="1" max="10" step="1" value="5" 
+                        oninput="adjustRating(this.value)" 
+                        onchange="adjustRating(this.value)">
+                        <span id="ratingValue">5</span> <br>
+                    </div>
 
-                <div>
-                <!-- storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10. -->
-                    <label for="severity">What is the storm severity?<br>
-                         <span class="description">(1=lowest; 10=strongest)</span></label>  <br>
-                    <input type="range" name="severity" id="severity" min="1" max="10" step="1" value="5" 
-                    oninput="adjustRating(this.value)" 
-                    onchange="adjustRating(this.value)">
-                    <span id="ratingValue">5</span> <br>
-                </div>
+                    <div>
+                    <!-- storm region using select with drop-down options of "Preston," Soda Springs, and "Fish Haven." Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled). The rest of the options should have relevant value attributes. -->
+                        <label for="region">Select the region of the storm:</label>
+                        <select id="region" name="region">
+                                <option selected disabled value="">Select Region...</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </div>
 
-                <div>
-                <!-- storm region using select with drop-down options of "Preston," Soda Springs, and "Fish Haven." Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled). The rest of the options should have relevant value attributes. -->
-                    <label for="region">Select the region of the storm:</label>
-                    <select id="region" name="region">
-                            <option selected disabled value="">Select Region...</option>
-                            <option value="Preston">Preston</option>
-                            <option value="Soda Springs">Soda Springs</option>
-                            <option value="Fish Haven">Fish Haven</option>
-                    </select>
-                </div>
+                    <div>
+                    <!-- user in-danger level using input of type radio with options and values of "yes," "maybe," and "no." -->
+                        <label for="danger-no">Are you in danger?</label><br>
+                        <input type="radio" id="danger-no" name="danger" value="no"> No <br>
+                        <input type="radio" id="danger-yes" name="danger" value="yes"> Yes <br>
+                        <input type="radio" id="danger-maybe" name="danger" value="maybe"> Maybe
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <div>
+                    <!-- additional information or comments using a textarea -->
+                        <label for="comments">Comments and additional Information:</label> <br>  
+                        <textarea id="comments" name="comments" rows="4" cols="25" form="stormReport"></textarea>
+                    </div>
 
-                <div>
-                <!-- user in-danger level using input of type radio with options and values of "yes," "maybe," and "no." -->
-                    <label for="danger-no">Are you in danger?</label><br>
-                    <input type="radio" id="danger-no" name="danger" value="no"> No <br>
-                    <input type="radio" id="danger-yes" name="danger" value="yes"> Yes <br>
-                    <input type="radio" id="danger-maybe" name="danger" value="maybe"> Maybe
-                </div>
-
-                <div>
-                <!-- additional information or comments using a textarea -->
-                    <label for="comments">Comments and additional Information:</label> <br>  
-                    <textarea id="comments" name="comments" rows="4" cols="25" form="stormReport"></textarea>
-                </div>
-
-                <div>
-                <!-- form submission button using input of type submit-->
-                    <input type="submit" value="submit">
-                </div>
-
+                    <div>
+                    <!-- form submission button using input of type submit-->
+                        <input type="submit" value="submit">
+                    </div>
+                </fieldset>
             </form>        
         </main>
 

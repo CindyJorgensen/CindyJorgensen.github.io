@@ -237,6 +237,18 @@ form {
 }
 div {
     padding: .25rem;  }
+
+fieldset {
+    width: 50%;
+    border: 2px solid #274c77;
+    padding: 1rem;
+    border-collapse: separate;
+}
+    div.fieldTitle {
+        font-size: 125%;
+        padding: .5rem;
+        color: #274c77;
+    }
 input, select { 
     font-size: 80%;
     text-align: center;
