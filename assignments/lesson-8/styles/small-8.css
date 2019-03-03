@@ -240,11 +240,22 @@ div {
 input, select { 
     font-size: 80%;
     text-align: center;
-    color: #000;}
+    color: #000;
+
+    border: 1px solid #274c77;
+    border-radius: 5px;}
 
 input #fullName, input #emailAddress {min-width: 75px;}
 
 span.description { font-size: 10px;}
+
+        input#contactNumber{
+            width: 6rem;    }
+        input#zipCode {
+            width: 3rem;
+        }
+        input#stormType {
+            width: 5rem;    }
 
 /* ----------- THANK YOU FORMATTING SECTION ----------- */
 main h2#thankYou { 
