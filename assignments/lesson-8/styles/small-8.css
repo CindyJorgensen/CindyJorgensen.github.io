@@ -235,7 +235,10 @@ main div.gallery {
 form {
     padding: 0 2rem;
     color: #6096ba;
-    width: 50%; }
+    width: 300px;
+    margin: auto; }
+
+    form>h1 {font-size: 80%;}
 div {
     padding: .5rem;  }
 
@@ -243,6 +246,9 @@ fieldset {
     border: 2px solid #274c77;
     padding: .25rem;
     margin: auto;   }
+
+    fieldset>h2 { font-size: 75%;}
+
 
 input, select { 
     font-size: 80%;
