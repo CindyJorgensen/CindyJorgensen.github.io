@@ -235,14 +235,14 @@ main div.gallery {
 form {
     padding: 0 2rem;
     color: #6096ba;
-}
+    width: 50%; }
 div {
     padding: .5rem;  }
 
 fieldset {
     border: 2px solid #274c77;
     padding: .25rem;
-}
+    margin: auto;   }
 
 input, select { 
     font-size: 80%;
