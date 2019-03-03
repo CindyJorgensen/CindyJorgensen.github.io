@@ -208,6 +208,11 @@ header.heading {
              div.date {
                  font-size: 2em;
                  color: #fff;   }
+
+            address {
+                border-top: 2px solid #274c77;
+                border-bottom: 2px solid #e7ecef; }
+            
  
 
 /* GALLERY GRID */
