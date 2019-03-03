@@ -42,7 +42,7 @@
                     <div>
                         <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
                         <label for="fullName">Please enter your full name: <span class="description">(must be at least 5 characters)</span></label>
-                        <input type="text" id="fullName" name="fullName" required minlength="5" pattern=[A-Za-z].{5,}>
+                        <input type="text" id="fullName" name="fullName" minlength="5" pattern=[A-Za-z].{5,} required>
                     </div>  
 
                     <div>
@@ -54,18 +54,18 @@
                     <div>
                     <!-- phone number using input of type tel and is required. -->
                         <label for="contactNumber">Contact number <span class="description">(format: ###-###-####)</span>:</label>
-                        <input type="tel" id="contactNumber" name="contactNumber" required minlenth="9" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####">
+                        <input type="tel" id="contactNumber" name="contactNumber" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####" required>
                     </div>
 
                     <div>
                     <!-- zip code using input of type number and is required. -->
                         <label for="zipCode"> Input your five digit zip code: </label>
-                        <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{5}">
+                        <input type="text" id="zipCode" name="zipCode"  pattern="[0-9]{5}" required>
                     </div>
                 </fieldset>
                 <br>
                 <fieldset> 
-                    <h2>Storm Information:</h2></div>
+                    <h2>Storm Information:</h2>
                     <div>
                     <!-- storm date using input of type date -->
                         <label for="stormDate">Date of Storm:</label>
@@ -137,7 +137,7 @@
                 <div class="nested3">Preston, ID 83263  </div>
                 <div class="nested4">&#9742; </div>
                 <div class="nested5">208-555-6677  </div>
-                <div class="nested6">&#xe0be;  </div>
+                <div class="nested6">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>  </div>
                 <div class="nested7"><a href="mailto:cljorgensen.pta@outlook.com">CJorgensen@weekendwarriorweather.com</a> </div>
             </div>
         
