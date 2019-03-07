@@ -1,0 +1,60 @@
+ /* Font Color Scheme:
+
+ Data Rows - background colors
+ #e7f0ed - grey;
+ #e7ffed - greenish color;
+
+ Headers, Column headings, and Footers
+ #628ca6
+ #7fb9c2
+*/
+
+table {
+    font-family: 'Ubuntu', sans-serif;
+    color: #000;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+
+    box-shadow: 7px 7px 10px #628ca6;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;}
+
+th, td {
+    padding: 5px;
+}
+
+th{
+    color: #fff; /* White text */
+    background-color: #628ca6; /* Blue shade */
+    letter-spacing: .1em;
+}
+    th.header {
+        background: #7fb9c2;
+        color: #000;
+        font-size: 125%;
+
+    }
+
+tr:nth-child(even) {
+    background: #e7ffed;
+}
+
+tr:nth-child(odd) {
+    background: #e7f0ed;
+}
+
+td.top {
+    background: #628ca6;
+    text-align: center;
+}
+
+tfoot td {
+    background: #7fb9c2;
+    font-size: 9px;
+    padding:5px;
+}

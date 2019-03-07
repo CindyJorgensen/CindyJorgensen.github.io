@@ -1,0 +1,213 @@
+/* To run media query for medium screens */
+@media screen and (min-width:501px) {
+
+        body, header, nav, main, address, footer { 
+            margin: auto;
+            width: 100%;
+            height: 100%;  }
+    
+        main div.weather5Day { 
+            display: block; }
+    
+        header section h1 {
+            text-align: center;
+            color: #e7ecef;}
+    
+    
+        /* Weather for 5 Day Forecast section and comments */
+        main div.weather5Day {
+            width: 90%;
+            margin: 0;
+            text-align: center;
+            align-content:center;       }
+    
+        main div h3.weatherTableTitle {
+            text-align: center;
+            font-size: 150%;
+            font-weight: bold;        }
+    
+        /* Weather images for webpage provided by openclipart.org - Public Domain */
+        main div table {
+            margin: auto;
+            justify-content: center;
+            text-align: center;
+            color: #8b8c89;
+            width: 60%;
+            padding: 2px;
+        
+            z-index: 10;}   
+    
+        th {
+            background-color: #274c77;
+            border: 1.5px solid #8b8c89;
+            margin: 0;
+            padding: 0;         }
+    
+        tbody {
+            border: 1.5px solid #8b8c89;        }
+    
+        .weatherImage {
+            height: auto;
+            width: 50px;
+            align-content: center;      }
+    
+        td.weathTemp {
+            height: 200%;
+            width: 200%;
+            align-content: center;  }
+    
+         /* Article format to include a lighter obaque background with a border */
+    
+        article {
+            margin: 10px auto;
+            background-color: #bec9db;
+            border: 1px solid #000;
+            box-shadow: 0 0 30px #777;
+            text-align: left;
+            padding: 10px;      }
+        
+
+    
+
+
+   
+            /* Style format for footer */
+            footer {
+                margin: 0;
+                padding: 10px 12px;
+                background-color: #6096ba;
+                color: #e7ecef; }
+                
+    /* HEADER */
+
+    /* Container Grid */
+header.heading {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, .15fr);
+}
+
+    /* Grid - Content */
+        header img#homeTown {
+             padding: 15px 10%; }
+
+        header div.motto {
+             font-size: 95%;
+ 
+            padding: 25px;  }
+
+/* ----------- THANK YOU FORMATTING SECTION ----------- */
+main h2#thankYou { 
+    width:100%;
+    margin: auto;
+    font-size: 100%;
+    padding: .5rem;   }
+
+
+}  /* end of media query for 501px - 800px */
+
+/* To run NEW media query for different viewport size */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+        header img#homeTown {
+             padding: 15px 20%; }
+        }
+
+@media screen and (min-width:501px) {        
+        /* Styling the navigation menu */
+            /* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+    
+            nav button {
+                display: none;  }
+                
+                nav ul.hide {
+                    display: block;
+                  }
+
+
+ /* GRID - Navigation Menu layout & Formatting */
+    nav ul#menuCenter {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);   }
+
+        li.menuHome {
+            grid-column-start: 1; }
+        li.menuPreston {
+            grid-column-start: 2; }
+        li.menuSodaSprings {
+            grid-column-start: 3; }
+        li.menuFishHaven {
+            grid-column-start: 4; }
+        li.menuStormCenter {
+            grid-column-start: 5; }
+        li.menuGallery {
+            grid-column-start: 6; }
+ 
+    img#imageArticle  {
+        float: right;
+        padding: 2%; }
+
+        /* Align the Contact Info & the Map next to each other */
+    
+        address {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:  1fr;
+            column-gap: 10%; 
+        
+            padding: 2%;}
+
+            address div.contactMe {
+                grid-column-start: 2;
+                grid-row-start:1 ;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;}               
+
+                .nested1 {
+                    grid-column-start: 1;
+                    grid-row-start:1;
+                    
+                    padding: 10px 0;}
+                .nested2 {
+                    grid-column-start: 2;
+                    grid-row-start:2;    }
+                .nested3 {
+                    grid-column-start: 2;
+                    grid-row-start:3;    }
+                .nested4 {
+                    grid-column-start: 1;
+                    grid-row-start:4;    }              
+                .nested5 {
+                    grid-column-start: 2;
+                    grid-row-start:4;    }
+                .nested6 {
+                    grid-column-start: 1;
+                    grid-row-start:5;    }
+                .nested7 {
+                    grid-column-start: 2;
+                    grid-row-start:5;
+                    
+                    font-size: 10px;}
+
+            .gmap_canvas {
+                grid-column-start: 1;
+                grid-column-end:2;
+                grid-row-start:1; 
+                grid-row-end: 2; 
+            
+                margin: auto;}
+        }
+
+@media screen and (min-width:700px) {
+    
+    /* GALLERY GRID */
+    main div.gallery {
+        display: grid;
+        grid-template-columns: repeat(2,375px);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 20px; 
+        column-gap: 20px;
+    
+        justify-content: center;
+        align-content: center;  }
+    }
