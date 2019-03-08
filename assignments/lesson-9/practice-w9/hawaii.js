@@ -2,7 +2,7 @@ var header = document.querySelector('header');
 var section = document.querySelector('section');
 
 
-var requestURL = 'http://cindyjorgensen.github.io/assignments/lesson-9/practice-w9/hawaii.json';
+var requestURL = 'hawaii.json';
 
 var request = new XMLHttpRequest();
 request.open('GET',requestURL); 
