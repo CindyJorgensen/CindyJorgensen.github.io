@@ -1,0 +1,105 @@
+{
+    "usPacificIslands": "The Hawaiian Islands",
+    "statehood": "August 21, 1959",
+    "active": true,
+    "islands": [
+        {
+            "name": "Oahu",
+            "nickname": "The Gathering Place",
+            "population": 953207,
+            "highestPoint": "Mount Ka'ala",
+            "pointsOfInterest": [
+                "Radiation resistance",
+                "Turning tiny",
+                "Radiation blast" ]
+        },
+        {
+            "name": "Maui",
+            "nickname": "The Valley Isle",
+            "population": 144444,
+            "highestPoint": "Haleakala",
+            "pointsOfInterest": [
+              "Million tonne punch",
+              "Damage resistance",
+              "Superhuman reflexes"
+            ]
+          },
+          {
+            "name": "Kaua'i",
+            "nickname": "The Garden Isle",
+            "population": 66921,
+            "highestPoint": "Kawaikini",
+            "pointsOfInterest": [
+              "Immortality",
+              "Heat Immunity",
+              "Inferno",
+              "Teleportation",
+              "Interdimensional travel"
+            ]
+          },
+          {
+            "name": "Hawai'i",
+            "nickname": "The Big Island",
+            "population": 185079,
+            "highestPoint": "Mauna Kea",
+            "pointsOfInterest": [
+              "Immortality",
+              "Heat Immunity",
+              "Inferno",
+              "Teleportation",
+              "Interdimensional travel"
+            ]
+          },
+          {
+            "name": "Moloka'i",
+            "nickname": "The Friendly Isle",
+            "population": 7345,
+            "highestPoint": "Kamakou",
+            "pointsOfInterest": [
+              "Immortality",
+              "Heat Immunity",
+              "Inferno",
+              "Teleportation",
+              "Interdimensional travel"
+            ]
+          },
+          {
+            "name": "Lana'i",
+            "nickname": "The Pineapple Isle",
+            "population": 3135,
+            "highestPoint": "Lana'ihale",
+            "pointsOfInterest": [
+              "Immortality",
+              "Heat Immunity",
+              "Inferno",
+              "Teleportation",
+              "Interdimensional travel"
+            ]
+          },
+          {
+            "name": "Ni'ihau",
+            "nickname": "The Forbidden Isle",
+            "population": 170,
+            "highestPoint": "Mount Paniau",
+            "pointsOfInterest": [
+              "Immortality",
+              "Heat Immunity",
+              "Inferno",
+              "Teleportation",
+              "Interdimensional travel"
+            ]
+          },
+          {
+            "name": "Kaho'olawe",
+            "nickname": "The Target Isle",
+            "population": 0,
+            "highestPoint": "Pu'u Moaulanui",
+            "pointsOfInterest": [
+              "Immortality",
+              "Heat Immunity",
+              "Inferno",
+              "Teleportation",
+              "Interdimensional travel"
+            ]
+          }                      
+    ]}
