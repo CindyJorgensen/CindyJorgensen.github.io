@@ -7,10 +7,13 @@ html {
   body {
     width: 800px;
     margin: 0 auto;
+    background-color: #E4572E;
   }
   
   h1, h2 {
     font-family: 'Faster One', cursive;
+    color: #F3A712;
+
   }
   
   /* header styles */
@@ -35,10 +38,12 @@ html {
   
   section p {
     margin: 5px 0;
+    color: #c6ccb2;
   }
   
   section ul {
     margin-top: 0;
+    color: #0f7173;
   }
   
   h2 {

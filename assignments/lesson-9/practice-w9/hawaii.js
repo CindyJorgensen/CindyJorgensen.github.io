@@ -13,7 +13,7 @@ request.send();
 request.onload = function() {
     var hawaiianIsland = request.response;
     populateHeader(hawaiianIsland);
-    showHeroes(hawaiiIsland);
+    showHeroes(hawaiianIsland);
 }
 
 function populateHeader(jsonObj) {
@@ -22,7 +22,7 @@ function populateHeader(jsonObj) {
     header.appendChild(myH1);
 
     var myPara = document.createElement('p');
-    myPara.textContent - 'statehood: ' + jsonObj['statehood'] + ' // Statehood: ' + jsonObj['statehood'];
+    myPara.textContent -  ' Statehood: ' + jsonObj['statehood'];
     header.appendChild(myPara);
 }
 
@@ -38,9 +38,9 @@ function showHeroes(jsonObj) {
       var myList = document.createElement('ul');
   
       myH2.textContent = island[i].name;
-      myPara1.textContent = 'nickname: ' + heroes[i].nickname;
-      myPara2.textContent = 'population: ' + heroes[i].population;
-      myPara3.textContent = 'Highest Point:' + heroes[i].highestPoint;
+      myPara1.textContent = 'Island nickname: ' + island[i].nickname;
+      myPara2.textContent = 'Island population: ' + island[i].population;
+      myPara3.textContent = 'Highest point on island:' + island[i].highestPoint;
           
       var attractions = island[i].pointsOfInterest;
       for (var j = 0; j < attractions.length; j++) {

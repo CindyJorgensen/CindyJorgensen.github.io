@@ -9,9 +9,7 @@
             "population": 953207,
             "highestPoint": "Mount Ka'ala",
             "pointsOfInterest": [
-                "Radiation resistance",
-                "Turning tiny",
-                "Radiation blast" ]
+                "Waikiki Beach", "Pearl Harbor", "Hanauma Bay & Natural Perserve", "Nuuanu Pali Lookout", "North Shore" ]
         },
         {
             "name": "Maui",
@@ -19,9 +17,7 @@
             "population": 144444,
             "highestPoint": "Haleakala",
             "pointsOfInterest": [
-              "Million tonne punch",
-              "Damage resistance",
-              "Superhuman reflexes"
+              "Lahaina Town", "Makena Beach State Park", "Iao Valley State Park", "Haleakala National Park", "Hana Highway"
             ]
           },
           {
@@ -30,11 +26,7 @@
             "population": 66921,
             "highestPoint": "Kawaikini",
             "pointsOfInterest": [
-              "Immortality",
-              "Heat Immunity",
-              "Inferno",
-              "Teleportation",
-              "Interdimensional travel"
+              "Wailua Falls", "Kalalau Trail", "Poipu Beach", "Waimea Canyon"
             ]
           },
           {
@@ -43,11 +35,7 @@
             "population": 185079,
             "highestPoint": "Mauna Kea",
             "pointsOfInterest": [
-              "Immortality",
-              "Heat Immunity",
-              "Inferno",
-              "Teleportation",
-              "Interdimensional travel"
+              "Historic Hailua-Kona Town", "Waipio Valley", "Downtown Hilo", "Ka Lae (Southpoint)", "Hawaii Volcanoes National Park"
             ]
           },
           {
@@ -56,11 +44,7 @@
             "population": 7345,
             "highestPoint": "Kamakou",
             "pointsOfInterest": [
-              "Immortality",
-              "Heat Immunity",
-              "Inferno",
-              "Teleportation",
-              "Interdimensional travel"
+              "Kalaupapa National Historical Park", "Kapuaiwa Coconut Grove", "Halawa Valley"
             ]
           },
           {
@@ -69,37 +53,7 @@
             "population": 3135,
             "highestPoint": "Lana'ihale",
             "pointsOfInterest": [
-              "Immortality",
-              "Heat Immunity",
-              "Inferno",
-              "Teleportation",
-              "Interdimensional travel"
-            ]
-          },
-          {
-            "name": "Ni'ihau",
-            "nickname": "The Forbidden Isle",
-            "population": 170,
-            "highestPoint": "Mount Paniau",
-            "pointsOfInterest": [
-              "Immortality",
-              "Heat Immunity",
-              "Inferno",
-              "Teleportation",
-              "Interdimensional travel"
-            ]
-          },
-          {
-            "name": "Kaho'olawe",
-            "nickname": "The Target Isle",
-            "population": 0,
-            "highestPoint": "Pu'u Moaulanui",
-            "pointsOfInterest": [
-              "Immortality",
-              "Heat Immunity",
-              "Inferno",
-              "Teleportation",
-              "Interdimensional travel"
+              "Lanai Archery and Shooting Range", "Manele Golf Course", "Pine Isle Market, Ltd."
             ]
           }                      
     ]}
