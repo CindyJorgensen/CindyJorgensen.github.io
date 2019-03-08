@@ -1,17 +1,18 @@
 var header = document.querySelector('header');
 var section = document.querySelector('section');
 
-var requestURL = 'https://cindyjorgensen.github.io/assignments/lesson-9/practicew-9/hawaii.json';
+
+var requestURL = 'http://cindyjorgensen.github.io/assignments/lesson-9/practice-w9/hawaii.json';
 
 var request = new XMLHttpRequest();
-request.open('GET',requestURL);
+request.open('GET',requestURL); 
 
 request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    var hawaiiIsland = request.response;
-    populateHeader(hawaiiIsland);
+    var hawaiianIsland = request.response;
+    populateHeader(hawaiianIsland);
     showHeroes(hawaiiIsland);
 }
 
