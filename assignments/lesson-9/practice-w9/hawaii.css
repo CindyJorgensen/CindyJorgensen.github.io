@@ -1,5 +1,7 @@
 /* || general styles */
 
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+
 html {
     font-family: 'helvetica neue', helvetica, arial, sans-serif;
   }
@@ -11,7 +13,7 @@ html {
   }
   
   h1, h2 {
-    font-family: 'Faster One', cursive;
+    font-family: 'ZCOOL KuaiLe', cursive;
     color: #F3A712;
 
   }

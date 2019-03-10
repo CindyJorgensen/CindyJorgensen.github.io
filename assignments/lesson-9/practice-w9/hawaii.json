@@ -9,51 +9,40 @@
             "population": 953207,
             "highestPoint": "Mount Ka'ala",
             "pointsOfInterest": [
-                "Waikiki Beach", "Pearl Harbor", "Hanauma Bay & Natural Perserve", "Nuuanu Pali Lookout", "North Shore" ]
-        },
+                "Waikiki Beach", "Pearl Harbor", "Hanauma Bay & Natural Perserve", "Nuuanu Pali Lookout", "North Shore" ]         },
         {
             "name": "Maui",
             "nickname": "The Valley Isle",
             "population": 144444,
             "highestPoint": "Haleakala",
             "pointsOfInterest": [
-              "Lahaina Town", "Makena Beach State Park", "Iao Valley State Park", "Haleakala National Park", "Hana Highway"
-            ]
-          },
+              "Lahaina Town", "Makena Beach State Park", "Iao Valley State Park", "Haleakala National Park", "Hana Highway"            ]         },
           {
             "name": "Kaua'i",
             "nickname": "The Garden Isle",
             "population": 66921,
             "highestPoint": "Kawaikini",
             "pointsOfInterest": [
-              "Wailua Falls", "Kalalau Trail", "Poipu Beach", "Waimea Canyon"
-            ]
-          },
+              "Wailua Falls", "Kalalau Trail", "Poipu Beach", "Waimea Canyon" ]    },
           {
             "name": "Hawai'i",
             "nickname": "The Big Island",
             "population": 185079,
             "highestPoint": "Mauna Kea",
             "pointsOfInterest": [
-              "Historic Hailua-Kona Town", "Waipio Valley", "Downtown Hilo", "Ka Lae (Southpoint)", "Hawaii Volcanoes National Park"
-            ]
-          },
+              "Historic Hailua-Kona Town", "Waipio Valley", "Downtown Hilo", "Ka Lae (Southpoint)", "Hawaii Volcanoes National Park"            ]          },
           {
             "name": "Moloka'i",
             "nickname": "The Friendly Isle",
             "population": 7345,
             "highestPoint": "Kamakou",
             "pointsOfInterest": [
-              "Kalaupapa National Historical Park", "Kapuaiwa Coconut Grove", "Halawa Valley"
-            ]
-          },
+              "Kalaupapa National Historical Park", "Kapuaiwa Coconut Grove", "Halawa Valley"            ]          },
           {
             "name": "Lana'i",
             "nickname": "The Pineapple Isle",
             "population": 3135,
             "highestPoint": "Lana'ihale",
             "pointsOfInterest": [
-              "Lanai Archery and Shooting Range", "Manele Golf Course", "Pine Isle Market, Ltd."
-            ]
-          }                      
+              "Lanai Archery and Shooting Range", "Manele Golf Course", "Pine Isle Market, Ltd."           ]         }                      
     ]}
