@@ -164,14 +164,14 @@ header.heading {
                 grid-row-start:1; 
             
                 display: grid;
-                color
+
                 font-size: 110%;
                 text-decoration: underline;
                 font-weight: bold;}
 
             .weatherCurrent {
                 grid-column-start: 1;
-                grid-row-start:2;  }             }
+                grid-row-start:2;  }             
             #temperature {
                 grid-column-start: 2;
                 grid-row-start: 2;  }
