@@ -286,7 +286,18 @@ main h2#thankYou {
     text-align: center;
     font-size: 100%;   }
 
+
+
+/* -------------- INDEX PAGE --------------------------*/
+/* 
+#townName {
+     display: grid;
+
+     grid-template-columns: repeat(2,1fr);
+     grid-column-gap: 15px;  }
+
 /*----- Clearfix: Force an Element not to collapse -----*/
+
 
 .clearfix:after {
     content: "";

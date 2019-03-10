@@ -16,7 +16,7 @@
 
     </head>
 
-    <body onLoad="currentDate()">
+    <body>
         <!-- Specific to mobile devices -->
         <header class="clearfix heading">
             <img id="homeTown" src="https://cdn1.iconfinder.com/data/icons/Futurosoft%20Icons%200.5.2/128x128/apps/keyboard_layout.png" alt="The world logo">
@@ -38,10 +38,12 @@
         </nav>
 
         <main>
- 
+            Content should be written here - 
+            <section id="townName">
+            </section>
         </main>
 
-        <address >
+        <address  onLoad="currentDate()" >
             <div class="contactMe, clearfix">
                 <div class="nested1"><b>Weekend Warrior Weather</b></div>
                 <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>121 S State Street </div>
@@ -65,5 +67,6 @@
 
         <script src="scripts/currentdate.js"> </script>
         <script src="scripts/hamburger.js"> </script>
+        <script src="scripts/town.js"></script>
     </body>
 </html>
