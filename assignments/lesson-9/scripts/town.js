@@ -41,12 +41,12 @@ function populateTown(townInfo) {
       myPara3.textContent = 'Population: ' + townInfo.towns[i].currentPopulation;
       myPara4.textContect =' Annual Rain Fall: ' + townInfo.towns[i].averageRainfall;
           
-    var eventList = townInfo.towns[i].events;
+/* Information is being omitted at this time     var eventList = townInfo.towns[i].events;
       for (var j = 0; j < eventList.length; j++) {
         var listItem = document.createElement('li');
         listItem.textContent = eventList[j];
-        myList.appendChild(listItem);
-      }
+        myList.appendChild(listItem); 
+      } */
 
       if (townInfo.towns[i].name === 'Preston') {
         myImg.setAttribute("src", "images/HOME_PrestonID.jpg"); }
@@ -61,7 +61,7 @@ function populateTown(townInfo) {
       myArticle.appendChild(myPara3);
       myArticle.appendChild(myPara4); 
 
-      myArticle.appendChild(myList);
+/*      myArticle.appendChild(myList); */
       myArticle.appendChild(myImg);
 
       section.appendChild(myArticle);

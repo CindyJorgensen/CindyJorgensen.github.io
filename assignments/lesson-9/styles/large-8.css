@@ -12,45 +12,6 @@
         color: #e7ecef;}
 
 
-    /* Weather for 5 Day Forecast section and comments */
-    div.weather5Day {
-        width: 90%;
-        margin: 0;
-        text-align: center;
-        align-content:center;       }
-
-    h3.weatherTableTitle {
-        text-align: center;
-        font-size: 150%;  }
-
-    /* Weather images for webpage provided by openclipart.org - Public Domain */
-    table {
-        margin: auto;
-        justify-content: center;
-        text-align: center;
-        color: #8b8c89;
-        width: 50%;
-        padding: 2px;      }   
-
-    th {
-        background-color: #274c77;
-        border: 1.5px solid #8b8c89;
-        margin: 0;
-        padding: 0;         }
-
-    tbody {
-        border: 1.5px solid #8b8c89;        }
-
-    .weatherImage {
-        height: auto;
-        width: 50px;
-        align-content: center;      }
-
-    td.weathTemp {
-        height: 200%;
-        width: 200%;
-        align-content: center;  }
-
  	/* Article format to include a lighter obaque background with a border */
 
 	article {
@@ -61,7 +22,13 @@
 		text-align: left;
         padding: 10px;      }
     
-
+ /* -------------- INDEX PAGE --------------------------*/
+ @media screen and (min-width: 900px) {
+section#townName {
+    grid-template-columns: repeat(3,30%);
+    grid-column-gap: 1%; 
+   justify-content: center; }
+ }
 
    
 

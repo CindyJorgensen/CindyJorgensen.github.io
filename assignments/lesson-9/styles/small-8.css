@@ -136,17 +136,84 @@ header.heading {
 
     h1 {text-align: center; }
 
+        img.backgroundImage {
+            position: relative;
+            width: 100%;  }
+
+        div.format {
+                position: absolute;
+                    left: 7%;
+                    top: 40%;   }
+
+        .weatherSummaryBox { 
+            display: grid;
+            grid-template-columns: 1%, .5%;
+            grid-template-rows: repeat (7, 25px);}
+
+            .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindSpeed, .weatherWindChill {
+                background-color: rgba(39,76,119, .8);
+                color: rgb(189, 189, 189);  }
+
+            .townDiv, #temperature, #high, #windChill, #humidity, #windSpeed {
+                background-color: rgba(39,76,119, .8);
+                color: #fff; }
+
+            .townDiv {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start:1; 
+            
+                display: grid;
+                color
+                font-size: 110%;
+                text-decoration: underline;
+                font-weight: bold;}
+
+            .weatherCurrent {
+                grid-column-start: 1;
+                grid-row-start:2;  }             }
+            #temperature {
+                grid-column-start: 2;
+                grid-row-start: 2;  }
+            .weatherHigh {
+                grid-column-start: 1;
+                grid-row-start:3;   }
+            #high {
+                grid-column-start: 2;
+                grid-row-start: 3;  }
+            .weatherWindChill {
+                grid-column-start: 1;
+                grid-row-start:4;   }
+            #windChill {
+                grid-column-start: 2;
+                grid-row-start: 4;  }                
+            .weatherHumidity {
+                grid-column-start: 1;
+                grid-row-start:5;   }
+            #humidity {
+                grid-column-start: 2;
+                grid-row-start: 5;  }
+            .weatherWindSpeed {
+                grid-column-start: 1;
+                grid-row-start:6;   }
+            #windSpeed {
+                grid-column-start: 2;
+                grid-row-start: 6;  }
+
+/*
     picture.wrapper {
        position: relative;
         z-index:1;
-    height: 100%    }
+        width: 100%    }
 
             .format {
                 position: absolute;
                     left: 10%;
-                    top: 10%;
+                    top: 15%;
+                    width: 10rem;
+                    height: 
                     z-index: 5;
-                background-color: #274c77;   
+                background-color: rgba(76, 119, 39, .8)  
             }
             .weatherSummaryBox {
                 display: grid;
@@ -171,7 +238,12 @@ header.heading {
 
     div img.imageArticle {
         display: flex;
-        height: 100%; }
+        height: 100%; } */
+
+    @media screen and (max-width: 500px) {
+    div#weather5Day {
+       display:none; }
+    }
 
         /* CONTACT AREA CONTENT */
         address {
@@ -300,7 +372,6 @@ section#townName {
     section#townName article {
         border: 1px solid #274c77;
         padding: 10px;    }
-
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/

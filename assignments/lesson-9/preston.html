@@ -42,8 +42,8 @@
             <h1>Preston, Idaho</h1>
             <hr>
 
-            <picture class="wrapper clearfix">
-                    <img class="backgroundImage" src="images/Preston500.jpg" alt="country living" sizes="50vw" srcset="images/Preston500.jpg 500w, images/Preston800.jpg 800w, images/Preston1100.jpg 1100w">
+      <!--     <picture id="wrapper" class="clearfix"> --> 
+                <img class="backgroundImage" src="images/Preston200.jpg" alt="country living" sizes="50vw" srcset="images/Preston500.jpg 500w, images/Preston800.jpg 800w, images/Preston1100.jpg 1100w">
   
                 <div class="format weatherSummaryBox">
                     <div class=townDiv>Weather Summary</div>
@@ -59,39 +59,32 @@
                         <div id="windSpeed"></div>
                 </div>
             </picture>
-                
-            <div class="weather5Day">
+ 
+            <div id="weather5Day" class="weather5Day">
 
-                <!--Weather Information Contact for Full-size computer screens and laptops only.-->
-                <h3 class="weatherTableTitle">5 Day Forecast</h3>
-                <table>
-                <tbody class="weatherBorder">
-                    <tr>
-                        <th>Sunday</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                    </tr>
-                    <tr>
-                        <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" alt="sunny" /></td>
-                        <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" alt="cloudy" /></td>
-                        <td> <img class="weatherImage" src="images/snowy_sivvus_weather_symbols.png" alt="snow" /></td>
-                        <td> <img class="weatherImage" src="images/sunny_sivvus_weather_symbols.png" alt="sunny"  /></td>
-                        <td> <img class="weatherImage" src="images/cloudy_sivvus_weather_symbols.png" alt="cloudy"  /></td>
-                    </tr>
-                    <tr>
-                        <td class="weathTemp">40&deg;</td>
-                        <td class="weathTemp">32&deg;</td>
-                        <td class="weathTemp">27&deg;</td>
-                        <td class="weathTemp">35&deg;</td>
-                        <td class="weathTemp">10&deg;</td>
-                    </tr>
-                    </tbody>
-                </table>
+               <!-- ** Weather Information Contact for Full-size computer screens and laptops only. ** -->
+
+                <h1>5 Day Forecast</h1>
+                <p class="day1 first">Wed.</p>
+                <p class="day2">Thur.</p>
+                <p class="day3">Fri.</p>
+                <p class="day4">Sat.</p>
+                <p class="day5 last">Sun.</p>
+                       
+                <div class="forecast first"><img class="forecast1" src="images/sunny_sivvus_weather_symbols.png" alt="sunny forecast"></div>
+                <div class="forecast"><img class="forecast2" src="images/cloudy_sivvus_weather_symbols.png" alt="sunny forecast"></div>
+                <div class="forecast"><img class="forecast3" src="images/sunny_sivvus_weather_symbols.png" alt="sunny forecast"></div>
+                <div class="forecast"><img class="forecast4" src="images/sunny_sivvus_weather_symbols.png" alt="sunny forecast"></div>
+                <div class="forecast last"><img class="forecast5" src="images/sunny_sivvus_weather_symbols.png" alt="sunny forecast"></div>
+
+                <p class="temp1 first">40&deg;</p>
+                <p class="temp2">40&deg;</p>
+                <p class="temp3">40&deg;</p>
+                <p class="temp4">40&deg;</p>
+                <p class="temp5 last">40&deg;</p>  
             </div>
-
-                 <br><br>
+                 <br>
+                 <br>
 
                  <hr />
 
