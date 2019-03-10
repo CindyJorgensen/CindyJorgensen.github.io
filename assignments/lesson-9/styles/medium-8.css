@@ -103,6 +103,14 @@ main h2#thankYou {
     font-size: 100%;
     padding: .5rem;   }
 
+/* -------------- INDEX PAGE --------------------------*/
+ 
+section#townName {
+    grid-template-columns: repeat(3,30%);
+    grid-column-gap: 1%; 
+   justify-content: center; }
+
+
 
 }  /* end of media query for 501px - 800px */
 

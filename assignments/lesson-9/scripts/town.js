@@ -17,9 +17,6 @@ request.onload = function() {
 function populateTown(townInfo) {
         
     for (var i = 0; i < townInfo.towns.length; i++) {
-!
-      if (townInfo.towns[i].name === 'Preston' || i === 'Soda Springs' || i === 'Fish Haven') {
-        continue; }
 
       var myArticle = document.createElement('article');
       var myH2 = document.createElement('h2');
@@ -28,9 +25,15 @@ function populateTown(townInfo) {
       var myPara3 = document.createElement('p');
       var myPara4 = document.createElement('p');
       var myList = document.createElement('ul');
-      var MyImg = document.createElement('img');
+      var myImg = document.createElement('img');
 
+      /* ----------------------------------------------------------------
+      This will elminate content that we don't want - such as town names 
 
+      'You MUST put in the names or indexes you DON'T want included 
+     ------------------------------------------------------------------- */
+      if (townInfo.towns[i].name === 'Franklin' || townInfo.towns[i].name === 'Greenville' || townInfo.towns[i].name === 'Placerton' || townInfo.towns[i].name === 'Springfield') {
+        continue; }
   
       myH2.textContent = townInfo.towns[i].name;
       myPara1.textContent = townInfo.towns[i].motto;
@@ -44,13 +47,13 @@ function populateTown(townInfo) {
         listItem.textContent = eventList[j];
         myList.appendChild(listItem);
       }
-/*
+
       if (townInfo.towns[i].name === 'Preston') {
-        img.setAttribute("src", "../images/w(3457072585_53e5a224c5_z.jpg"); }
+        myImg.setAttribute("src", "images/HOME_PrestonID.jpg"); }
         else if (townInfo.towns[i].name === 'Soda Springs') {
-          img.setAttribute("src", "../images/w9_6888602099_33b415dfa7_z.jpg");  }
+          myImg.setAttribute("src", "images/HOME_SodaSpringsID.jpg");  }
         else if (townInfo.towns[i].name === 'Fish Haven') {
-          img.setAttribute("src", "../images/w9_15476663331_df4981e838_z.jpg"); } */
+          myImg.setAttribute("src", "images/Home_FishHavenID.jpg"); }
   
       myArticle.appendChild(myH2);
       myArticle.appendChild(myPara1);
@@ -59,7 +62,7 @@ function populateTown(townInfo) {
       myArticle.appendChild(myPara4); 
 
       myArticle.appendChild(myList);
-/*      myArticle.appendChild(MyImg); */
+      myArticle.appendChild(myImg);
 
       section.appendChild(myArticle);
     }

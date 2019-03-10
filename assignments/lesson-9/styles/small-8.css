@@ -293,10 +293,15 @@ main h2#thankYou {
 section#townName {
      display: grid;
      
-     grid-template-columns: repeat(3,30%);
-     grid-column-gap: 1%; 
-    justify-content: center;
-    border: 1px solid #274c77; }
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+     justify-content: center; }
+
+    section#townName article {
+        border: 1px solid #274c77;
+        padding: 10px;    }
+
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 
