@@ -1,0 +1,101 @@
+.wrapper {
+    display: grid; 
+    border: 1px solid blue;
+
+    /* Grid Template Columns */
+    grid-template-columns: 200px 200px 200px; /* Designates the size of each column in pixels */
+
+    grid-template-columns: 1fr 1fr 1fr; /* Designates the size of each column using the "current" width of the viewport. This allows the columns to grow & shrink with the size of the viewport. */
+
+    grid-template-columns: 2fr 1fr 1fr; /* Different allocation of column size, doubles the first column, decreases the remaining columns. Still same size as the viewport - to allow growth or shrinkage of the grid. */
+
+    grid-template-columns: 500px 1fr 2fr; /* Example of mixing pixel width column and "fr" (which is auto width), Allows the "fr" columns to grown and shrink in size/width, maintains the pixel; until viewport is smaller than designated pixel width. */
+
+    grid-template-columns: repeat(3, 1fr); /* 
+    This is the same as:
+        grid-template-columns: 1fr 1fr 1fr; (just simplies to say (3) 1fr repeat. */
+
+    grid-template-columns: 20px repeat(6,1fr) 20px; /* Example of mixing the pixel width (1st column), repeat shortcut (2-7 column), pixel width (8th column) */
+
+    grid-template-columns: repeat(5, 1fr 2fr); /* Example that creates 10 columns, interchanging a single width, double width, single width, double width, ... */
+
+    grid-auto-columns: minmax(1fr, auto); 
+
+    /* setting grid to managable size for example */
+    grid-template-columns: repeat(3, 1fr);
+
+    /*Grid Template Rows */
+    grid-auto-rows: minmax(1fr, auto); /* All previous examples used with columns are available with rows. This feature automatically creates a minimum height for rows (columns creates the width); however, it will automatically adjust IF content is larger than designated height; and each row return to the default format. */
+
+    /* Creating Gap between columns & rows */
+    column-gap: 10px; /* works like padding - but for a grid */
+    row-gap: 1em;
+
+    /*removing gap for example */
+    column-gap: 0;
+    row-gap:0;
+
+}
+
+ /* EXAMPLE 1:
+     Every column begins with 1 (left side), and continues to final column (right side). In
+     the current column you have 3 columns: 
+        (1st column - 1 & 2) (2nd column - (share 2) & 3) (3rd column - (share 3) & 4)
+
+     Every row begins with 1 (top), and continues to final row (bottom). In the current row you have 3 rows 
+        (1st row - 1 & 2) (2nd row - (share 2) & 3)
+*/
+
+.box1 {
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:3;
+
+    /* Allows a nested grid */
+    display: grid;
+
+    grid-template-columns: subgrid; /* Using subgrid, applies the formatting of the parent to the child (nested grid) 
+
+    grid-template-columns: repeat(3, 1fr); 
+        The above format - creates an independent format for the child (nested grid) */
+
+    z-index: 5;
+}
+
+.box2 {
+    grid-column-start:1;
+    grid-row-start:3;
+    grid-row-end:5; 
+}
+
+/* This box displays on top as it comes later in the source order */
+.box3 {
+    grid-column-start: 2;
+    grid-row-start:2;
+    grid-row-end:4;
+
+    background-color: aqua;
+
+    z-index: 6;
+}
+
+/* This box displays on top as it comes later in the source order */
+.box4 {
+    grid-column-start: 3;
+    grid-row-start:2;
+    grid-row-end: span 2; /* using span - allows you to state the total amount spread, instead of row-end. */
+
+    background-color: greenyellow;
+
+    /* Using the z-index allows the box to appear as if it is BEHIND the top box */
+    z-index: 0;
+}
+
+
+/* Coloring to showcase the grid better - CREATES A VISUAL*/
+div div {
+    background-color: lightsalmon;
+    border: 1px solid salmon; 
+    border-radius: 2px; }  
+

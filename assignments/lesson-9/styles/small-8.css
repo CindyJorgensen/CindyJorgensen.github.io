@@ -289,12 +289,14 @@ main h2#thankYou {
 
 
 /* -------------- INDEX PAGE --------------------------*/
-/* 
-#townName {
+ 
+section#townName {
      display: grid;
-
-     grid-template-columns: repeat(2,1fr);
-     grid-column-gap: 15px;  }
+     
+     grid-template-columns: repeat(3,30%);
+     grid-column-gap: 1%; 
+    justify-content: center;
+    border: 1px solid #274c77; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 
