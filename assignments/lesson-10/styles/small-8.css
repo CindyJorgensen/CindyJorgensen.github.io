@@ -60,9 +60,9 @@ header.heading {
     grid-template-rows: repeat(3, .25fr);   }
 
     /* Grid - Content */
-        header img#homeTown {
-            grid-column-start:2;    
-            grid-row-start: 1;  
+        header img#homeTown{
+            grid-column-start:2;  
+            grid-row-start: 1; 
 
             justify-content: center;
             align-content: center;
@@ -82,6 +82,10 @@ header.heading {
 
             padding: 0;
             margin:0;
+        }
+
+        header img#homeTown {
+            float:left;
         }
 
         header div.motto {
