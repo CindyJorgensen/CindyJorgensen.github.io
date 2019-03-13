@@ -1,0 +1,388 @@
+
+
+/* --------------------- FORMATS FOR EVERY PAGE OF SITE --------------------*/
+/* To import google font */
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Nunito|Open+Sans);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+
+/* Standard Formatting for body and sublevels */
+body {
+    background-color: #e7ece7;
+    margin: 10px;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+        }
+
+header {
+    margin: auto;
+    padding: 0;
+    background-color: #274c77;
+
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #e7ecef;    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    color: #274c77;     }
+
+h1 {font-size: 188%;} /* Equal to 35px */
+h2 {font-size: 157%;} /* Equal to 30px */
+h3 {font-size: 125%;} /* Equal to 25px */
+h4 {font-size: 94%;} /* Equal to 20px */
+h5 {font-size: 63%;} /* Equal to 15px */
+
+main {
+    margin: 10px;   }
+
+/* Style format for address/contact */
+address {
+    margin: 10px;
+    color: #6096ba;}
+
+/* Style format for footer */
+footer {
+    margin: 0;
+    padding: 10px 12px;
+    background-color: #6096ba;
+    color: #e7ecef; }
+
+/* HEADER */
+
+    /* Container Grid */
+header.heading {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, .25fr);   }
+
+    /* Grid - Content */
+        header img#homeTown {
+            grid-column-start:2;    
+            grid-row-start: 1;  
+
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+            padding: 10px;
+            margin:0;   }
+
+        header h1.siteHeading {
+            grid-column-start:1;
+            grid-column-end:4;
+            grid-row-start: 2;
+
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+            padding: 0;
+            margin:0;
+        }
+
+        header div.motto {
+            grid-column-start:1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+
+            justify-content: center;
+            align-content: center;
+
+            font-size: 85%;
+            text-align: center;
+
+            padding: 0 20px;
+            margin:0;           }
+
+	/* Styling the navigation menu */
+		/* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+		
+        nav {
+            background-color: #6096ba;  }
+        
+        nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+            text-align: center;         }
+        
+        nav ul.hide {
+            display:none;   }
+
+        nav ul li {
+            float:none;         }
+
+		nav ul li a {
+            display: block;
+			color:#274c77;
+            text-decoration: none;
+            padding: .5em;  		}
+
+        nav ul li a.active {
+            background-color: rgba(39,76,119, .5);
+            width: auto;
+            color: #e7ecef;
+            margin: 0;     }
+
+        nav ul li a:hover {
+            background-color: #e7ecef;
+            color: #274c77; }
+
+    /* MAIN SECTION FOMRATTING */
+
+    h1 {text-align: center; }
+
+        img.backgroundImage {
+            position: relative;
+            width: 100%;  }
+
+        div.format {
+                position: absolute;
+                    left: 7%;
+                    top: 40%;   }
+
+        .weatherSummaryBox { 
+            display: grid;
+            grid-template-columns: 1%, .5%;
+            grid-template-rows: repeat (7, 25px);}
+
+            .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindSpeed, .weatherWindChill {
+                background-color: rgba(39,76,119, .8);
+                color: rgb(189, 189, 189);  }
+
+            .townDiv, #temperature, #high, #windChill, #humidity, #windSpeed {
+                background-color: rgba(39,76,119, .8);
+                color: #fff; }
+
+            .townDiv {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start:1; 
+            
+                display: grid;
+
+                font-size: 110%;
+                text-decoration: underline;
+                font-weight: bold;}
+
+            .weatherCurrent {
+                grid-column-start: 1;
+                grid-row-start:2;  }             
+            #temperature {
+                grid-column-start: 2;
+                grid-row-start: 2;  }
+            .weatherHigh {
+                grid-column-start: 1;
+                grid-row-start:3;   }
+            #high {
+                grid-column-start: 2;
+                grid-row-start: 3;  }
+            .weatherWindChill {
+                grid-column-start: 1;
+                grid-row-start:4;   }
+            #windChill {
+                grid-column-start: 2;
+                grid-row-start: 4;  }                
+            .weatherHumidity {
+                grid-column-start: 1;
+                grid-row-start:5;   }
+            #humidity {
+                grid-column-start: 2;
+                grid-row-start: 5;  }
+            .weatherWindSpeed {
+                grid-column-start: 1;
+                grid-row-start:6;   }
+            #windSpeed {
+                grid-column-start: 2;
+                grid-row-start: 6;  }
+
+/*
+    picture.wrapper {
+       position: relative;
+        z-index:1;
+        width: 100%    }
+
+            .format {
+                position: absolute;
+                    left: 10%;
+                    top: 15%;
+                    width: 10rem;
+                    height: 
+                    z-index: 5;
+                background-color: rgba(76, 119, 39, .8)  
+            }
+            .weatherSummaryBox {
+                display: grid;
+                grid-template-columns: repeat(2,10px);
+                grid-template-rows: repeat(6, 10px);                
+            }
+                .townDiv {
+                    grid-column-start: 1;
+                    grid-column-end:3;
+                    grid-row-start:1;
+                    text-align: center;
+                }
+    img.backgroundImage {
+        display: flex;
+        
+         width: 100%;
+        height: auto;
+        overflow: hidden;
+        z-index: 0;
+        margin: auto;
+        padding: 0; }
+
+    div img.imageArticle {
+        display: flex;
+        height: 100%; } */
+
+    @media screen and (max-width: 500px) {
+    div#weather5Day {
+       display:none; }
+    }
+
+        /* CONTACT AREA CONTENT */
+        address {
+            background-color: #a3cef1;
+            width: 100%;
+            height: 100%; 
+        
+            margin: 0;
+            padding: 0;}
+
+        .nested1, .nested2, .nested3, .nested4, .nested5,
+         .nested6, .nested7 {
+                text-align: left; 
+                padding-left: 4rem;
+                padding-top:0;
+                padding-bottom: 0;}
+
+
+        /* MAP formatting content */
+
+            address div iframe {
+                width:100%;
+                height: 100%;   }
+
+            address div.gmap_canvas {
+                position: relative;
+                margin: auto;
+
+                width: 300px;
+                height: auto;
+                border: 1px solid #555; } 
+
+             /* FOOTER AREA */
+             div.date {
+                 font-size: 2em;
+                 color: #fff;   }
+
+            address {
+                border-top: 2px solid #274c77;
+                border-bottom: 2px solid #e7ecef; }
+            
+ 
+
+/* GALLERY GRID */
+
+main.galleryPage {
+    width: 100%;
+    margin: 0;  }
+
+main div.gallery {
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows: 1fr;
+    row-gap: 20px; 
+
+    justify-content: center;
+    align-content: center;}
+
+    figure {
+        grid-column-start: auto;
+        grid-row-start: auto; 
+
+        box-shadow: 0 0 20px #777;
+    }
+
+/* ------- FORM FORMATTING SECTION -------------------- */
+
+form {
+    color: #6096ba;
+    width: 300px;
+    margin: auto;
+    font-size: 13px;
+    padding-bottom: 5px; }
+
+    form > h1 {
+        font-size: 90%;
+        padding: 5px 0; }
+
+div {
+    padding: .5rem;  }
+
+fieldset {
+    border: 5px ridge #274c77;
+    padding: .25rem;
+    margin: auto;   }
+
+    fieldset>h2 { font-size: 75%;}
+
+input, select { 
+    font-size: 80%;
+    text-align: center;
+    color: #000;
+
+    border: 1px solid #274c77;
+    border-radius: 5px;}
+
+input #fullName, input #emailAddress {min-width: 75px;}
+
+span.description { font-size: 10px;}
+
+        input#contactNumber{
+            width: 6rem;    }
+        input#zipCode {
+            width: 3rem;
+        }
+        input#stormType {
+            width: 5rem;    }
+
+/* ----------- THANK YOU FORMATTING SECTION ----------- */
+main h2#thankYou { 
+    width:100%;
+    text-align: center;
+    font-size: 100%;   }
+
+
+
+/* -------------- INDEX PAGE --------------------------*/
+ 
+section#townName {
+     display: grid;
+     
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+     justify-content: center; }
+
+    section#townName article {
+        border: 1px solid #274c77;
+        padding: 10px;    }
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;    }
+
+@media screen and (max-width:500px) {
+    main div.weather5Day { 
+        display: none;  }
+    }

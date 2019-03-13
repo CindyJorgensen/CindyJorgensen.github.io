@@ -1,0 +1,290 @@
+/* To run media query for medium screens */
+@media screen and (min-width:501px) {
+
+    body, header, nav, main, address, footer { 
+        margin: auto;
+        width: 100%;
+        height: 100%;  }
+
+    main div.weather5Day { 
+        display: block; }
+
+    header section h1 {
+        text-align: center;
+        color: #e7ecef;}
+
+    @media screen and (min-width: 501px) {
+    div.format {
+        position: absolute;
+            left: 5%;
+            top: 44%;   }    }        
+    
+    
+        /* Weather for 5 Day Forecast section and comments */
+
+        #weather5Day {
+            display: grid;
+            grid-template-columns: repeat(5,90px);
+            grid-template-rows: 45px,45px, 60px, 45px;
+            justify-content: center;
+            align-content: center;
+        
+            margin: auto;   }
+
+        div#weather5Day h1 {
+            grid-column-start: 1;
+            grid-column-end:6;
+            grid-row-start: 1; 
+        
+            text-align: center;
+            font-size: 25px;
+            padding:  10px 0 2px 0;
+            margin: 0;}
+
+            
+        .day1,.day2, .day3, .day4, .day5 {
+
+            justify-items: center;
+            align-items: center;
+            
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            border-left: .5px solid  #274c77;
+            border-top: 5px solid #274c77;
+            border-bottom: .5px solid #274c77;
+            background-color: #a3cef1;
+        
+            padding: 5px;
+            margin: 0;}   
+
+            .day1 {
+                grid-column-start:1;              grid-row-start:2;
+            
+                border-top-left-radius: 10px;}
+            .day2 {
+                grid-column-start:2;              grid-row-start:2; }
+            .day3 {
+                grid-column-start:3;              grid-row-start:2; }
+            .day4 {
+                grid-column-start:4;              grid-row-start:2; }
+            .day5 {
+                grid-column-start:5;              grid-row-start:2; 
+                border-top-right-radius: 10px;}
+   
+                
+            div.forecast { 
+                border-left: .5px solid #274c77;
+                grid-template-rows: 70px;
+            
+                display: subgrid;}
+
+            .last {
+                border-right: 3px solid #274c77;}
+            div.first, p.first {
+                border-left: 3px solid #274c77;}
+
+            img.forecast1, img.forecast2, img.forecast3, img.forecast4, img.forecast5 {
+
+                padding: 0;
+                margin: 0;  }
+            
+                img.forecast1 {
+                    grid-column-start:1;              grid-row-start:3; }
+                img.forecast2 {
+                    grid-column-start:2;              grid-row-start:3; }
+                img.forecast3  {
+                    grid-column-start:3;              grid-row-start:3; }
+                img.forecast4 {
+                    grid-column-start:4;              grid-row-start:3; }
+                img.forecast5  {
+                    grid-column-start:5;              grid-row-start:3; }
+
+
+            .temp1, .temp2, .temp3, .temp4, .temp5 {
+                grid-template-rows: 45px;
+
+                border-bottom: 3px solid #274c77;
+                border-left: .5px solid #274c77;
+                text-align: center;
+                padding-bottom: 10px;
+                margin: 0;  }
+
+                .temp1 {
+                    grid-column-start:1;              grid-row-start:4;
+                    border-bottom-left-radius: 10px; }
+                .temp2 {
+                    grid-column-start:2;              grid-row-start:4; }
+                .temp3 {
+                    grid-column-start:3;              grid-row-start:4; }
+                .temp4 {
+                    grid-column-start:4;              grid-row-start:4; }
+                .temp5 {
+                    grid-column-start:5;              grid-row-start:4;
+                    border-bottom-right-radius: 10px; }    
+
+
+    
+         /* Article format to include a lighter obaque background with a border */
+    
+        article {
+            margin: 10px auto;
+            background-color: #bec9db;
+            border: 1px solid #000;
+            box-shadow: 0 0 30px #777;
+            text-align: left;
+            padding: 10px;      }
+        
+
+    
+
+
+   
+            /* Style format for footer */
+            footer {
+                margin: 0;
+                padding: 10px 12px;
+                background-color: #6096ba;
+                color: #e7ecef; }
+                
+    /* HEADER */
+
+    /* Container Grid */
+header.heading {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, .15fr);
+}
+
+    /* Grid - Content */
+        header img#homeTown {
+             padding: 15px 10%; }
+
+        header div.motto {
+             font-size: 95%;
+ 
+            padding: 25px;  }
+
+/* ----------- THANK YOU FORMATTING SECTION ----------- */
+main h2#thankYou { 
+    width:100%;
+    margin: auto;
+    font-size: 100%;
+    padding: .5rem;   }
+
+/* -------------- INDEX PAGE --------------------------*/
+ @media screen and (min-width: 600px) {
+section#townName {
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 5%; 
+   justify-content: center; }   }
+
+
+
+}  /* end of media query for 501px - 800px */
+
+/* To run NEW media query for different viewport size */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+        header img#homeTown {
+             padding: 15px 20%; }
+        }
+
+@media screen and (min-width:670px) {        
+        /* Styling the navigation menu */
+            /* This hides the items in the Navigation list from the user's view until they hover over the "Menu" */
+    
+            nav button {
+                display: none;  }
+                
+                nav ul.hide {
+                    display: block;
+                  }
+
+
+ /* GRID - Navigation Menu layout & Formatting */
+    nav ul#menuCenter {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);   }
+
+        li.menuHome {
+            grid-column-start: 1; }
+        li.menuPreston {
+            grid-column-start: 2; }
+        li.menuSodaSprings {
+            grid-column-start: 3; }
+        li.menuFishHaven {
+            grid-column-start: 4; }
+        li.menuStormCenter {
+            grid-column-start: 5; }
+        li.menuGallery {
+            grid-column-start: 6; }
+ 
+    img#imageArticle  {
+        float: right;
+        padding: 2%; }
+
+        /* Align the Contact Info & the Map next to each other */
+    
+        address {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:  1fr;
+            column-gap: 10%; 
+        
+            padding: 2%;}
+
+            address div.contactMe {
+                grid-column-start: 2;
+                grid-row-start:1 ;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;}               
+
+                .nested1 {
+                    grid-column-start: 1;
+                    grid-row-start:1;
+                    
+                    padding: 10px 0;}
+                .nested2 {
+                    grid-column-start: 2;
+                    grid-row-start:2;    }
+                .nested3 {
+                    grid-column-start: 2;
+                    grid-row-start:3;    }
+                .nested4 {
+                    grid-column-start: 1;
+                    grid-row-start:4;    }              
+                .nested5 {
+                    grid-column-start: 2;
+                    grid-row-start:4;    }
+                .nested6 {
+                    grid-column-start: 1;
+                    grid-row-start:5;    }
+                .nested7 {
+                    grid-column-start: 2;
+                    grid-row-start:5;
+                    
+                    font-size: 10px;}
+
+            .gmap_canvas {
+                grid-column-start: 1;
+                grid-column-end:2;
+                grid-row-start:1; 
+                grid-row-end: 2; 
+            
+                margin: auto;}
+        }
+
+@media screen and (min-width:700px) {
+    
+    /* GALLERY GRID */
+    main div.gallery {
+        display: grid;
+        grid-template-columns: repeat(2,375px);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 20px; 
+        column-gap: 20px;
+    
+        justify-content: center;
+        align-content: center;  }
+    }

@@ -1,0 +1,67 @@
+
+
+ /* To run media query for large screens */
+@media screen and (min-width:801px) {
+    body, header, nav, main, address, footer { 
+        margin: auto;
+        width: 100%;
+        height: 100%;  }
+
+    header section h1 {
+        text-align: center;
+        color: #e7ecef;}
+
+
+ 	/* Article format to include a lighter obaque background with a border */
+
+	article {
+		margin: 10px auto;
+		background-color: #bec9db;
+		border: 1px solid #000;
+		box-shadow: 0 0 30px #777;
+		text-align: left;
+        padding: 10px;      }
+    
+ /* -------------- INDEX PAGE --------------------------*/
+ @media screen and (min-width: 900px) {
+section#townName {
+    grid-template-columns: repeat(3,30%);
+    grid-column-gap: 1%; 
+   justify-content: center; }
+ }
+
+   
+
+    	/* Style format for footer */
+        footer {
+            margin: 0;
+            padding: 10px 12px;
+            background-color: #6096ba;
+            color: #e7ecef; }
+        
+        }   /* END OF MEDIA QUERY */
+
+/* To run NEW media query for different viewport size */
+@media screen and (min-width:801px) and (max-width:900px) {
+    /* Grid - Content */
+    header img#homeTown {
+            padding: 15px 25%;     }
+    } /* END OF MEDIA QUERY */
+
+    /* To run NEW media query for different viewport size */
+@media screen and (min-width:901px)  {
+    /* Grid - Content */
+    header img#homeTown {
+            padding: 15px 35%;
+    }
+} /* END OF MEDIA QUERY */
+
+@media screen and (min-width:1100px) {
+        /* GALLERY GRID */
+        main div.gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 375px);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 30px;
+            row-gap: 20px;  }
+        }
