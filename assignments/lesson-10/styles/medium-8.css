@@ -13,11 +13,11 @@
         text-align: center;
         color: #e7ecef;}
 
-    @media screen and (min-width: 501px) {
+    @media screen and (min-width: 530px) {
     div.format {
         position: absolute;
             left: 5%;
-            top: 44%;   }    }        
+            top: 54%;   }    }        
     
     
         /* Weather for 5 Day Forecast section and comments */
