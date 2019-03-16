@@ -13,15 +13,26 @@
         text-align: center;
         color: #e7ecef;}
 
-    @media screen and (min-width: 530px) {
+    @media screen and (min-width: 501px) {
     div.format {
         position: absolute;
-            left: 5%;
-            top: 54%;   }    }        
-    
+            left: 25px;
+            top: 340px;   }    }        
     
         /* Weather for 5 Day Forecast section and comments */
 
+    section#dayForecast {
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center; }
+    
+        section#dayForecast article {
+            border: 1px solid #274c77;
+            padding: 10px;    }
+
+/* TEST for implemenation of inputted data from URL source 
         #weather5Day {
             display: grid;
             grid-template-columns: repeat(5,90px);
@@ -121,7 +132,7 @@
                     grid-column-start:4;              grid-row-start:4; }
                 .temp5 {
                     grid-column-start:5;              grid-row-start:4;
-                    border-bottom-right-radius: 10px; }    
+                    border-bottom-right-radius: 10px; }    */
 
 
     

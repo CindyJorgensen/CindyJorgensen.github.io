@@ -49,11 +49,14 @@ function populateTown(townInfo) {
       } */
 
       if (townInfo.towns[i].name === 'Preston') {
-        myImg.setAttribute("src", "images/HOME_PrestonID.jpg"); }
+        myImg.setAttribute("src", "images/HOME_PrestonID.jpg"), 
+        myImg.setAttribute("alt","image of Preston City Hall"); }
         else if (townInfo.towns[i].name === 'Soda Springs') {
-          myImg.setAttribute("src", "images/HOME_SodaSpringsID.jpg");  }
+          myImg.setAttribute("src", "images/HOME_SodaSpringsID.jpg"),
+          myImg.setAttribute("alt", "information road sign");  }
         else if (townInfo.towns[i].name === 'Fish Haven') {
-          myImg.setAttribute("src", "images/Home_FishHavenID.jpg"); }
+          myImg.setAttribute("src", "images/Home_FishHavenID.jpg"),
+          myImg.setAttribute("alt", "field with view of hills and clouds"); }
   
       myArticle.appendChild(myH2);
       myArticle.appendChild(myPara1);

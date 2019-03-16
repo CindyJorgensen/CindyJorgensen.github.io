@@ -46,25 +46,31 @@
   
                 <div class="format weatherSummaryBox">
                     <div class=townDiv>Weather Summary</div>
-                    <div class="weatherCurrent">Currently: </div>
+                    <div class="currentTemperature">Current Temp:</div> 
                         <div id="temperature"></div>
-                    <div class="weatherHigh">High: </div>
-                        <div id="high"></div>
                     <div class="weatherWindChill">Wind Chill: </div>
                         <div id="windChill"></div>
                     <div class="weatherHumidity">Humidity: </div>
                         <div id="humidity"></div>
                     <div class="weatherWindSpeed">Wind Speed: </div>
                         <div id="windSpeed"></div>
+                    <div class="weatherHigh">High: </div>
+                        <div id="high"></div>
+                    <div class="weatherLow">Low: </div>
+                        <div id="low"></div>
+                    <div></div>
                 </div>
             </picture>
  
             <div id="weather5Day" class="weather5Day">
 
                <!-- ** Weather Information Contact for Full-size computer screens and laptops only. ** -->
-
+ 
                 <h1>5 Day Forecast</h1>
-                <p class="day1 first">Wed.</p>
+                <section id="dayForecast">
+                    
+                </section>
+<!-- TEST       <p class="day1 first">Wed.</p>
                 <p class="day2">Thur.</p>
                 <p class="day3">Fri.</p>
                 <p class="day4">Sat.</p>
@@ -81,7 +87,7 @@
                 <p class="temp3">40&deg;</p>
                 <p class="temp4">40&deg;</p>
                 <p class="temp5 last">40&deg;</p>  
-            </div>
+            </div>-->
                  <br>
                  <br>
 
@@ -125,6 +131,8 @@
 
         <script src="scripts/currentdate.js"> </script>
         <script src="scripts/hamburger.js"> </script>
-        <script src="scripts/windChill.js"></script>
+        <script src="scripts/weather.js"></script>
+        <!--  <script src="scripts/windChill.js"></script>   -->
+        
     </body>
 </html>

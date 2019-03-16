@@ -147,21 +147,25 @@ header.heading {
 
         div.format {
                 position: absolute;
-                    left: 7%;
-                    top: 50%;   }
+                    left: 40px;
+                    top: 320px;   }
+
 
         .weatherSummaryBox { 
             display: grid;
             grid-template-columns: 1%, .5%;
-            grid-template-rows: repeat (7, 25px);}
+            grid-template-rows: repeat (7, 15px);
+            padding: 0;}
 
-            .weatherCurrent, .weatherHigh, .weatherHumidity, .weatherWindSpeed, .weatherWindChill {
+            .currentTemperature, .weatherHigh, .weatherHumidity, .weatherWindSpeed, .weatherWindChill, .weatherLow {
                 background-color: rgba(39,76,119, .8);
-                color: rgb(189, 189, 189);  }
+                color: rgb(189, 189, 189);
+                padding:  3px 4px;  }
 
-            .townDiv, #temperature, #high, #windChill, #humidity, #windSpeed {
+            .townDiv, #conditions, #temperature, #high, #windChill, #humidity, #windSpeed, #low {
                 background-color: rgba(39,76,119, .8);
-                color: #fff; }
+                color: #fff;
+                padding: 3px 4px; }
 
             .townDiv {
                 grid-column-start: 1;
@@ -174,81 +178,52 @@ header.heading {
                 text-decoration: underline;
                 font-weight: bold;}
 
-            .weatherCurrent {
+            .currentTemperature {
                 grid-column-start: 1;
                 grid-row-start:2;  }             
             #temperature {
                 grid-column-start: 2;
                 grid-row-start: 2;  }
-            .weatherHigh {
+            .weatherWindChil {
                 grid-column-start: 1;
-                grid-row-start:3;   }
-            #high {
-                grid-column-start: 2;
                 grid-row-start: 3;  }
-            .weatherWindChill {
-                grid-column-start: 1;
-                grid-row-start:4;   }
             #windChill {
                 grid-column-start: 2;
-                grid-row-start: 4;  }                
+                grid-row-start: 3;  }
             .weatherHumidity {
                 grid-column-start: 1;
-                grid-row-start:5;   }
+                grid-row-start:4;   }
             #humidity {
                 grid-column-start: 2;
-                grid-row-start: 5;  }
+                grid-row-start: 4;  }
             .weatherWindSpeed {
                 grid-column-start: 1;
-                grid-row-start:6;   }
+                grid-row-start:5;   }
             #windSpeed {
                 grid-column-start: 2;
+                grid-row-start: 5;  }                
+            .weatherHigh {
+                grid-column-start: 1;
+                grid-row-start:6;   }
+            #high {
+                grid-column-start: 2;
                 grid-row-start: 6;  }
+            .weatherLow {
+                grid-column-start: 1;
+                grid-row-start:7;   }
+            #low {
+                grid-column-start: 2;
+                grid-row-start: 7;  }
 
-/*
-    picture.wrapper {
-       position: relative;
-        z-index:1;
-        width: 100%    }
-
-            .format {
-                position: absolute;
-                    left: 10%;
-                    top: 15%;
-                    width: 10rem;
-                    height: 
-                    z-index: 5;
-                background-color: rgba(76, 119, 39, .8)  
-            }
-            .weatherSummaryBox {
-                display: grid;
-                grid-template-columns: repeat(2,10px);
-                grid-template-rows: repeat(6, 10px);                
-            }
-                .townDiv {
-                    grid-column-start: 1;
-                    grid-column-end:3;
-                    grid-row-start:1;
-                    text-align: center;
-                }
-    img.backgroundImage {
-        display: flex;
-        
-         width: 100%;
-        height: auto;
-        overflow: hidden;
-        z-index: 0;
-        margin: auto;
-        padding: 0; }
-
-    div img.imageArticle {
-        display: flex;
-        height: 100%; } */
+    @media screen and (min-width:447px) and (max-width:500px) {
+        div.format {
+            position: absolute;
+            left: 40px;
+            top: 290px;   } }
 
     @media screen and (max-width: 500px) {
     div#weather5Day {
-       display:none; }
-    }
+       display:none; }      }
 
         /* CONTACT AREA CONTENT */
         address {
@@ -377,7 +352,6 @@ section#townName {
     section#townName article {
         border: 1px solid #274c77;
         padding: 10px;    }
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 
