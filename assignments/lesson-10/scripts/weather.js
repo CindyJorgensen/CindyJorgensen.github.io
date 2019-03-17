@@ -2,7 +2,8 @@
 
 var currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
-var weatherRequest = new XMLHttpRequest();
+var weatherRequest;
+weatherRequest = new XMLHttpRequest();
 weatherRequest.open('Get', currentURLweather, true);
 
 weatherRequest.responseType = 'json';
@@ -92,19 +93,11 @@ function populateForecast(forecastData) {
             var myLow = document.createElement('p');
 
             var i 
-            if (a < 1) {
-                    i = 6; }
+            if (a == 0) {
+                    i = 0; }
                 else {
-                 i = (a * 7); } /* This finds the list array for the first array of each day  - 0,7,14,21,28,35*/            
+                 i = ((a+1) * 7); } /* This finds the list array for the first array of each day  - 0,7,14,21,28,35*/            
            
-    /*        var obj = JSON.parse(date, function(key, value) {
-                if (key == 'dt_txt') {
-                    return new Date(value); }
-                else {
-                    return value;   } 
-                } ); 
-
-            console.log(obj.dt_txt);*/
 
             var n = new Date(forecastData.list[i].dt_txt);
 
@@ -134,8 +127,8 @@ function populateForecast(forecastData) {
                 else {myIcon.textContent = forecastData.list[i].weather[0].main; }
 
 
-            myHigh.textContent = "High: " + ((forecastData.list[i].main.temp_max).toFixed(0)) + " &deg; F";
-            myLow.textContent = "Low: " + ((forecastData.list[i].main.temp_min).toFixed(0)) + " &deg; F";
+            myHigh.textContent = "High: " + (forecastData.list[i].main.temp_max).toFixed(0) + "&deg; F";
+            myLow.textContent = "Low: " + (forecastData.list[i].main.temp_min).toFixed(0) + "&deg; F";
                 
                    
             myArticle.appendChild(myDOWeek);

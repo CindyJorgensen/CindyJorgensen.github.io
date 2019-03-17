@@ -24,7 +24,7 @@
     section#dayForecast {
         display: grid;
         
-        grid-template-columns: repeat(6, 140px);
+        grid-template-columns: repeat(5, 140px);
         grid-template-rows: 1fr;
         grid-column-gap: .75px;
         justify-content: center;
