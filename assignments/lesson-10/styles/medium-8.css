@@ -24,13 +24,18 @@
     section#dayForecast {
         display: grid;
         
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center; }
+        grid-template-columns: repeat(6, 140px);
+        grid-template-rows: 1fr;
+        grid-column-gap: .75px;
+        justify-content: center;
+        text-align: center; }
     
         section#dayForecast article {
             border: 1px solid #274c77;
-            padding: 10px;    }
+            padding: 10px; 
+            justify-items: center;
+            justify-content: center;
+            text-align: center;   }
 
 /* TEST for implemenation of inputted data from URL source 
         #weather5Day {
