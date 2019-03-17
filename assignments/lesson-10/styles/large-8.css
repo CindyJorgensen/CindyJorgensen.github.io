@@ -21,6 +21,12 @@
 		box-shadow: 0 0 30px #777;
 		text-align: left;
         padding: 10px;      }
+
+@media screen and (min-width: 670px) {
+    div.format {
+        position: absolute;
+            left: 40px;
+            top: 400px;   }    }        
     
  /* -------------- INDEX PAGE --------------------------*/
  @media screen and (min-width: 900px) {

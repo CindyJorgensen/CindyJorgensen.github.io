@@ -153,14 +153,17 @@ header.heading {
 
         .weatherSummaryBox { 
             display: grid;
-            grid-template-columns: 1% .5%;
-            grid-template-rows: repeat(7, 15px);
-            padding: 0;}
+            grid-template-columns: 150px 50px;
+            grid-template-rows: repeat(7, 25px);
+            padding: 0;
+        
+            text-align: center;}
 
             .currentTemperature, .weatherHigh, .weatherHumidity, .weatherWindSpeed, .weatherWindChill, .weatherLow {
                 background-color: rgba(39,76,119, .8);
                 color: rgb(189, 189, 189);
-                padding:  3px 4px;  }
+                padding:  3px 4px; 
+                text-align: right; }
 
             .townDiv, #conditions, #temperature, #high, #windChill, #humidity, #windSpeed, #low {
                 background-color: rgba(39,76,119, .8);
