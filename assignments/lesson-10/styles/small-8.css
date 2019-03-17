@@ -153,8 +153,8 @@ header.heading {
 
         .weatherSummaryBox { 
             display: grid;
-            grid-template-columns: 1%, .5%;
-            grid-template-rows: repeat (7, 15px);
+            grid-template-columns: 1% .5%;
+            grid-template-rows: repeat(7, 15px);
             padding: 0;}
 
             .currentTemperature, .weatherHigh, .weatherHumidity, .weatherWindSpeed, .weatherWindChill, .weatherLow {

@@ -1,9 +1,12 @@
-// CURRENT WEATHER SUMMARY INFORMATION
+/* ---------------------------------------------------------------------------------------- *
+ *                                                                                          *
+ *                       CURRENT WEATHER SUMMARY INFORMATION                                *
+ *                                                                                          *
+ * -----------------------------------------------------------------------------------------*/
 
-var currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
+let currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
-var weatherRequest;
-weatherRequest = new XMLHttpRequest();
+let weatherRequest = new XMLHttpRequest();
 weatherRequest.open('Get', currentURLweather, true);
 
 weatherRequest.responseType = 'json';
@@ -27,8 +30,6 @@ weatherRequest.onload = function() {
         wind: {speed: #, deg: #}
         ------------------------------   */
 
-  console.log(weatherData);
-
   /* Will input the informaiton onto Preston.html Site Page */ 
   document.getElementById('low').innerHTML = (weatherData.main.temp_min).toFixed(0) + "&deg; F";
   document.getElementById('temperature').innerHTML = (weatherData.main.temp).toFixed(0) + "&deg; F";
@@ -38,24 +39,24 @@ weatherRequest.onload = function() {
 
 
     /*Create windChill information in weatherSiteAPI.js */ 
-    var wChill = 35.74 + 0.6215 * (weatherData.main.temp) - 35.75 * Math.pow((weatherData.wind.speed),.16) + 0.4275 * (weatherData.main.temp) * Math.pow((weatherData.wind.speed),.16)
+    var wChill = 35.74 + 0.6215 * (weatherData.main.temp) - 35.75 * Math.pow((weatherData.wind.speed),.16)
+     + 0.4275 * (weatherData.main.temp) * Math.pow((weatherData.wind.speed),.16)
 
     document.getElementById('windChill').innerHTML = wChill.toFixed(0) + '&deg; F';
 
 }
 
+/* ---------------------------------------------------------------------------------------- *
+ *                                                                                          *
+ *                      5 DAY FORECAST REQUEST INFORMATION                                  *
+ *                                                                                          *
+ * -----------------------------------------------------------------------------------------*/
 
-
-
-// 5 DAY FORECAST REQUEST INFORMATION 
-
-console.log('section');
 var section = document.querySelector('section');
 
+let forecastURLweather = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
-var forecastURLweather = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
-
-var forecastRequest = new XMLHttpRequest();
+let forecastRequest = new XMLHttpRequest();
 forecastRequest.open('Get', forecastURLweather, true);
 
 forecastRequest.responseType = 'json';
@@ -87,18 +88,17 @@ function populateForecast(forecastData) {
         for (var a = 0; a < forecastData.list.length; a++) {
 
             var myArticle = document.createElement('article');
-            var myDOWeek = document.createElement('p');
+            var myDOWeek = document.createElement('h5');
             var myIcon = document.createElement('img');
             var myHigh = document.createElement('p');
             var myLow = document.createElement('p');
 
             var i 
-            if (a == 0) {
+            if (a === 0) {
                     i = 0; }
                 else {
                  i = ((a+1) * 7); } /* This finds the list array for the first array of each day  - 0,7,14,21,28,35*/            
            
-
             var n = new Date(forecastData.list[i].dt_txt);
 
             var weekday = new Array(7);
@@ -125,7 +125,6 @@ function populateForecast(forecastData) {
                 else if (forecastData.list[i].weather[0].main === "Drizzle") {myIcon.setAttribute('src', 'images/raining_sivvus_weather_symbols.png'),
                 myIcon.setAttribute("alt","rain cloud image"); }
                 else {myIcon.textContent = forecastData.list[i].weather[0].main; }
-
 
             myHigh.textContent = "High: " + (forecastData.list[i].main.temp_max).toFixed(0) + "&deg; F";
             myLow.textContent = "Low: " + (forecastData.list[i].main.temp_min).toFixed(0) + "&deg; F";
