@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Weekend Warrior Weather</title>
+
+        <!-- This the normalize.css file link that must be first before any other links!-->
+        <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+
+        <!-- This is the link to the CSS file that will be used to format the css files-->
+        <link href="styles/small.css" type="text/css" rel="stylesheet" />
+        <link href="styles/medium.css" type="text/css" rel="stylesheet" />
+        <link href="styles/large.css" type="text/css" rel="stylesheet" />
+
+        <!-- This is the link to the icon imagees used. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <!-- Specific to mobile devices -->
+        <header class="clearfix heading">
+            <img id="homeTown" src="images/WeekendWeatherImage.jpg" alt="beach">
+            <h1 class="siteHeading" style="color: #e7ecef">Weekend Warrior Weather</h1>
+            <div class="motto"> "Climate is what we expect, weather is what we get." - Mark Twain</div>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()"> &equiv; </button>
+            
+            <ul id="menuCenter" class="hide">
+                <li><a href="../../index.html">Assignment Listing Page</a></li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="storm-center.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>  
+            </ul>
+        </nav>
+
+        <main>
+            <section id="townName">
+            </section>
+        </main>
+
+        <address  onLoad="currentDate()" >
+            <div class="contactMe, clearfix">
+                <div class="nested1"><b>Weekend Warrior Weather</b></div>
+                <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>121 S State Street </div>
+                <div class="nested3">Preston, ID 83263  </div>
+                <div class="nested4"><i class="fa fa-phone" style="font-size:24px"></i></div>
+                <div class="nested5">208-555-6677  </div>
+                <div class="nested6"><i class="fa fa-envelope-o" style="font-size:24px"></i> </div>
+                <div class="nested7"><a href="mailto:cljorgensen.pta@outlook.com">CJorgensen@weekendwarriorweather.com</a> </div>
+            </div>
+        
+            <!--The div element for the map -->
+            <div class="gmap_canvas clearfix">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.632220085877!2d-111.87840338417418!3d42.09392887920563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7ea14d5c557%3A0x4e385fff8a07b494!2s121+S+State+St%2C+Preston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550136734933"></iframe>
+            </div>
+        </address>
+
+        <footer>
+            &copy; 2019 - Cindy Jorgensen - Location: Alaska -<a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+            <div id="date"></div>
+        </footer>
+
+        <script src="scripts/currentdate.js"> </script>
+        <script src="scripts/hamburger.js"> </script>
+        <script src="scripts/town.js"></script>
+    </body>
+</html>
