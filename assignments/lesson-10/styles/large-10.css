@@ -71,3 +71,7 @@ section#townName {
             column-gap: 30px;
             row-gap: 20px;  }
         }
+
+        figure:hover {
+            box-shadow: 15px 10px 10px #333;
+        }

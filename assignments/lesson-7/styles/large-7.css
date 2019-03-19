@@ -11,6 +11,9 @@
         text-align: center;
         color: #e7ecef;}
 
+    figure:hover {
+        box-shadow: 15px 10px 10px #333;
+    }
 
     /* Weather for 5 Day Forecast section and comments */
     div.weather5Day {

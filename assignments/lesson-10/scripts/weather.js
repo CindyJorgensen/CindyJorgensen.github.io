@@ -126,8 +126,8 @@ function populateForecast(forecastData) {
                 myIcon.setAttribute("alt","rain cloud image"); }
                 else {myIcon.textContent = forecastData.list[i].weather[0].main; }
 
-            myHigh.textContent = "High: " + (forecastData.list[i].main.temp_max).toFixed(0) + "&deg; F";
-            myLow.textContent = "Low: " + (forecastData.list[i].main.temp_min).toFixed(0) + "&deg; F";
+            myHigh.textContent = "High: " + forecastData.list[i].main.temp_max.toFixed(0) + "&deg;"+ "F";
+            myLow.textContent = "Low: " + forecastData.list[i].main.temp_min.toFixed(0) + "&deg;" + "F";
                 
                    
             myArticle.appendChild(myDOWeek);
