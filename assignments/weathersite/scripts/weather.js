@@ -95,12 +95,16 @@ function populateForecast(forecastData) {
             var myHigh = document.createElement('p');
             var myLow = document.createElement('p');
 
-            var i 
+            var i; 
             if (a === 0) {
-                    i = 0; }
+                i=0;
+                var low = i + 7;}
+                else if (a * 8 <= forecastData.list.length) {
+                    i = (a * 8); /* This finds the list array for the first array of each day  - 0,7,14,21,28,35*/
+                    var low = i + 7; }            
                 else {
-                 i = ((a+1) * 7); } /* This finds the list array for the first array of each day  - 0,7,14,21,28,35*/            
-           
+                    break;
+                }
             var n = new Date(forecastData.list[i].dt_txt);
 
             var weekday = new Array(7);
