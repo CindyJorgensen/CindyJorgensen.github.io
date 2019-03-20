@@ -1,5 +1,4 @@
-function currentDate() {
-    
+   
     var d = new Date();
     var weekday = new Array(7);
         weekday[0] = "Sunday";
@@ -30,4 +29,4 @@ function currentDate() {
     var day = [d.getDate()];
     var year = [d.getFullYear()];
     
-    document.getElementById("date").innerHTML = n + ", " + day + " " + mnth + " " + year;  }
+    document.getElementById("date").innerHTML = n + ", " + day + " " + mnth + " " + year;

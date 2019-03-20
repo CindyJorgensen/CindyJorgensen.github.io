@@ -3,8 +3,8 @@
  *                       CURRENT WEATHER SUMMARY INFORMATION                                *
  *                                                                                          *
  * -----------------------------------------------------------------------------------------*/
-
-let currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
+function getWeather(cityid) {
+let currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityid + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
 let weatherRequest = new XMLHttpRequest();
 weatherRequest.open('Get', currentURLweather, true);
@@ -43,18 +43,18 @@ weatherRequest.onload = function() {
      + 0.4275 * (weatherData.main.temp) * Math.pow((weatherData.wind.speed),.16)
 
     document.getElementById('windChill').innerHTML = wChill.toFixed(0) + '&deg; F';
-
+    get5DayForecast(cityid);
+    }
 }
-
 /* ---------------------------------------------------------------------------------------- *
  *                                                                                          *
  *                      5 DAY FORECAST REQUEST INFORMATION                                  *
  *                                                                                          *
  * -----------------------------------------------------------------------------------------*/
+function get5DayForecast(cityid) {
 
-var section = document.querySelector('section');
 
-let forecastURLweather = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
+let forecastURLweather = 'https://api.openweathermap.org/data/2.5/forecast?id=' + cityid + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
 let forecastRequest = new XMLHttpRequest();
 forecastRequest.open('Get', forecastURLweather, true);
@@ -65,9 +65,10 @@ forecastRequest.send();
 forecastRequest.onload = function() {
     var forecastData = forecastRequest.response;
     populateForecast(forecastData);  }
+}
 
 function populateForecast(forecastData) {
-    
+    var section = document.querySelector('section');   
     /* ---- Key: Values ----
         cod: "#"
         message: #
@@ -115,19 +116,19 @@ function populateForecast(forecastData) {
             /* This will sort and output an image */
             if (forecastData.list[i].weather[0].main === "Clear") {
                 myIcon.setAttribute("src","images/sunny_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt","sun"); }
+                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
                 else if (forecastData.list[i].weather[0].main === "Clouds"){myIcon.setAttribute("src", "images/cloudy_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt","cloud image"); }
+                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
                 else if (forecastData.list[i].weather[0].main === "Rain") {myIcon.setAttribute("src","images/raining_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt","cloud with rain"); }
+                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
                 else if (forecastData.list[i].weather[0].main === "Snow") {myIcon.setAttribute('src', "images/snowy_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt","cloud with snowflake image");  }
+                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description));  }
                 else if (forecastData.list[i].weather[0].main === "Drizzle") {myIcon.setAttribute('src', 'images/raining_sivvus_weather_symbols.png'),
-                myIcon.setAttribute("alt","rain cloud image"); }
+                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
                 else {myIcon.textContent = forecastData.list[i].weather[0].main; }
 
-            myHigh.textContent = "High: " + forecastData.list[i].main.temp_max.toFixed(0) + "&deg;"+ "F";
-            myLow.textContent = "Low: " + forecastData.list[i].main.temp_min.toFixed(0) + "&deg;" + "F";
+            myHigh.innerHTML = "High: " + forecastData.list[i].main.temp_max.toFixed(0) + "&deg; F";
+            myLow.innerHTML = "Low: " + forecastData.list[i].main.temp_min.toFixed(0) + "&deg; F";
                 
                    
             myArticle.appendChild(myDOWeek);
