@@ -4,9 +4,9 @@
  *                                                                                          *
  * -----------------------------------------------------------------------------------------*/
 function getWeather(cityid) {
-let currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityid + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
+var currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityid + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
-let weatherRequest = new XMLHttpRequest();
+var weatherRequest = new XMLHttpRequest();
 weatherRequest.open('Get', currentURLweather, true);
 
 weatherRequest.responseType = 'json';
@@ -54,9 +54,9 @@ weatherRequest.onload = function() {
 function get5DayForecast(cityid) {
 
 
-let forecastURLweather = 'https://api.openweathermap.org/data/2.5/forecast?id=' + cityid + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
+var forecastURLweather = 'https://api.openweathermap.org/data/2.5/forecast?id=' + cityid + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
-let forecastRequest = new XMLHttpRequest();
+var forecastRequest = new XMLHttpRequest();
 forecastRequest.open('Get', forecastURLweather, true);
 
 forecastRequest.responseType = 'json';
