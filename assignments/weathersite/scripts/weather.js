@@ -68,7 +68,8 @@ forecastRequest.onload = function() {
 }
 
 function populateForecast(forecastData) {
-    var section = document.querySelector('section');   
+    var section = document.querySelector('section');  
+     
     /* ---- Key: Values ----
         cod: "#"
         message: #
