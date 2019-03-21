@@ -218,6 +218,8 @@ header.heading {
                 grid-column-start: 2;
                 grid-row-start: 7;  }
 
+            .imgIndex { width: 350px; height: auto; float:left; border-radius: 20px; margin: 0 2rem 2rem 2rem;}
+
     @media screen and (min-width:447px) and (max-width:500px) {
         div.format {
             position: absolute;

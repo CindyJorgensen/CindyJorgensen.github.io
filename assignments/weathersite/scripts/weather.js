@@ -119,18 +119,8 @@ function populateForecast(forecastData) {
             myDOWeek.textContent = weekday[n.getDay()];
 
             /* This will sort and output an image */
-            if (forecastData.list[i].weather[0].main === "Clear") {
-                myIcon.setAttribute("src","images/sunny_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
-                else if (forecastData.list[i].weather[0].main === "Clouds"){myIcon.setAttribute("src", "images/cloudy_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
-                else if (forecastData.list[i].weather[0].main === "Rain") {myIcon.setAttribute("src","images/raining_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
-                else if (forecastData.list[i].weather[0].main === "Snow") {myIcon.setAttribute('src', "images/snowy_sivvus_weather_symbols.png"),
-                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description));  }
-                else if (forecastData.list[i].weather[0].main === "Drizzle") {myIcon.setAttribute('src', 'images/raining_sivvus_weather_symbols.png'),
-                myIcon.setAttribute("alt",(forecastData.list[i].weather[0].description)); }
-                else {myIcon.textContent = forecastData.list[i].weather[0].main; }
+            myIcon.setAttribute("src","http://openweathermap.org/img/w/" + forecastData.list[i].weather[0].icon + ".png"),
+            ("alt",(forecastData.list[i].weather[0].description)); 
 
             myHigh.innerHTML = "High: " + forecastData.list[i].main.temp_max.toFixed(0) + "&deg; F";
             myLow.innerHTML = "Low: " + forecastData.list[i].main.temp_min.toFixed(0) + "&deg; F";
