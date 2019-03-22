@@ -124,6 +124,7 @@ header.heading {
             display: block;
 			color:#274c77;
             text-decoration: none;
+            font-size: 13px;
             padding: .5em;  		}
 
         nav ul li a.active {
