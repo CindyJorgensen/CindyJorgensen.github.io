@@ -162,7 +162,7 @@ header.heading {
 
             .currentTemperature, .weatherHigh, .weatherHumidity, .weatherWindSpeed, .weatherWindChill, .weatherLow {
                 background-color: rgba(39,76,119, .8);
-                color: rgb(189, 189, 189);
+                color: #ffffff;
                 padding:  3px 4px; 
                 text-align: right; }
 

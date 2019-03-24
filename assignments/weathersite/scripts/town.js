@@ -50,7 +50,7 @@ function populateTown(townInfo) {
 
       if (townInfo.towns[i].name === 'Preston') {
         myImg.setAttribute("src", "images/HOME_PrestonID.jpg"), 
-        myImg.setAttribute("alt","image of Preston City Hall"); }
+        myImg.setAttribute("alt", "image of Preston City Hall"); }
         else if (townInfo.towns[i].name === 'Soda Springs') {
           myImg.setAttribute("src", "images/HOME_SodaSpringsID.jpg"),
           myImg.setAttribute("alt", "information road sign");  }
