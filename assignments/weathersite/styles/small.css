@@ -221,6 +221,16 @@ header.heading {
 
             .imgIndex { width: 350px; height: auto; float:left; border-radius: 20px; margin: 0 2rem 2rem 2rem;}
 
+            .imgRoundBorder { 
+                float: right;
+                margin-left: 15px;
+                border-radius: 15px;}
+                .imgCircleBorder {
+                    float: right;
+                    margin-left: 15px;
+                    border-radius: 110px;
+                }
+
     @media screen and (min-width:447px) and (max-width:500px) {
         div.format {
             position: absolute;
