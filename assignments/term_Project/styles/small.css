@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans+Condensed:300|Poppins|Shadows+Into+Light');
+
+/* --------------------------------------------- */
+/* --------- Branding: Color Palette ----------- */
+/* --------------------------------------------- */
+/* These are the colors of the boxes under the Branding section */
+#swatch1{
+	background-color: #4F000B;
+}	
+#swatch2{
+	background-color: #F4FAFF;
+}	
+#swatch3{
+	background-color: #2E4057;
+}	
+#swatch4{
+	background-color: #F4D35E;
+}		
+#swatch5{
+	background-color: #E1AA7D;
+	border-radius: 10px;
+}
+/* ----------------------------------------------------- */
+/* --------- Typography: Heading & Body Copy ----------- */
+/* ----------------------------------------------------- */
+/* These are the font families of all the headings and body copy */
+
+body{
+	font-family: "Open Sans Condensed", "Poppins" Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+
+
+/* -------------------------------------------------- */
+/* --------- Navigation: Main & Secondary ----------- */
+/* -------------------------------------------------- */
+/* Colors, style, floating, shapes, etc of main & secondary navs */
+
+/* Main Navigation Style */
+#mainnav {
+	padding: 0;
+	background-color: #F4D35E;
+	color: #000000;
+	border-top: 2px solid #4F000B;
+	border-bottom: 1.75px solid #4F000B;
+	margin: 0;
+}
+#mainnav ul.hide {display: none;}
+#mainnav ul{
+  display: inline;
+}
+#mainnav li{
+	float: none;
+	list-style: none;
+	padding-right: 2rem; }
+
+#mainnav a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	padding: .5rem;	}
+
+#mainnav li>a {padding-left: 1.25rem;}
+
+
+#mainnav a:link, #secondnav a:link {
+	color: #000000;
+	/* other styles */
+	text-decoration: none;
+}
+#mainnav a:visited, #secondnav a:visited {
+	color: #000000;
+	/* other styles */
+}
+#mainnav a:hover #secondnav a:hover {
+	color: #2E4057;
+	background-color: #F4D35E;
+	border-radius: 2px;
+	/* other styles */
+}
+#mainnav a:active, #secondnav a:active {
+	background-color: #2E4057;
+	color: #E1AA7D;
+	border-radius: 5px;
+	/* other styles */
+}
+
+
+/* Secondary Navigation Style */
+#secondnav{
+	background-color: #F4D35E;
+	padding: .5rem;
+	border-bottom: 2px solid #4F000B;
+	border-top: 1.75px solid #4F000B;
+	margin: 0;
+	font-size: 12px;
+	font-weight: lighter;
+
+}
+#secondnav ul{
+	display: inline;
+
+}
+#secondnav li{
+	float: left;
+	padding-right: 1.25rem;
+	list-style: none;
+}
+
+	#secondnav li>a {
+		padding-left: 1.5rem;	}
+
+
+/* ----------------------------------- */
+/* --------- HTML Elements ----------- */
+/* ----------------------------------- */
+/* Styling for all HTML Elements */
+body {
+	width: 100%; 
+	margin: 0;	}
+
+/* True for all headings */
+h1, h2, h3 ,h4, h5, h6{
+	color: #000000;
+}
+
+
+/* Style for individual headings */
+h1{
+	font-size: 2.5rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.75rem;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+h5{
+	font-size: 1.25rem;
+}
+
+h6{
+	font-size: 1rem;
+}
+
+
+/* List Styles */
+ul{
+    color: #000000;
+}
+ul li{
+    list-style-type: disc;
+}
+
+ol{
+    color: #000000;
+}
+/* 
+ol li{
+
+} */
+
+
+/* Non-Navigational Link Styles */
+/* This is for all default links on your page */
+a:link{
+ color: #251605;
+}
+a:visited{
+	color: #ffffff;
+}
+a:hover{
+	color: #2E4057;
+}
+a:active{
+	color: #E1AA7D;
+}
+
+/* This is for secondary link styles (possibly in your footer, etc) 
+.linkstyle2 a:link{
+	color: #
+}
+.linkstyle2 a:visited{
+
+}
+.linkstyle2 a:hover{
+
+}
+.linkstyle2 a:active{
+
+}
+*/
+
+/* Paragraph Styles */
+p{
+	color:#000;
+	/* Other paragraph styles */
+}
+
+
+/* Figure and Figcaption Styles */
+figure{
+	width: 33%;
+}
+figure img{
+	width: 600px;
+	border: 2px solid #073B3A;
+}
+figcaption{
+	font-size: .75rem;
+	padding-left: 10px;
+}
+
+.centerIMG {
+	margin-left: 50%;
+	margin-right: 50%;	}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- */
+/* --------- Style Guide CSS ----------- */
+/* ------------------------------------- */
+/* The following CSS is used for the styling of the structure of the Style Guide itself */
+#styleguidebody{
+	width: 800px;
+	margin: 10px auto;
+	border: 1px solid #333;
+	padding: 20px;
+	background-color: #999999;
+}
+
+.styleguide{
+	font-family: "Poppins", 'Times New Roman', Times, serif;
+}
+h1.styleguide, h2.styleguide, h3.styleguide, h4.styleguide, h5.styleguide, h6.styleguide{
+    color: #333;
+	font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+h2.styleguide{
+    background-color: #E1AA7D;
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: -15px;
+    color:#222222;
+}
+p.styleguide{
+    color: #333;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+section{
+    margin-top: -10px;
+    margin-bottom: 70px; 
+}
+.colorgroup{
+    float: left;
+    width: 170px;
+}
+.colorgroup h4{
+	font-size: .9em;
+}
+.colorgroup p{
+    font-size: .8em;
+}
+.clear{
+    clear: both;
+}
+.swatches{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}

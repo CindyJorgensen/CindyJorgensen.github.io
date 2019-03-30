@@ -1,0 +1,25 @@
+/* THIS IS THE CSS STYLING FOR MEDIUM VIEWPORTS */
+
+@media screen and (min-width: 500px) {
+    
+    #mainnav ul.hide {display: inline;}
+
+    #mainnav{
+        padding: 1rem .5rem;
+        border-top: 2px solid #4F000B;
+        border-bottom: 1.75px solid #4F000B;
+        margin: 0;      }
+
+  #mainnav li{
+      float: left;
+      list-style: none;
+      padding-right: 2rem;
+  }
+  #mainnav li>a {padding-left: 1.25rem;}
+  
+
+
+
+
+
+} /* End of @media screen query min-width: 500px */
