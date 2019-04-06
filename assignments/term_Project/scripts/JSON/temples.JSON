@@ -1,0 +1,203 @@
+[
+    {
+        "name": "Anchorage Alaska Temple",
+        "address": "13161 Brayton Drive",
+        "city": "Anchorage",
+        "state": "Alaska",
+        "zipCode": "99516",
+        "telephone": "1-907-348-7890",
+        "email": "",
+        "cityID":"5879348",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "No distribution center nearby"  ],
+        "history": [
+            "Announced: October 4, 1997",
+            "Groundbreaking: April 17, 1998",
+            "Dedicated: January 9, 1999",
+            "Rededicated: February 8, 2004"  ],
+        "sessionSchedule": [
+            {   "Baptism": [
+                    "Tuesday - 6:30 PM - 8:30 PM",
+                    "Wednesday - 10:00 AM - 12:00 PM",
+                    "Wednesday - 6:30PM - 8:30 PM",
+                    " Thursday - 10:00 AM - 12:00 PM",
+                    " Thursday - 6:30PM - 8:30 PM",
+                    " Friday - 11:00 AM - 1:00 PM",
+                    " Friay - 7:00PM - 9:00 PM",
+                    " Saturday - 8:30 AM - 1:30 PM"] },
+            {   "Initiatory": [
+                    "Tuesday - 6:30 PM - 8:00 PM",
+                    "Wednesday - 9:30 AM - 11:00 PM",
+                    "Wednesday - 6:30PM - 8:00 PM",
+                    "Thursday - 9:30 AM - 11:00 PM",
+                    "Thursday - 6:30PM - 8:00 PM",
+                    "Friday - 10:300 AM - 12:00 PM",
+                    "Friay - 6:00PM - 9:00 PM",
+                    "Saturday - 7:30 AM - 1:30 PM"] },
+                
+            {   "Endowments": [
+                    "Tuesday- 7:00 PM",
+                    "Wednesday - 5:30 AM",
+                    "Wednesday - 10:00 AM",
+                    "Wednesday - 7:00 PM",
+                    "Thursday - 10:00 AM",
+                    "Thursday - 7:00 PM",
+                    "Friday - 11:00 AM",
+                    "Friday - 6:30 PM",
+                    "Friday - 8:00 PM",
+                    "Saturday - 8:00 AM",
+                    "Saturday - 10:00 AM",
+                    "Saturday - 12:00 PM" ] },
+            {   "Sealing": [ 
+                    "Tuesday - 6:30 PM - 8:00 PM",
+                    "Wednesday - 9:30 AM - 11:00 AM",
+                    "Wednesday - 6:30 PM - 8:00 PM",
+                    "Thursday - 9:30 AM - 11:00 AM",
+                    "Thursday - 6:30 PM - 8:00 PM",
+                    "Friday - 10:30 AM - 12:00 PM",
+                    "Friay - 6:00PM - 7:30 PM",
+                    "Friday - 8:00 PM - 9:00 PM",
+                    "Saturday - 7:30 AM - 9:00 AM",
+                    "Saturday - 11:30 AM - 1:00 PM"  ]  }
+                ],
+        "templeClose": [
+            "Monday, 24 March 2019 - Monday, 8 April 2019",
+            "Wednesday, 3 July 2019 - Thursday, 4 July 2019",
+            "Monday, 23 September 2019 - Monday, 7 October 2019",
+            "Wednesday 27 Noebmer 2019 - Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+            "Tuesday 31, Decmeber 2019" ],
+
+        "templeClosureSchedule": [
+            {
+                "start": "Monday, 24 March 2019",
+                "end": "Monday, 8 April 2019"
+            },
+            {
+                "start": "Wednesday, 3 July 2019",
+                "end": "Thursday, 4 July 2019"
+            },
+            {
+                "start": "Monday, 23 September 2019",
+                "end": "Monday, 7 October 2019"
+            },
+            {
+                "start": "Wednesday 27 Noebmer 2019",
+                "end": "Thursday, 28 November 2019"
+            },
+            {
+                "start": "Tuesday, 24 December 2019",
+                "end": "Wednesday 25, December 2019"
+            },
+            {
+                "start": "Tuesday 31, Decmeber 2019",
+                "end": "Tuesday 31, Decmeber 2019"
+            }
+        ]
+    },
+    {
+        "name": "Boise Idaho Temple",
+        "address": "1211 S Cole Road",
+        "city": "Boise",
+        "state": "Idaho",
+        "zipCode": "83709",
+        "telephone": "1-208-322-4422",
+        "email": "",
+        "cityID":"5586437",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "No distribution center nearby"  ],
+        "history": [
+            "Announced: March 31, 1982","Groundbreaking: December 18, 1982","Dedicated: May 25, 1984","Rededicated: May 29, 1987, November 18 2012"
+                ],
+        "sessionSchedule": [
+            {
+                "Baptism": ["Tuesday - 6:30 PM - 8:30 PM","Wednesday - 10:00 AM - 12:00 PM","Wednesday - 6:30PM - 8:30 PM","Thursday - 10:00 AM - 12:00 PM","Thursday - 6:30PM - 8:30 PM","Friday - 11:00 AM - 1:00 PM","Friay - 7:00PM - 9:00 PM","Saturday - 8:30 AM - 1:30 PM"] },
+            {
+                "Initiatory":["Tuesday - 6:30 PM - 8:00 PM","Wednesday - 9:30 AM - 11:00 PM","Wednesday - 6:30PM - 8:00 PM","Thursday - 9:30 AM - 11:00 PM","Thursday - 6:30PM - 8:00 PM","Friday - 10:300 AM - 12:00 PM","Friay - 6:00PM - 9:00 PM","Saturday - 7:30 AM - 1:30 PM" ] },
+            {
+                "Endowments":["Tuesday- 7:00 PM","Wednesday - 5:30 AM","Wednesday - 10:00 AM","Wednesday - 7:00 PM","Thursday - 10:00 AM","Thursday - 7:00 PM","Friday - 11:00 AM", "Friday - 6:30 PM","Friday - 8:00 PM","Saturday - 8:00 AM","Saturday - 10:00 AM","Saturday - 12:00 PM"] },
+            {
+                "Sealing": ["Tuesday - 6:30 PM - 8:00 PM","Wednesday - 9:30 AM - 11:00 AM","Wednesday - 6:30 PM - 8:00 PM","Thursday - 9:30 AM - 11:00 AM","Thursday - 6:30 PM - 8:00 PM", "Friday - 10:30 AM - 12:00 PM","Friay - 6:00PM - 7:30 PM","Friday - 8:00 PM - 9:00 PM","Saturday - 7:30 AM - 9:00 AM","Saturday - 11:30 AM - 1:00 PM" ] }
+            ] ,
+        "templeClose": [
+            "Saturday, 6 April 2019",
+            "Monday, 6 May 2019 - Monday, 20 May 2019",
+            "Thursday, 4 July 2019",
+            "Saturday, 5 October 2019",
+            "Monday, 14 October 2019 - Monday, 28 October 2019",
+            "Wednesday 27 November 2019 (Limited Hours)",
+            "Thursday, 28 November 2019",
+            "Tuesday, 24 December 2019 - Wednesday 25, December 2019",
+            "Tuesday 31, Decmeber 2019 (Limited Hours)"         ],
+
+        "templeClosureSchedule": [
+            {
+                "start": "Saturday, 6 April 2019",
+                "end": "Saturday, 6 April 2019"
+            },
+            {
+                "start": "Monday, 6 May 2019",
+                "end": "Monday, 20 May 2019"
+            },
+            {
+                "start": "Thursday, 4 July 2019"
+            },
+            {
+                "start": "Saturday, 5 October 2019"
+            },
+            {
+                "start": "Monday, 14 October 2019",
+                "end": "Monday, 28 October 2019"
+            },
+            {
+                "start": "Wednesday 27 November 2019 (Limited Hours)"
+            },
+            {
+                "start": "Thursday, 28 November 2019"
+            },
+            {
+                "start": "Tuesday, 24 December 2019",
+                "end": "Wednesday 25, December 2019"
+            },
+            {
+                "start": "Tuesday 31, Decmeber 2019 (Limited Hours)"
+            }
+        ]
+    },
+    {
+        "name": "Idaho Falls Temple",
+        "address": "",
+        "city": "",
+        "state": "",
+        "zipCode": "",
+        "telephone": "",
+        "email": "",
+        "cityID":"5596475",
+        "services": "",
+        "history": "",
+        "sessionSchedule": "",
+        "templeClose": "",
+        "templeClosureSchedule": ""
+    },
+    {
+        "name": "Laie Hawaii Temple",
+        "address": "",
+        "city": "",
+        "state": "",
+        "zipCode": "",
+        "telephone": "",
+        "email": "",
+        "cityID":"5850027",
+        "services": "",
+        "history": "",
+        "sessionSchedule": "",
+        "templeClose": "",
+        "templeClosureSchedule": ""
+    }
+]
