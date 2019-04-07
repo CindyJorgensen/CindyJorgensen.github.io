@@ -26,14 +26,14 @@
 /* These are the font families of all the headings and body copy */
 
 body{
-	font-family: "Open Sans Condensed", "Poppins" Arial, Helvetica, sans-serif;
+	font-family: Open Sans Condensed, Poppins, Arial, Helvetica, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+	font-family: Abril Fatface, Arial, Helvetica, sans-serif;
 }
 
-
+.centerText {text-align: center;}
 /* -------------------------------------------------- */
 /* --------- Navigation: Main & Secondary ----------- */
 /* -------------------------------------------------- */
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6{
 /* Main Navigation Style */
 #mainnav {
 	padding: 0;
-	background-color: #F4D35E;
+	background-color: #E1AA7D;
 	color: #000000;
 	border-top: 2px solid #4F000B;
 	border-bottom: 1.75px solid #4F000B;
@@ -91,7 +91,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Secondary Navigation Style */
 #secondnav{
-	background-color: #F4D35E;
+	background-color: #E1AA7D;
 	padding: .5rem;
 	border-bottom: 2px solid #4F000B;
 	border-top: 1.75px solid #4F000B;
@@ -119,52 +119,31 @@ h1,h2,h3,h4,h5,h6{
 /* ----------------------------------- */
 /* Styling for all HTML Elements */
 body {
-	width: 100%; 
-	margin: 0;	}
+	width: 100%; 	}
 
 /* True for all headings */
 h1, h2, h3 ,h4, h5, h6{
-	color: #000000;
+	color: #4F000B;
 }
-
-
+ main { padding-left: 2rem; background-color: #F4D35E;
+width: 100%; 
+margin: auto; }
+main>h1 {margin-top: 0; padding-top: 2rem;}
 /* Style for individual headings */
-h1{
-	font-size: 2.5rem;
-}
+h1{ font-size: 2rem; }
+h2{ font-size: 1.8rem; }
+h3{ font-size: 1.6rem; }
+h4{ font-size: 1.4rem; }
+h5{	font-size: 1.2rem; }
+h6{ font-size: 1rem; }
 
-h2{
-	font-size: 2rem;
-}
-
-h3{
-	font-size: 1.75rem;
-}
-
-h4{
-	font-size: 1.5rem;
-}
-
-h5{
-	font-size: 1.25rem;
-}
-
-h6{
-	font-size: 1rem;
-}
-
+header {width:100%;}
 
 /* List Styles */
-ul{
-    color: #000000;
-}
-ul li{
-    list-style-type: disc;
-}
+ul{ color: #000000;}
+ul li{ list-style-type: disc; }
 
-ol{
-    color: #000000;
-}
+ol{ color: #000000;}
 /* 
 ol li{
 
@@ -220,10 +199,14 @@ figcaption{
 	font-size: .75rem;
 	padding-left: 10px;
 }
-
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;	}
 .centerIMG {
-	margin-left: 50%;
-	margin-right: 50%;	}
+	width:200px;
+	height: auto;
+	padding: 25px;	}
 
 
 
@@ -247,11 +230,11 @@ figcaption{
 }
 
 .styleguide{
-	font-family: "Poppins", 'Times New Roman', Times, serif;
+	font-family: Poppins, 'Times New Roman', Times, serif;
 }
 h1.styleguide, h2.styleguide, h3.styleguide, h4.styleguide, h5.styleguide, h6.styleguide{
     color: #333;
-	font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+	font-family: Abril Fatface, Arial, Helvetica, sans-serif;
 }
 h2.styleguide{
     background-color: #E1AA7D;
@@ -262,7 +245,7 @@ h2.styleguide{
 }
 p.styleguide{
     color: #333;
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 section{
     margin-top: -10px;
@@ -286,3 +269,92 @@ section{
     height: 100px;
     border-radius: 10px;
 }
+
+/* ------------------------------------- */
+/* --------- EVERY PAGE CSS ----------- */
+/* ------------------------------------- */
+
+/* This provides space around the logo and sets the color of the font
+in the heading  to match the logo */
+#title, .tagline { 
+	color: #F4D35E;
+	text-align: center;
+	padding-bottom: 1rem;}
+
+
+/* ------------------------------------- */
+/* --------- TEMPLE PAGE CSS ----------- */
+/* ------------------------------------- */	
+section.templePage { 
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	margin:0;
+	padding: 0;
+	width: 100%; }
+
+	.templePage article {
+	border: 2px dashed green;
+	margin: 20px;	}
+
+	.templePage h2 { text-align: center; }
+
+	.templePage h3 {
+		margin-bottom: 0;
+		padding-left: 10px;
+	}
+	.templePage p { 
+		padding: 0 15px;
+		margin: 0;
+		text-align: center;}
+		.templePage article img {
+			align-self: center;
+			justify-self: auto; }
+
+	.ctaButton {
+		background-color: #F4D35E;
+		color: #4F000B;	}
+
+
+/* ------------------------------------- */
+/* --------- RESERVATION PAGE ---------- */
+/* ------------------------------------- */
+
+fieldset { border: 2px dashed green; margin: 15px;}
+
+#reservation {
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	justify-content: center;	}
+
+	.fieldsetTitles {margin: 15px 0; padding: 5px; font-size: 20px;}
+
+	.labelTitles {
+		margin-top: 15px;
+		margin-bottom:5px;
+		font-family: Poppins;
+		font-size: 15px;}
+	
+	.inputFields {
+		width: 220px;
+		margin-top: 5px; }
+
+	.locationBox { background-color:#ffffff;
+		border-radius:1px;}	
+	.description {font-size: 12px;}
+	.reserveRadioBtn {font-family: Poppins;}
+
+	/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+	clear: both;    }
+	
+	.clear:after {
+		margin:0;
+		padding:0;
+		width:100%;
+		height: auto;
+	}

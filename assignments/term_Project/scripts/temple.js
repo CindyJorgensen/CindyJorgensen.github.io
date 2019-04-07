@@ -48,7 +48,7 @@ function populateTempleWrite(templeFile) {
 
         templeName.textContent = templeFile[i].name;
         templeStreet.textContent = templeFile[i].address;
-        templeAddress.textContent = templeFile[i].city + " , " + templeFile[i].state + " " + templeFile[i].zipCode;
+        templeAddress.textContent = templeFile[i].city + ", " + templeFile[i].state + " " + templeFile[i].zipCode;
         templePhone.textContent = templeFile[i].telephone;
         templeEmail.textContent = templeFile[i].email;
         var cityNameID = templeFile[i].cityID;
@@ -91,7 +91,7 @@ function populateTempleWrite(templeFile) {
             myTempleImage.setAttribute("src", "images/Temple_IdahoFallsID_200.jpg"), ("alt", "image of the Idaho Falls ID temple ");
         }
         else {
-            myTempleImage.setAttribute("src", "images/Temple_LaieHI_200.jpg"), ("alt", "image of the Laie Hawaii temple ");
+            myTempleImage.setAttribute("src", "images/Temple_LaieHI_200.jpg"), ("alt", "image of the Laie Hawaii temple "); }
 
         myArticle.appendChild(templeName);
         myArticle.appendChild(templeStreet);
@@ -106,6 +106,63 @@ function populateTempleWrite(templeFile) {
         myArticle.appendChild(myTempleClosure);
         myArticle.appendChild(myTempleImage);
 
-        section.appendChild(myArticle); }
+        section.appendChild(myArticle);
+    }
+/*      populategetWeather(cityNameID);  */
+     
+}
+
+/* --------------------------------------------------------------------------- *
+*                                                                              *
+*                 CURRENT WEATHER SUMMARY INFORMATION                          *
+*                                                                              *
+* -----------------------------------------------------------------------------*/
+function getWeather(cityNameID) {
+    var currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityNameID + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
+
+var weatherRequest = new XMLHttpRequest();
+weatherRequest.open('Get', currentURLweather, true);
+
+weatherRequest.responseType = 'json';
+weatherRequest.send();      
+
+weatherRequest.onload = function() {
+    var weatherData = weatherRequest.response;
+
+    /* ---- Key: Values ----
+        base: "stations"
+        clouds: {all: #}
+        coord: {lon: #, lat: # }
+        dt: #
+        id: #
+        main: {temp: #, pressure: #, humidity: #, temp_min: #, temp_max: #}
+        name: "cityName"
+        sys: {type: #, id: #, message: #, country: "text", sunrise: #, }
+        visibility: #
+        weather: {id:#, main: "text", description: "text", icon: "##a"}
+        wind: {speed: #, deg: #}
+        ------------------------------   */
+
+  /* Will input the information onto Temple Site Page */ 
+  document.getElementById('low').innerHTML = (weatherData.main.temp_min).toFixed(0) + "&deg; F";
+  document.getElementById('temperature').innerHTML = (weatherData.main.temp).toFixed(0) + "&deg; F";
+  document.getElementById('high').innerHTML = (weatherData.main.temp_max).toFixed(0) + "&deg; F";
+  document.getElementById('humidity').innerHTML = weatherData.main.humidity + " %";
+  document.getElementById('windSpeed').innerHTML = (weatherData.wind.speed).toFixed(0) + " mph";
+
+  var myIcon = document.createElement('img');
+
+  /* This will sort and output an image */
+  myIcon.setAttribute("src","https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"),
+  ("alt",(weatherData.weather[0].description));
+
+
+    /*Create windChill information in weatherSiteAPI.js */ 
+    var wChill = 35.74 + 0.6215 * (weatherData.main.temp) - 35.75 * Math.pow((weatherData.wind.speed),.16)
+     + 0.4275 * (weatherData.main.temp) * Math.pow((weatherData.wind.speed),.16)
+
+    document.getElementById('windChill').innerHTML = wChill.toFixed(0) + '&deg; F';
+    get5DayForecast(cityid); /* Calls the next function - get5DayForecast(cityid) -->  */
     }
 }
+
