@@ -1,35 +1,9 @@
 /* THIS IS THE CSS STYLING FOR MEDIUM VIEWPORTS */
 
 @media screen and (min-width: 500px) {
-    
-    #mainnav ul.hide {display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    text-align: center;
-    font-family: Abril Fatface, serif;
 
-    } /* This displays a vertical nav menu, replacing the drop down menu */
-
-    button {display:none;} /* This hides the hamburger menu, when the nav menu is no longer dropdown */
-
-    #mainnav{
-        padding: 1rem .5rem;
-        border-top: 2px solid #4F000B;
-        border-bottom: 1.75px solid #4F000B;
-        margin: 0;
-        border-right: .5px solid #4F000B      }
-
-  #mainnav li{
-      float: left;
-      list-style: none;
-      padding-right: 2rem;
-  }
-  #mainnav li>a {padding-left: 1.25rem;}
   
 fieldset { width:30%}
-
 
 
 

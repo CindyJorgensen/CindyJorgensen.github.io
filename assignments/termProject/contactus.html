@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Home Page | Temple Inn Suites</title>
+
+        <!-- This the normalize.css file link that must be first before any other links!-->
+        <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+
+        <!-- This is the link to the CSS file that will be used to format the css files-->
+        <link href="styles/small.css" type="text/css" rel="stylesheet" />
+        <link href="styles/medium.css" type="text/css" rel="stylesheet" />
+        <link href="styles/large.css" type="text/css" rel="stylesheet" />
+
+        <!-- This is the link to the icon imagees used. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <header id="swatch3" class="clearfix">
+            <div class="box">
+                <img id="temple" class="centerIMG" src="images/TempleInnSuitesLogo.png" alt="temple icon">
+            </div>
+            <div class="tagline"> "Providing services to those who provide services for others."</div>
+        </header>
+        <div id="myTopNav" class="navbar">
+            <a href="index.html">Home Page</a>
+            <a href="temple.html">Temples</a>
+            <a href="reservations.html">Reservations</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-Content">
+                        <a href="services.html">Services</a>
+                        <a href="reception.html">Reception</a>
+                        <a class="active" href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
+                    </div>
+                </div>  
+            <a href="contactus.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <main>
+
+        </main>
+
+        <address  onLoad="currentDate()" >
+            <div class="contactMe, clearfix">
+                <div class="nested1"><b>Temple Inn & Suites</b></div>
+                <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>4800 Montgomery Lane #300 </div>
+                <div class="nested3">Bethesda, MD 20814  </div>
+                <div class="nested4"><i class="fa fa-phone" style="font-size:24px"></i></div>
+                <div class="nested5">208-555-6677  </div>
+                <div class="nested6"><i class="fa fa-envelope-o" style="font-size:24px"></i> </div>
+                <div class="nested7"><a href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
+            </div>
+        
+            <!--The div element for the map
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:200px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:400px;}</style></div>
+            </div>  -->
+        </address>
+
+        <footer>
+            &copy; 2019 - Cindy Jorgensen - Location: Alaska -<a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+            <div id="date"></div>
+        </footer>
+
+        <script src="scripts/currentdate.js"> </script>
+        <script src="scripts/hamburger.js"> </script>
+    
+    </body>
+</html>

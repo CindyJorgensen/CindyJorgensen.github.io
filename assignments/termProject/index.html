@@ -18,25 +18,28 @@
 
     </head>
 
-    <body onload="getTempleInformation()">
-        <header id="swatch3" class="clearfix">
-            <div class="box">
-                <img id="temple" class="centerIMG" src="images/TempleInnSuitesLogo.png" alt="temple icon">
+    <body onload="myFunction()">
+            <header id="swatch3" class="clearfix">
+                <div class="box">
+                    <img id="temple" class="centerIMG" src="images/TempleInnSuitesLogo.png" alt="temple icon">
+                </div>
+                <div class="tagline"> "Providing services to those who provide services for others."</div>
+            </header>
+            <div id="myTopNav" class="navbar">
+                <a href="index.html">Home Page</a>
+                <a href="temple.html">Temples</a>
+                <a href="reservations.html">Reservations</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-Content">
+                            <a href="services.html">Services</a>
+                            <a href="reception.html">Reception</a>
+                            <a class="active" href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
+                        </div>
+                    </div>  
+                <a href="contactus.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-            <div class="tagline"> "Providing services to those who provide services for others."</div>
-        </header>
-
-        <nav id="mainnav" class="clearfix">
-            <button onclick="toggleMenu()"> &equiv; </button>
-            
-            <ul id="menuCenter" class="hide">
-                <li><a class="active" href="index.html">Home Page</a></li>
-                <li><a href="temple.html">Temples</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contactus.html">Contact</a></li>
-            </ul>
-        </nav>
 
         <main>
             <div class="box">
@@ -73,7 +76,5 @@
 
         <script src="scripts/currentdate.js"> </script>
         <script src="scripts/hamburger.js"> </script>
-        <script src="scripts/temple.js"></script>
-
     </body>
 </html>
