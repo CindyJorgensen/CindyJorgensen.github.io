@@ -147,7 +147,7 @@ h1, h2, h3 ,h4, h5, h6{
 	color: #4F000B;
 }
  main { 
-	 padding-left: 2rem;
+	 padding:0 2rem;
 	 background-color: #F4D35E;
 	 width: 100%;
 	 margin: auto; }
@@ -329,9 +329,10 @@ in the heading  to match the logo */
 /* ------------------------------------- */	
 
 #opening {display: flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 border-top: 4px solid #4F000B;
-border-bottom: 2px solid #4F000B;}
+border-bottom: 2px solid #4F000B;
+margin-right: 2rem;}
 
 #opening img { padding: 5px;
 height: 100%; width: auto;}
@@ -351,7 +352,7 @@ height: 100%; width: auto;}
 	border: 1px solid white;
 	position: fixed;
 	cursor: pointer;
-	top: 20px;
+	bottom: 70px;
 	right: 25px;
 	width: 120px;	}
 

@@ -4,7 +4,6 @@
  *           TEMPLE INFORMATION                       *
  *                                                    *
  * ---------------------------------------------------*/
-/* function getTempleInformation() {*/
 
 var templeJSON = 'scripts/JSON/temples.JSON';
 
@@ -13,6 +12,7 @@ templeRequest.open('Get', templeJSON, true);
 
 templeRequest.responseType = 'json';
 templeRequest.send();
+
 
 templeRequest.onload = function () {
     var templeFile = templeRequest.response;
@@ -25,7 +25,6 @@ templeRequest.onload = function () {
     */
     populateTempleWrite(templeFile);
 } /* Calls the function that will write all content into the temple page */
-
 
 function populateTempleWrite(templeFile) {
     var section = document.querySelector('section');
@@ -108,7 +107,8 @@ function populateTempleWrite(templeFile) {
 
         section.appendChild(myArticle);
     }
-/*      populategetWeather(cityNameID);  */
+    /* Call the next function to get the weather */
+    getWeather(cityNameID);
      
 }
 
@@ -144,25 +144,26 @@ weatherRequest.onload = function() {
         ------------------------------   */
 
   /* Will input the information onto Temple Site Page */ 
-  document.getElementById('low').innerHTML = (weatherData.main.temp_min).toFixed(0) + "&deg; F";
-  document.getElementById('temperature').innerHTML = (weatherData.main.temp).toFixed(0) + "&deg; F";
-  document.getElementById('high').innerHTML = (weatherData.main.temp_max).toFixed(0) + "&deg; F";
-  document.getElementById('humidity').innerHTML = weatherData.main.humidity + " %";
-  document.getElementById('windSpeed').innerHTML = (weatherData.wind.speed).toFixed(0) + " mph";
+    var myDiv = document.createElement('div');
+    var temp = document.createElement('p');
+    var high = document.createElement ('p');
+    var low = document.createElement('p');
 
+  temp = (weatherData.main.temp).toFixed(0) + "&deg; F";
+  high = (weatherData.main.temp_min).toFixed(0) + "&deg; F";
+  low = (weatherData.main.temp_max).toFixed(0) + "&deg; F";
+  
   var myIcon = document.createElement('img');
 
   /* This will sort and output an image */
   myIcon.setAttribute("src","https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"),
   ("alt",(weatherData.weather[0].description));
-
-
-    /*Create windChill information in weatherSiteAPI.js */ 
-    var wChill = 35.74 + 0.6215 * (weatherData.main.temp) - 35.75 * Math.pow((weatherData.wind.speed),.16)
-     + 0.4275 * (weatherData.main.temp) * Math.pow((weatherData.wind.speed),.16)
-
-    document.getElementById('windChill').innerHTML = wChill.toFixed(0) + '&deg; F';
-    get5DayForecast(cityid); /* Calls the next function - get5DayForecast(cityid) -->  */
-    }
+    
+  myDiv.appendChild(temp);
+  myDiv.appendChild(high);
+  myDiv.appendChild(low);
+  section.appendChild(myDiv);
 }
 
+
+}

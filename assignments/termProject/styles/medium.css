@@ -5,6 +5,11 @@
   
 fieldset { width:30%}
 
-
+.ctaButton {
+    top: 20px; 
+    bottom: unset;
+	right: 25px;
+	width: 120px;
+}
 
 } /* End of @media screen query min-width: 500px */
