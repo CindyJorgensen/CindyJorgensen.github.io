@@ -29,13 +29,13 @@
     <div id="myTopNav" class="navbar">
         <a href="index.html">Home Page</a>
         <a href="temple.html">Temples</a>
-        <a href="reservations.html">Reservations</a>
+        <a class="active" href="reservations.html">Reservations</a>
         <div class="dropdown">
             <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-Content">
                     <a href="services.html">Services</a>
                     <a href="reception.html">Reception</a>
-                    <a class="active" href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
+                    <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
                 </div>
             </div>  
         <a href="contactus.html">Contact</a>
@@ -45,172 +45,183 @@
     <main class="clearfix clear">
         <h1 class="centerText">Reservations</h1>
         <p  class="centerText">To ensure that we are able to serve you, please complete the following information:</p>
-        <form action="reservationConfirmation.html" method="GET" id="reservation">
-            <fieldset class="box">
-                <h3 class="fieldsetTitles">Reservation Information:</h3>
-                <label for="reservationCheckIn" class="labelTitles">Check-in date:</label>
-                <input type="date" id="reservationCheckIn" name="reservationCheckIn" class="inputFields">
-                <label for="reservationCheckOut" class="labelTitles">Check-out date:</label>
-                <input type="date" id="reservervationCheckOut" name="reservationCheckOut" class="inputFields">
-                
-                <h3><label for="reservelocation" class="fieldsetTitles">Location:</label></h3>
-                <select id="reservelocation" class="inputFields locationBox">
-                        <option>Please select from dropdown</option>
-                    <optgroup label="Alabama">
-                        <option>Gardendal, Alabama</option>
-                    </optgroup>
-                    <optgroup label="Alaska">
-                        <option>Anchorage, Alaska</option>
-                    </optgroup>
-                    <optgroup label="Arizona">
-                        <option>Central Arizona</option>
-                        <option>Gilbert, Arizona</option>
-                        <option>Mesa, Arizona</option>
-                        <option>Phoenix, Arizona</option>
-                        <option>Snowflake, Arizona</option>
-                        <option>Tucson, Arizona</option>
-                    </optgroup>
-                    <optgroup label="California">
-                        <option>Fresno, California</option>
-                        <option>Los Angeles, California</option>
-                        <option>Newport Beach, California</option>
-                        <option>Oakland, California</option>
-                        <option>Redlands, California</option>
-                        <option>Rancho Cordova, California</option>
-                        <option>San Diego, California</otopn>
-                    </optgroup>
-                    <optgroup label="Colorado">
-                        <option>Centennial, Colorado</option>
-                        <option>Fort Collins, Colorado</option>
-                    </optgroup>
-                    <optgroup label="Connecticut">
-                        <option>Farmington, Connecticut</option>
-                    </optgroup>
-                    <optgroup label="Florida">
-                        <option>Davie, Florida</option>
-                        <option>Windermere, Florida</option>
-                    </optgroup>
-                    <optgroup label="Georgia">
-                        <option>Sandy Springs, Georgia</option>
-                    </optgroup>
-                    <optgroup label="Hawaii">
-                        <option>Kailua-Kona, Hawaii</option>
-                        <option>Laie, Hawaii</option>
-                    </optgroup>
-                    <optgroup label="Idaho">
-                        <option>Boise, Idaho</option>
-                        <option>Idaho Falls, Idaho</option>
-                        <option>Meridian, Idaho</option>
-                        <option>Rexburg, Idaho</option>
-                        <option>Twin Falls, Idaho</option>
-                    </optgroup>
-                    <optgroup label="Illinois">
-                        <option>Glenview, Illinois</option>
-                        <option>Nauvoo, Illinois</option>
-                    </optgroup>
-                    <optgroup label="Indiana">
-                        <option>Carmel, Indiana</option>
-                    </optgroup>
-                    <optgroup label="Kentucky">
-                        <option>Crestwood, Kentucky</option>
-                    </optgroup>
-                    <optgroup label="Louisiana">
-                        <option>Baton Rouge, Louisana</option>
-                    </optgroup>
-                    <optgroup label="Maryland">
-                        <option>Kensington, Maryland</option>
-                    </optgroup>
-                    <optgroup label="Massachusetts">
-                        <option>Belmont, Massachusetts</option>
-                    </optgroup>
-                    <optgroup label="Michigan">
-                        <option>Bloomfield Hills, Michigan</option>
-                    </optgroup>
-                    <optgroup label="Minnesota">
-                        <option>Oakdale, Mennesota</option>
-                    </optgroup>
-                    <optgroup label="Missouri">
-                        <option>Kansas City, Missouri</option>
-                        <option>St. Louis, Missouri</option>
-                    </optgroup>
-                    <optgroup label="Nebraska">
-                        <option>Omaha, Nebraska</option>
-                    </optgroup>
-                    <optgroup label="Nevada">
-                        <option>Las Vegas, Nevada</option>
-                        <option>Reno, Nevada</option>
-                    </optgroup>
-                    <optgroup label="New Mexico">
-                        <option>Albuquerque, New Mexico</option>
-                    </optgroup>
-                    <optgroup label="New York">
-                        <option>New York, New York</option>
-                        <option>Palmyra, New York</option>
-                    </optgroup>
-                    <optgroup label="North Carolina">
-                        <option>Apex, North Carolina</option>
-                    </optgroup>
-                    <optgroup label="North Dakota">
-                        <option>Bismarck, North Dakota</option>
-                    </optgroup>
-                    <optgroup label="Ohio">
-                        <option>Columbus, Ohio</option>
-                    </optgroup>
-                    <optgroup label="Oklahoma">
-                        <option>Yukon, Oklahoma</option>
-                    </optgroup>
-                    <optgroup label="Oregon">
-                        <option>Central Point, Oregon</option>
-                        <option>Lake Oswego, Oregon</option>
-                    </optgroup>
-                    <optgroup label="Pennsylvania">
-                        <option>Philadelphia, Pennsylvania</option>
-                    </optgroup>
-                    <optgroup label="South Carolina">
-                        <option>Hopkins, South Carolina</option>
-                    </optgroup>
-                    <optgroup label="Tennessee">
-                        <option>Bartlett, Tennessee</option>
-                        <option>Franklin, Tennessee</option>
-                    </optgroup>
-                    <optgroup label="Texas">
-                        <option>Dallas, Texas</option>
-                        <option>Lubbock, Texas</option>
-                        <option>San Antonio, Texas </option>
-                        <option>Spring, Texas</option>
-                    </optgroup>
-                    <optgroup label="Utah">
-                        <option>American Fork, Utah</option>
-                        <option>Bountiful, Utah</option>
-                        <option>Brigham City, Utah</option>
-                        <option>Cedar City, Utah</option>
-                        <option>Draper, Utah</option>
-                        <option>Logan, Utah</option>
-                        <option>Manti, Utah</option>
-                        <option>Monticello, Utah</option>
-                        <option>Ogden, Utah</option>
-                        <option>Payson, Utah</option>
-                        <option>Provo, Utah</option>
-                        <option>Salt Lake City, Utah</option>
-                        <option>South Jordan, Utah</option>
-                        <option>St. George, Utah</option>
-                        <option>Vernal, Utah</option>
-                    </optgroup>
-                    <optgroup label="Washington">
-                        <option>Bellevue, Washington</option>
-                        <option>Richland, Washington</option>
-                        <option>Spokane, Washington</option>
-                    </optgroup>
-                    <optgroup label="Wyoming">
-                        <option>Afton, Wyoming</option>
-                    </optgroup>
-                </select>
+        <form action="reservationConfirmation.html" method="GET" id="reservation" >
+            <fieldset >
+                <legend class="fieldsetTitles">Reservation Information:</legend>
+                <div>
+                    <label for="reservationCheckIn" class="labelTitles">Check-in date:</label> <br>
+                    <input type="date" id="reservationCheckIn" name="reservationCheckIn" class="inputFields">
+                </div>
+                <div>  
+                    <label for="reservationCheckOut" class="labelTitles">Check-out date:</label> <br>
+                    <input type="date" id="reservationCheckOut" name="reservationCheckOut" class="inputFields">
+                </div>   
             </fieldset>
-            <fieldset class="box">
-                <h3 class="fieldsetTitles">Room Information:</h3>
-                <label for="roomsNeeded" class="labelTitles">Number of rooms:</label><br>
-                <input type="number" id="roomsNeeded" name="roomsNeeded" value="1" min="1" max="10" class="inputFields">
-                <div><h4 class=fieldsetTitles>Type of room desired:</h4>
+            <fieldset>
+                <legend class="fieldsetTitles"><label for="reservelocation" >Location:</label></legend>
+                <div>
+                    <select id="reservelocation" class="inputFields locationBox">
+                            <option>Please select from dropdown</option>
+                        <optgroup label="Alabama">
+                            <option>Gardendal, Alabama</option>
+                        </optgroup>
+                        <optgroup label="Alaska">
+                            <option>Anchorage, Alaska</option>
+                        </optgroup>
+                        <optgroup label="Arizona">
+                            <option>Central Arizona</option>
+                            <option>Gilbert, Arizona</option>
+                            <option>Mesa, Arizona</option>
+                            <option>Phoenix, Arizona</option>
+                            <option>Snowflake, Arizona</option>
+                            <option>Tucson, Arizona</option>
+                        </optgroup>
+                        <optgroup label="California">
+                            <option>Fresno, California</option>
+                            <option>Los Angeles, California</option>
+                            <option>Newport Beach, California</option>
+                            <option>Oakland, California</option>
+                            <option>Redlands, California</option>
+                            <option>Rancho Cordova, California</option>
+                            <option>San Diego, California</option>
+                        </optgroup>
+                        <optgroup label="Colorado">
+                            <option>Centennial, Colorado</option>
+                            <option>Fort Collins, Colorado</option>
+                        </optgroup>
+                        <optgroup label="Connecticut">
+                            <option>Farmington, Connecticut</option>
+                        </optgroup>
+                        <optgroup label="Florida">
+                            <option>Davie, Florida</option>
+                            <option>Windermere, Florida</option>
+                        </optgroup>
+                        <optgroup label="Georgia">
+                            <option>Sandy Springs, Georgia</option>
+                        </optgroup>
+                        <optgroup label="Hawaii">
+                            <option>Kailua-Kona, Hawaii</option>
+                            <option>Laie, Hawaii</option>
+                        </optgroup>
+                        <optgroup label="Idaho">
+                            <option>Boise, Idaho</option>
+                            <option>Idaho Falls, Idaho</option>
+                            <option>Meridian, Idaho</option>
+                            <option>Rexburg, Idaho</option>
+                            <option>Twin Falls, Idaho</option>
+                        </optgroup>
+                        <optgroup label="Illinois">
+                            <option>Glenview, Illinois</option>
+                            <option>Nauvoo, Illinois</option>
+                        </optgroup>
+                        <optgroup label="Indiana">
+                            <option>Carmel, Indiana</option>
+                        </optgroup>
+                        <optgroup label="Kentucky">
+                            <option>Crestwood, Kentucky</option>
+                        </optgroup>
+                        <optgroup label="Louisiana">
+                            <option>Baton Rouge, Louisana</option>
+                        </optgroup>
+                        <optgroup label="Maryland">
+                            <option>Kensington, Maryland</option>
+                        </optgroup>
+                        <optgroup label="Massachusetts">
+                            <option>Belmont, Massachusetts</option>
+                        </optgroup>
+                        <optgroup label="Michigan">
+                            <option>Bloomfield Hills, Michigan</option>
+                        </optgroup>
+                        <optgroup label="Minnesota">
+                            <option>Oakdale, Mennesota</option>
+                        </optgroup>
+                        <optgroup label="Missouri">
+                            <option>Kansas City, Missouri</option>
+                            <option>St. Louis, Missouri</option>
+                        </optgroup>
+                        <optgroup label="Nebraska">
+                            <option>Omaha, Nebraska</option>
+                        </optgroup>
+                        <optgroup label="Nevada">
+                            <option>Las Vegas, Nevada</option>
+                            <option>Reno, Nevada</option>
+                        </optgroup>
+                        <optgroup label="New Mexico">
+                            <option>Albuquerque, New Mexico</option>
+                        </optgroup>
+                        <optgroup label="New York">
+                            <option>New York, New York</option>
+                            <option>Palmyra, New York</option>
+                        </optgroup>
+                        <optgroup label="North Carolina">
+                            <option>Apex, North Carolina</option>
+                        </optgroup>
+                        <optgroup label="North Dakota">
+                            <option>Bismarck, North Dakota</option>
+                        </optgroup>
+                        <optgroup label="Ohio">
+                            <option>Columbus, Ohio</option>
+                        </optgroup>
+                        <optgroup label="Oklahoma">
+                            <option>Yukon, Oklahoma</option>
+                        </optgroup>
+                        <optgroup label="Oregon">
+                            <option>Central Point, Oregon</option>
+                            <option>Lake Oswego, Oregon</option>
+                        </optgroup>
+                        <optgroup label="Pennsylvania">
+                            <option>Philadelphia, Pennsylvania</option>
+                        </optgroup>
+                        <optgroup label="South Carolina">
+                            <option>Hopkins, South Carolina</option>
+                        </optgroup>
+                        <optgroup label="Tennessee">
+                            <option>Bartlett, Tennessee</option>
+                            <option>Franklin, Tennessee</option>
+                        </optgroup>
+                        <optgroup label="Texas">
+                            <option>Dallas, Texas</option>
+                            <option>Lubbock, Texas</option>
+                            <option>San Antonio, Texas </option>
+                            <option>Spring, Texas</option>
+                        </optgroup>
+                        <optgroup label="Utah">
+                            <option>American Fork, Utah</option>
+                            <option>Bountiful, Utah</option>
+                            <option>Brigham City, Utah</option>
+                            <option>Cedar City, Utah</option>
+                            <option>Draper, Utah</option>
+                            <option>Logan, Utah</option>
+                            <option>Manti, Utah</option>
+                            <option>Monticello, Utah</option>
+                            <option>Ogden, Utah</option>
+                            <option>Payson, Utah</option>
+                            <option>Provo, Utah</option>
+                            <option>Salt Lake City, Utah</option>
+                            <option>South Jordan, Utah</option>
+                            <option>St. George, Utah</option>
+                            <option>Vernal, Utah</option>
+                        </optgroup>
+                        <optgroup label="Washington">
+                            <option>Bellevue, Washington</option>
+                            <option>Richland, Washington</option>
+                            <option>Spokane, Washington</option>
+                        </optgroup>
+                        <optgroup label="Wyoming">
+                            <option>Afton, Wyoming</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="fieldsetTitles">Room Information:</legend>
+                <div>
+                    <label for="roomsNeeded" class="labelTitles">Number of rooms:</label><br>
+                    <input type="number" id="roomsNeeded" name="roomsNeeded" value="1" min="1" max="10" class="inputFields">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class=fieldsetTitles>Type of room desired:</legend>
                     <div>
                         <input type="radio" id="studio" name="roomType" value="studio">
                         <label for="studio" class="reserveRadioBtn">Studio Suite:</label> <div class="inputFields">A living room area with a fully equipped kitchen and the sleeping area contains a queen size bedroom and single bath.</div>
@@ -218,24 +229,22 @@
                     <br>
                     <div>
                         <input type="radio" id="oneBedroom" name="roomType" value="1Bedroom">
-                        <label for="roomType" class="reserveRadioBtn">1 Bedroom Suite:</labeL><div class="inputFields">A living room and dining room area with a fully equipped kitchen with a separated queen size bedroom and single bath.</div>
+                        <label for="oneBedroom" class="reserveRadioBtn">1 Bedroom Suite:</labeL><div class="inputFields">A living room and dining room area with a fully equipped kitchen with a separated queen size bedroom and single bath.</div>
                     </div>
                     <br>
                     <div>
-                        <input type="radio" id="twoBedroom" name="roomType" value="2Bedroom">
-                        <label for="roomType" class="reserveRadioBtn">2 Bedroom Suite:</label><div class="inputFields">A living room and dining room area with a fully equipped kitchen. This unit has has two individual king size bedrooms and standard bathrooms.</div>
+                        <input class="rightAlign" type="radio" id="twoBedroom" name="roomType" value="2Bedroom">
+                        <label for="twoBedroom" class="reserveRadioBtn">2 Bedroom Suite:</label><div class="inputFields">A living room and dining room area with a fully equipped kitchen. This unit has has two individual king size bedrooms and standard bathrooms.</div>
                     </div>
-                </div>
             </fieldset>
-            <fieldset class="box">
-                    <h3 class="fieldsetTitles">Personal Information:</h3>
+            <fieldset>
+                    <legend class="fieldsetTitles">Personal Information:</legend>
                     <div>
                         <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
                         <label for="fullName" class="labelTitles">Please enter your full name:</label>
-                        <div class="description">(must be at least 5 characters)</div>                            <input type="text" id="fullName" class="inputFields" name="fullName" minlength="5" pattern=[A-Za-z].{5,} required>
-
+                        <div class="description">(must be at least 5 characters)</div>
+                        <input type="text" id="fullName" class="inputFields" name="fullName" minlength="5" pattern=[A-Za-z].{5,} required>
                     </div>  
-
                     <div>
                         <!-- email using input of type email and use a placeholder to provide a demo email. -->
                         <label for="emailAddress" class="labelTitles">Please enter your email address:</label>
@@ -247,12 +256,9 @@
                         <label for="contactNumber" class="labelTitles">Contact number:</label><div class="description">(format: ###-###-####)</div>
                         <input type="tel" id="contactNumber" class="inputFields" name="contactNumber" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####" required>
                     </div>
-
                     <div>
-                    <!-- zip code using input of type number and is required. -->
-                        <label for="zipCode" class="labelTitles">Input your five digit zip code: </label>
-                        <br>
-                        <input type="text" id="zipCode" class="inputFields" name="zipCode"  pattern="[0-9]{5}" required>
+                    <!-- form submission button using input of type submit-->
+                        <input class="submit" type="submit" value="submit">
                     </div>
             </fieldset>       
         </form>

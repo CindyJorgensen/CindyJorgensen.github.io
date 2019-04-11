@@ -10,7 +10,7 @@
 #swatch2{
 	background-color: #F4FAFF;
 }	
-#swatch3{
+#swatch3, .swatch3{
 	background-color: #2E4057;
 }	
 #swatch4{
@@ -54,8 +54,10 @@ h1,h2,h3,h4,h5,h6{
 	padding: 14px 16px;
 	text-decoration: none;	}
 
-	.active { background-color: #ffffff;
-		color:#4F000B;}
+	.active { 
+		background-color: #ffffff;
+		color:#4F000B;
+	border: 1px outset #4F000B;}
 
 	.navbar .icon { display:none;}
 
@@ -130,6 +132,7 @@ h1,h2,h3,h4,h5,h6{
 		width: 100%;
 		text-align: left;
 	}
+	.hideSmall {display:none;}
 }
 
 /* ----------------------------------- */
@@ -143,10 +146,15 @@ body {
 h1, h2, h3 ,h4, h5, h6{
 	color: #4F000B;
 }
- main { padding-left: 2rem; background-color: #F4D35E;
-width: 100%; 
-margin: auto; }
+ main { 
+	 padding-left: 2rem;
+	 background-color: #F4D35E;
+	 width: 100%;
+	 margin: auto; }
+
 main>h1 {margin-top: 0; padding-top: 2rem;}
+footer {color: #ffffff; padding-left: 30px; padding-top: 15px;}
+
 /* Style for individual headings */
 h1{ font-size: 2rem; }
 h2{ font-size: 1.8rem; }
@@ -156,6 +164,12 @@ h5{	font-size: 1.2rem; }
 h6{ font-size: 1rem; }
 
 header {width:100%;}
+.fltRight {
+	float:right;
+	height: 75%;
+	width: auto;
+	margin: 10px;
+	border-radius: 5px;}
 
 /* List Styles */
 ul{ color: #000000;}
@@ -171,13 +185,13 @@ ol li{
 /* Non-Navigational Link Styles */
 /* This is for all default links on your page */
 a:link{
- color: #251605;
+ color: #ffffff;
 }
 a:visited{
 	color: #ffffff;
 }
 a:hover{
-	color: #2E4057;
+	color: #F4D35F;
 }
 a:active{
 	color: #E1AA7D;
@@ -219,8 +233,9 @@ figcaption{
 }
 .box {
 	display: flex;
-	align-items: center;
+	width: 100%;
 	justify-content: center;	}
+
 .centerIMG {
 	width:200px;
 	height: auto;
@@ -299,6 +314,82 @@ in the heading  to match the logo */
 	text-align: center;
 	padding-bottom: 1rem;}
 
+.mapouter {
+	float:right;
+	width: 400px;
+	height: auto;
+}
+#gmap_canvas {
+	overflow:hidden;
+	margin:0;
+	position: relative;
+}
+/* ------------------------------------- */
+/* --------- INDEX PAGE CSS ----------- */
+/* ------------------------------------- */	
+
+#opening {display: flex;
+flex-wrap: nowrap;
+border-top: 4px solid #4F000B;
+border-bottom: 2px solid #4F000B;}
+
+#opening img { padding: 5px;
+height: 100%; width: auto;}
+
+/* ------------------------------------- */
+/* --------- Call to Action  ----------- */
+/* ------------------------------------- */	
+
+#rewards {
+	box-sizing: border-box;	}
+
+.ctaButton {
+	background-color: #F4FAFF;
+	border-radius: 110px;
+	color: #2E4057;
+	padding: 14px 15px;
+	border: 1px solid white;
+	position: fixed;
+	cursor: pointer;
+	top: 20px;
+	right: 25px;
+	width: 120px;	}
+
+	/* The pop-up "rewards" window will be hidden by default */
+.form-popup {
+	display: none;
+	position: fixed;
+	bottom: 2rem;
+	right: 1rem;
+	border: 2px solid #2E4057;
+	z-index: 9;	}
+
+	/* Format of the pop up window */
+.formBox {
+	max-width: 300px;
+	padding: 10px;
+	background-color: #E1AA7D;	}
+
+	/* Format the input fields of the pop-up window */
+.formBox input[type=text], .formBox input[type=email] {
+	width: 265px;
+	padding: 15px;
+	margin: 5px 0 10px 0;
+	border: .5x solid #000000;
+	background: #F4D35E;	}
+
+.formBox .popUpBtn {
+	background-color: #2E4057;
+	color: white;
+	padding: 10px 12px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: .8;	}
+
+	.formBox .cancel { background-color: rgb(133, 2, 20)}
+	.formBox .popUpBtn:hover, .ctaButton:hover { opacity: 1;}
 
 /* ------------------------------------- */
 /* --------- TEMPLE PAGE CSS ----------- */
@@ -338,21 +429,24 @@ section.templePage {
 /* --------- RESERVATION PAGE ---------- */
 /* ------------------------------------- */
 
-fieldset { border: 2px dashed green; margin: 15px;}
+fieldset { 
+	border: 1px solid #4F000B;
+	margin: 15px;
+	flex-basis: 250px;}
 
 #reservation {
 	display: flex;
-	flex-direction: column;
 	flex-flow: wrap;
 	justify-content: center;	}
 
-	.fieldsetTitles {margin: 15px 0; padding: 5px; font-size: 20px;}
+.fieldsetTitles {font-size: 20px;
+		color: #4F000B; font-weight: 300%; font-family: Abril Fatface;}
 
 	.labelTitles {
-		margin-top: 15px;
 		margin-bottom:5px;
 		font-family: Poppins;
-		font-size: 15px;}
+		font-size: 15px;
+}
 	
 	.inputFields {
 		width: 220px;
@@ -362,6 +456,17 @@ fieldset { border: 2px dashed green; margin: 15px;}
 		border-radius:1px;}	
 	.description {font-size: 12px;}
 	.reserveRadioBtn {font-family: Poppins;}
+	legend {margin-bottom: 5px;}
+
+	.submit {
+		background-color: #4F000B;
+		color: #ffffff;
+		font-weight: bolder;
+		font-size: 15px;
+		margin-top: 15px;
+		padding: 10px;
+		width: 220px;}
+
 
 	/*----- Clearfix: Force an Element not to collapse -----*/
 

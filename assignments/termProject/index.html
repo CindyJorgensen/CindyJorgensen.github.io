@@ -16,6 +16,7 @@
         <!-- This is the link to the icon imagees used. -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     </head>
 
     <body onload="myFunction()">
@@ -26,7 +27,7 @@
                 <div class="tagline"> "Providing services to those who provide services for others."</div>
             </header>
             <div id="myTopNav" class="navbar">
-                <a href="index.html">Home Page</a>
+                <a class="active" href="index.html">Home Page</a>
                 <a href="temple.html">Temples</a>
                 <a href="reservations.html">Reservations</a>
                 <div class="dropdown">
@@ -34,7 +35,7 @@
                         <div class="dropdown-Content">
                             <a href="services.html">Services</a>
                             <a href="reception.html">Reception</a>
-                            <a class="active" href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
+                            <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
                         </div>
                     </div>  
                 <a href="contactus.html">Contact</a>
@@ -42,15 +43,61 @@
             </div>
 
         <main>
-            <div class="box">
-                <p>---------->  INSERT IMAGE OF TEMPLE  <--------------- </p>
+            <h1 class="centerText">Grand Opening</h1>
+            <h2 class="centerText"> Now open in Houston, Texas</h1>
+            <div id="opening">
+                <img src="images/INDEX_Temple_Houston.jpg" alt="Houston Temple exterior">
+                <img src="images/INDEX_Temple_Houston(2).jpg" alt="Houston Temple exterior">
+                <img src="images/INDEX_Temple_Houston(room1).jpg" alt="room in the Houston Temple">
+                <img src="images/INDEX_Temple_Houston(room2).jpg" alt="another room in Houston Temple">
+                <img src="images/INDEX_Temple_Houston(room3).jpg" alt="baptism font in Houston Temple">
             </div>
-            <h1>Your home away from home.</h1>
-            <p>It is our mission to ensure that our accomodations provide you with the comfort and convenience and are treated like you treat your guests. It is our pleasure to provide a quality specialized services to our guest for all their needs.</p>
+            <div>
+                <p>We are excited to annouce the <strong>opening of our newest Temple Inn & Suites in Houston, Texas</strong>. Our mission to ensure that our accomodations provide you with the comfort and convenience and are treated like you treat your guests. It is our pleasure to provide a quality specialized services to our guest for all their needs.</p>
+                <p>Our Houston Inn & Suites features:
+                    <ul>
+                        <li>200 guest rooms with kitchenette units</li>
+    
+                        <li>3 reception rooms</li>
+                        <li>2 meeting rooms</li>
+                        <li>On-premise restaurant</li>
+                        <li>Continental breakfast served every morning (5 AM - 9 AM)</li>
+                            <li>5 long-term suites
+                                <ul>Featuring:
+                                    <li>2 bedrooms</li>
+                                    <li>2 bathrooms</li>
+                                    <li>Living Room</li>
+                                    <li>Dining Area</li>
+                                    <li>Fully stocked kitchen</li>
+                                    <li>Weekly maid service</li>
+                                    <li>Washer & Dryer</li>
+                                    <li> - All units are on ground floor</li>
+                                </ul>
+                            </li>
+                        </ul>
+            </div>
+
 
             
-            <button class="ctaButton" name="callToAction" type="button" onclick="openForm">Join our rewards program and get a <em>free</em> night.</button>
+            <button class="ctaButton" name="callToAction" type="button" onclick="openForm()">Join our rewards program and get a <em>free</em> night. <br> Click here!</button>
 
+            <!-- This is the pop-up CALL TO ACTION form that will appear when the button is clicked.-->
+            <div id="rewards" class="form-popup">
+                <form action="reservations.html" class="formBox">
+                    <h1 class="formText">Sign Up</h1>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="John.Doe@email.com" required>
+
+                    <button type="submit" class="popUpBtn">Sign Up</button>
+                    <button type="submit" class="popUpBtn cancel" onclick="closeForm()">Cancel</button>
+                </form>
+            </div>
         </main>
 
         <address  onLoad="currentDate()" >
@@ -76,5 +123,6 @@
 
         <script src="scripts/currentdate.js"> </script>
         <script src="scripts/hamburger.js"> </script>
+        <script src="scripts/button.js"></script>
     </body>
 </html>
