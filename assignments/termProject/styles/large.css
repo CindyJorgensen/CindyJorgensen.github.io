@@ -1,1 +1,15 @@
-/* Nothing to records at this time */
+@media screen and (min-width:700px) {
+    #opening {
+        flex-wrap:nowrap;
+    }
+
+    section.templePage {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .resize {
+        height: auto;
+        width: 400px;
+        padding: 2rem;
+    }
+}

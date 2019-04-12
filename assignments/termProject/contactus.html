@@ -41,7 +41,60 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <main>
-
+                <h2 class="centerText">Contact Us</h2>
+                <form action="thankyou_contact.html" method="get"> 
+                    <h3 class="centerText">Contact Request Submission Form</h3>
+                    <fieldset> 
+                        <legend>Personal Information:</legend>
+                        <div>
+                            <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
+                            <label for="fullName">Please enter your full name:<br> 
+                            <input class="lawn" type="text" id="fullName" name="fullName" minlength="5" pattern=[A-Za-z].{5,} required>
+                            <span class="description">(must be at least 5 characters)</span></label>
+                        </div>  
+    <br>
+                        <div>
+                            <!-- email using input of type email and use a placeholder to provide a demo email. -->
+                            <label for="emailAddress">Please enter your email address:</label> <br>
+                            <input class="lawn" type="email" id="emailAddress" name="emailAddress" placeholder="yourname@example.com">
+                        </div>
+                        <br>       
+                        <div>
+                        <!-- phone number using input of type tel and is required. -->
+                            <label for="contactNumber">Contact number <span class="description">(format: ###-###-####)</span>:</label><br>
+                            <input  class="lawn" type="tel" id="contactNumber" name="contactNumber" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####" required>
+                        </div>
+ 
+                    </fieldset>
+                    <br>
+                    <fieldset> 
+                        <legend>Purpose of Contact:</legend>
+                        <div>
+                        <!-- This will allow customer to choose the specific services they desire to have quoted. Which will provide the employee an idea of what they will need to provide adequate quote. -->
+                            <label for="serviceType">Choose service type:</label><br>
+                            <select id="serviceType" name="serviceType">
+                                    <option selected disabled value="">Select purpose...</option>
+                                    <option value="Problem">Problem during recent visit</option>
+                                    <option value="Suggestion">Suggestion</option>
+                                    <option value="Accessibilty">Accessibilty</option>
+                                    <option value="Question">Question</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <div>
+                        <!-- additional information or comments using a textarea -->
+                            <label for="comments">Comments, questions and additional Information:</label> <br>  
+                            <textarea id="comments" name="comments" rows="4" cols="25" form="contactForm"></textarea>
+                        </div>
+                        <br>   
+                        <div>
+                        <!-- form submission button using input of type submit-->
+                            <input type="submit" value="submit">
+                        </div>
+                    </fieldset>
+                </form>        
         </main>
 
         <footer class="swatch3">
@@ -77,6 +130,6 @@
                 <script src="scripts/currentdate.js"> </script>
                 <script src="scripts/hamburger.js"> </script>
                 <script src="scripts/temple.js"></script>
-        
+                <script src="scripts/button.js"></script>
             </body>
         </html>

@@ -150,7 +150,8 @@ h1, h2, h3 ,h4, h5, h6{
 	 padding:0 2rem;
 	 background-color: #F4D35E;
 	 width: 100%;
-	 margin: auto; }
+	 margin: 0; 
+	 font-size:14px;}
 
 main>h1 {margin-top: 0; padding-top: 2rem;}
 footer {color: #ffffff; padding-left: 30px; padding-top: 15px;}
@@ -314,16 +315,9 @@ in the heading  to match the logo */
 	text-align: center;
 	padding-bottom: 1rem;}
 
-.mapouter {
-	float:right;
-	width: 400px;
-	height: auto;
-}
-#gmap_canvas {
-	overflow:hidden;
-	margin:0;
-	position: relative;
-}
+.mapouter { display: none;	}
+#gmap_canvas { display: none;	}
+
 /* ------------------------------------- */
 /* --------- INDEX PAGE CSS ----------- */
 /* ------------------------------------- */	
@@ -345,16 +339,17 @@ height: 100%; width: auto;}
 	box-sizing: border-box;	}
 
 .ctaButton {
-	background-color: #F4FAFF;
-	border-radius: 110px;
-	color: #2E4057;
+	background-color:whitesmoke;
+	border-radius: 100%;
+	color: #4F000B;
+	font-weight: bolder;
 	padding: 14px 15px;
-	border: 1px solid white;
+	border: 3px solid #F4D35F;
 	position: fixed;
 	cursor: pointer;
 	bottom: 70px;
 	right: 25px;
-	width: 120px;	}
+	width: 150px;	}
 
 	/* The pop-up "rewards" window will be hidden by default */
 .form-popup {
@@ -399,13 +394,20 @@ section.templePage {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
+	justify-items: center;
 	margin:0;
 	padding: 0;
-	width: 100%; }
+	width: 300px; }
 
 	.templePage article {
 	border: 2px dashed green;
 	margin: 20px;	}
+
+	.templePage article img {
+		display: flex;
+		justify-content: center;
+		padding: 0 3rem;
+	}
 
 	.templePage h2 { text-align: center; }
 
@@ -417,13 +419,7 @@ section.templePage {
 		padding: 0 15px;
 		margin: 0;
 		text-align: center;}
-		.templePage article img {
-			align-self: center;
-			justify-self: auto; }
 
-	.ctaButton {
-		background-color: #F4D35E;
-		color: #4F000B;	}
 
 
 /* ------------------------------------- */
@@ -469,6 +465,19 @@ fieldset {
 		width: 220px;}
 
 
+		.overlay {
+			position: absolute;
+			bottom: 50px;
+			left: 3rem;
+			background-color: rgba(255,255,255, .6);
+			display: flex;
+			width: 250px;
+			flex-direction: column;
+		}
+		.thankyou {
+			padding:1rem 2rem;
+			font-size: 20px;
+			color: #000000;}
 	/*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {

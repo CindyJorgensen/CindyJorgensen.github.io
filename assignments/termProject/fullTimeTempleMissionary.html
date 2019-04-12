@@ -42,9 +42,31 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <main>
-            <h1>This is the full time missionary page.</h1>
+            <h1>We offer full time temple missionaries a home away from home.</h1>
+            <div class="box">
+                <img src="images/FTTM_2-bedroom-hotel-suite.jpg" alt="2 bedroom suite">
+            </div>
+            <form action="thankyou.html" method="get" class="overlay">
+                <fieldset>
+                    <legend>Contact us for more information:</legend>
+                    <label for="contactName">Name:</label>
+                    <br>
+                    <input id="contactName" name="contactName" type="text" required placeholder="Jane Doe">
+                    <br>
+                    <label for="contactNumber">Contact Number:</label>
+                    <br>
+                    <input id="contactNumber" name="contactNumber" type="tel" placeholder="###-###-####">
+                    <br>
+                    <label for="contactEmail">Email Address:</label>
+                    <br>
+                    <input id="contactEmail" name="contactEmail" type="email" required placeholder="jane.doe@me.com"><br>
+                    <button type="submit" class="popUpBtn">Submit</button><br><br><br>
+                    <button type="submit" class="popUpBtn cancel" onclick="closeForm()">Cancel</button>
+                </fieldset>
         </main>
-        <script href="hamburger.js"></script>
-        <script href="currentdate.js"></script>
+        <script src="scripts/currentdate.js"> </script>
+        <script src="scripts/hamburger.js"> </script>
+        <script src="scripts/temple.js"></script>
+        <script src="scripts/button.js"></script>
     </body>
 </html>

@@ -2,6 +2,9 @@
 
 @media screen and (min-width: 500px) {
 
+section.templePage {
+    width: 100%;
+}
   
 fieldset { width:30%}
 
@@ -10,6 +13,19 @@ fieldset { width:30%}
     bottom: unset;
 	right: 25px;
 	width: 120px;
+}
+
+.mapouter {
+    display: block;
+	float:right;
+	width: 400px;
+	height: auto;
+}
+#gmap_canvas {
+    display: block;
+	overflow:hidden;
+	margin:0;
+	position: relative;
 }
 
 } /* End of @media screen query min-width: 500px */

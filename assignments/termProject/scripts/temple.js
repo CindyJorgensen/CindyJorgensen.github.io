@@ -1,4 +1,4 @@
-
+function getTempleInformation() {
 /* -------------------------------------------------- *
  *                                                    *
  *           TEMPLE INFORMATION                       *
@@ -17,12 +17,6 @@ templeRequest.send();
 templeRequest.onload = function () {
     var templeFile = templeRequest.response;
 
-    //TEMP:
-    console.log(templeFile);
-    /*
-        document.getElementById('templeName').innerHTML = templeFile[0].name;
-        document.getElementById('templeAddress').innerHTML = templeFile[0].address + " " + templeFile[0].city + " , " + templeFile[0].state + " " + templeFile[0].zipCode;
-    */
     populateTempleWrite(templeFile);
 } /* Calls the function that will write all content into the temple page */
 
@@ -44,6 +38,8 @@ function populateTempleWrite(templeFile) {
         var closureListTitle = document.createElement('h3'); /* Title for list */
         var myTempleClosure = document.createElement('ul'); /* Temple closures will be entered here */
         var myTempleImage = document.createElement('img');
+
+
 
         templeName.textContent = templeFile[i].name;
         templeStreet.textContent = templeFile[i].address;
@@ -80,17 +76,23 @@ function populateTempleWrite(templeFile) {
             myTempleClosure.appendChild(closureList);
         }
 
-        if (templeName === 'Anchorage Alaska Temple') {
+        /* Assigns images to element within a loop; also assigns the cityNumber that will pass through to get the weather */
+        var d = i + 1;
+        if(cityNameID === '5879348') {
             myTempleImage.setAttribute("src", "images/Temple_AnchorageAK_200.jpg"), ("alt", "image of the Anchorage Alaska temple ");
+            var cityNumber = 5879348;
         }
-        else if (templeName=== 'Boise Idaho Temple') {
-            myTempleImage.setAttribute("src", "images/Temple_BoiseID_200.jpg"), ("alt", "image of the Boise Idaho temple ");
+        else if(cityNameID === '5586437') {
+            myTempleImage.setAttribute("src", "images/Temple_BoiseID_200.jpg"), ("alt", "image of the Boise Idaho temple ")
+            var cityNumber = 5586437;
         }
-        else if (templeName === 'Idaho Falls Idaho Temple') {
+        else if(cityNameID === '5596475') {
             myTempleImage.setAttribute("src", "images/Temple_IdahoFallsID_200.jpg"), ("alt", "image of the Idaho Falls ID temple ");
+            var cityNumber = 5596475;
         }
-        else {
-            myTempleImage.setAttribute("src", "images/Temple_LaieHI_200.jpg"), ("alt", "image of the Laie Hawaii temple "); }
+        else{
+            myTempleImage.setAttribute("src", "images/Temple_LaieHI_200.jpg"), ("alt", "image of the Laie Hawaii temple ");
+            var cityNumber = 5850027; }
 
         myArticle.appendChild(templeName);
         myArticle.appendChild(templeStreet);
@@ -107,18 +109,16 @@ function populateTempleWrite(templeFile) {
 
         section.appendChild(myArticle);
     }
-    /* Call the next function to get the weather */
-    getWeather(cityNameID);
+    /*  Call the next function to get the weather   */
+ /*   getWeather(cityNumber);*/
      
 }
 
 /* --------------------------------------------------------------------------- *
-*                                                                              *
 *                 CURRENT WEATHER SUMMARY INFORMATION                          *
-*                                                                              *
 * -----------------------------------------------------------------------------*/
-function getWeather(cityNameID) {
-    var currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityNameID + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
+function getWeather(cityNumber) {
+    var currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityNumber + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
 
 var weatherRequest = new XMLHttpRequest();
 weatherRequest.open('Get', currentURLweather, true);
@@ -144,26 +144,25 @@ weatherRequest.onload = function() {
         ------------------------------   */
 
   /* Will input the information onto Temple Site Page */ 
-    var myDiv = document.createElement('div');
-    var temp = document.createElement('p');
-    var high = document.createElement ('p');
-    var low = document.createElement('p');
+  var temperatureCurrent = document.createElement('p');
+  var highCurrent = document.createElement('p');
+  var lowCurrent = document.createElement('p');
+  var iconCurrent =  document.createElement('img');
 
-  temp = (weatherData.main.temp).toFixed(0) + "&deg; F";
-  high = (weatherData.main.temp_min).toFixed(0) + "&deg; F";
-  low = (weatherData.main.temp_max).toFixed(0) + "&deg; F";
-  
-  var myIcon = document.createElement('img');
+  temperatureCurrent.innerHTML = (weatherData.main.temp).toFixed(0) + "&deg; F";
+  lowCurrent.innerHTML = (weatherData.main.temp_min).toFixed(0) + "&deg; F";
+  highCurrent.innerHTML = (weatherData.main.temp_max).toFixed(0) + "&deg; F";
 
   /* This will sort and output an image */
-  myIcon.setAttribute("src","https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"),
+  iconCurrent.setAttribute("src","https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"),
   ("alt",(weatherData.weather[0].description));
     
-  myDiv.appendChild(temp);
-  myDiv.appendChild(high);
-  myDiv.appendChild(low);
-  section.appendChild(myDiv);
-}
-
-
-}
+  iconCurrent.innerHTML = myIcon;
+/*
+myArticle.appendChild(temperatureCurrent);
+myArticle.appendChild(highCurrent);
+myArticle.appendChild(lowCurrent);
+myArticle.appendChild(iconCurrent);*/
+            }
+        }
+    }
