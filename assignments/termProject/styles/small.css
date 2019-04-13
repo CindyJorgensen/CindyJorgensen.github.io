@@ -235,7 +235,8 @@ figcaption{
 .box {
 	display: flex;
 	width: 100%;
-	justify-content: center;	}
+	justify-content: center;
+	overflow: hidden;	}
 
 .centerIMG {
 	width:200px;
