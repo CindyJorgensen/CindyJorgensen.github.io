@@ -371,7 +371,7 @@ height: 100%; width: auto;}
 	width: 265px;
 	padding: 15px;
 	margin: 5px 0 10px 0;
-	border: .5x solid #000000;
+	border: .5px solid #000000;
 	background: #F4D35E;	}
 
 .formBox .popUpBtn {
@@ -436,8 +436,11 @@ fieldset {
 	flex-flow: wrap;
 	justify-content: center;	}
 
-.fieldsetTitles {font-size: 20px;
-		color: #4F000B; font-weight: 300%; font-family: Abril Fatface;}
+.fieldsetTitles {
+	font-size: 20px;
+	color: #4F000B;
+	font-weight: 300;
+	font-family: Abril Fatface;}
 
 	.labelTitles {
 		margin-bottom:5px;
