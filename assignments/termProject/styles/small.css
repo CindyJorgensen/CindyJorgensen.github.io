@@ -306,9 +306,11 @@ in the heading  to match the logo */
 #opening {
 	display: flex;
 	flex-wrap: nowrap;
+	flex-shrink: inherit;
 	border-top: 4px solid #4F000B;
 	border-bottom: 2px solid #4F000B;
-	margin-right: 2rem;}
+	margin-right: 2rem;
+	width: 100%;}
 
 #opening img { padding: 5px;
 height: 100%; width: auto;}
