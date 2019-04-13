@@ -1,4 +1,4 @@
-function getTempleInformation() {
+function getTempleInformation(cityID) {
 /* -------------------------------------------------- *
  *                                                    *
  *           TEMPLE INFORMATION                       *
@@ -46,7 +46,6 @@ function populateTempleWrite(templeFile) {
         templeAddress.textContent = templeFile[i].city + ", " + templeFile[i].state + " " + templeFile[i].zipCode;
         templePhone.textContent = templeFile[i].telephone;
         templeEmail.textContent = templeFile[i].email;
-        var cityNameID = templeFile[i].cityID;
         historyListTitle.textContent = "History:";
  
         /* This will continue a loop to retrieve all the history for the temple */
@@ -76,23 +75,26 @@ function populateTempleWrite(templeFile) {
             myTempleClosure.appendChild(closureList);
         }
 
+        var cityNumber = templeFile[i].cityID;
         /* Assigns images to element within a loop; also assigns the cityNumber that will pass through to get the weather */
-        var d = i + 1;
-        if(cityNameID === '5879348') {
+        var cityID=0;
+
+        if(cityNumber === '5879348') {
             myTempleImage.setAttribute("src", "images/Temple_AnchorageAK_200.jpg"), ("alt", "image of the Anchorage Alaska temple ");
-            var cityNumber = 5879348;
+            cityID = 5879348;
         }
-        else if(cityNameID === '5586437') {
-            myTempleImage.setAttribute("src", "images/Temple_BoiseID_200.jpg"), ("alt", "image of the Boise Idaho temple ")
-            var cityNumber = 5586437;
+        else if(cityNumber === '5586437') {
+            myTempleImage.setAttribute("src", "images/Temple_BoiseID_200.jpg"), ("alt", "image of the Boise Idaho temple ");
+            cityID = 5586437;
         }
-        else if(cityNameID === '5596475') {
+        else if(cityNumber === '5596475') {
             myTempleImage.setAttribute("src", "images/Temple_IdahoFallsID_200.jpg"), ("alt", "image of the Idaho Falls ID temple ");
-            var cityNumber = 5596475;
+            cityID = 5596475;
         }
         else{
             myTempleImage.setAttribute("src", "images/Temple_LaieHI_200.jpg"), ("alt", "image of the Laie Hawaii temple ");
-            var cityNumber = 5850027; }
+            cityID = 5850027;
+            }
 
         myArticle.appendChild(templeName);
         myArticle.appendChild(templeStreet);
@@ -110,59 +112,6 @@ function populateTempleWrite(templeFile) {
         section.appendChild(myArticle);
     }
     /*  Call the next function to get the weather   */
- /*   getWeather(cityNumber);*/
+  getWeather(cityID);   }
      
 }
-
-/* --------------------------------------------------------------------------- *
-*                 CURRENT WEATHER SUMMARY INFORMATION                          *
-* -----------------------------------------------------------------------------*/
-function getWeather(cityNumber) {
-    var currentURLweather = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityNumber + '&appid=c7d023f4cea5310b318c2e583321df8a&units=imperial'; 
-
-var weatherRequest = new XMLHttpRequest();
-weatherRequest.open('Get', currentURLweather, true);
-
-weatherRequest.responseType = 'json';
-weatherRequest.send();      
-
-weatherRequest.onload = function() {
-    var weatherData = weatherRequest.response;
-
-    /* ---- Key: Values ----
-        base: "stations"
-        clouds: {all: #}
-        coord: {lon: #, lat: # }
-        dt: #
-        id: #
-        main: {temp: #, pressure: #, humidity: #, temp_min: #, temp_max: #}
-        name: "cityName"
-        sys: {type: #, id: #, message: #, country: "text", sunrise: #, }
-        visibility: #
-        weather: {id:#, main: "text", description: "text", icon: "##a"}
-        wind: {speed: #, deg: #}
-        ------------------------------   */
-
-  /* Will input the information onto Temple Site Page */ 
-  var temperatureCurrent = document.createElement('p');
-  var highCurrent = document.createElement('p');
-  var lowCurrent = document.createElement('p');
-  var iconCurrent =  document.createElement('img');
-
-  temperatureCurrent.innerHTML = (weatherData.main.temp).toFixed(0) + "&deg; F";
-  lowCurrent.innerHTML = (weatherData.main.temp_min).toFixed(0) + "&deg; F";
-  highCurrent.innerHTML = (weatherData.main.temp_max).toFixed(0) + "&deg; F";
-
-  /* This will sort and output an image */
-  iconCurrent.setAttribute("src","https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png"),
-  ("alt",(weatherData.weather[0].description));
-    
-  iconCurrent.innerHTML = myIcon;
-/*
-myArticle.appendChild(temperatureCurrent);
-myArticle.appendChild(highCurrent);
-myArticle.appendChild(lowCurrent);
-myArticle.appendChild(iconCurrent);*/
-            }
-        }
-    }
