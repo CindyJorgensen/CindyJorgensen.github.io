@@ -154,10 +154,10 @@ ol li{
 /* Non-Navigational Link Styles */
 /* This is for all default links on your page */
 a:link{
- color: #ffffff;
+ color: #2E4057;
 }
 a:visited{
-	color: #ffffff;
+	color: #2E4057;
 }
 a:hover{
 	color: #F4D35F;
