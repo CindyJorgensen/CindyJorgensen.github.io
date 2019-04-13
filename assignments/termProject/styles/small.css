@@ -211,7 +211,7 @@ figcaption{
 	height: auto;
 	padding: 25px;	}
 
-
+img {border-radius: 5px;}
 
 
 
@@ -382,13 +382,13 @@ section.templePage {
 	width: 300px; }
 
 	.templePage article {
-	border: 2px dashed green;
-	margin: 20px;	}
+	border: 1px solid #2E4057;
+	margin: 20px;
+	padding:0 10px;
+	border-radius:10px;	}
 
-	.templePage article img {
-		display: flex;
-		justify-content: center;
-		padding: 0 3rem;
+	.templePage img {
+		padding: 0 3rem 1rem 3rem;
 	}
 
 	.templePage h2 { text-align: center; }
@@ -432,7 +432,8 @@ fieldset {
 	
 	.inputFields {
 		width: 220px;
-		margin-top: 5px; }
+		margin-top: 5px;
+		font-family: Open Sans Condensed, Poppins, Arial, Helvetica, sans-serif;; }
 
 	.locationBox { background-color:#ffffff;
 		border-radius:1px;}	
