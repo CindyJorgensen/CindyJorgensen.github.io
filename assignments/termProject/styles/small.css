@@ -160,10 +160,10 @@ a:visited{
 	color: #2E4057;
 }
 a:hover{
-	color: #F4D35F;
+	color: #000000;
 }
 a:active{
-	color: #E1AA7D;
+	color: #000000;
 }
 
 /* This is for secondary link styles (possibly in your footer, etc) 
