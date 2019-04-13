@@ -481,6 +481,17 @@ fieldset {
 			padding:1rem 2rem;
 			font-size: 20px;
 			color: #000000;}
+
+/* ------------------------------------- */
+/* --------- SERVICE, Reception -------- */ 
+/* ------& FT Missionary PAGE ---------- */
+/* ------------------------------------- */
+
+#reception {
+	display:flex;
+
+}
+
 	/*----- Clearfix: Force an Element not to collapse -----*/
 
 .clearfix:after {
