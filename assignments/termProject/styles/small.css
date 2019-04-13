@@ -323,11 +323,12 @@ in the heading  to match the logo */
 /* --------- INDEX PAGE CSS ----------- */
 /* ------------------------------------- */	
 
-#opening {display: flex;
-flex-wrap: wrap;
-border-top: 4px solid #4F000B;
-border-bottom: 2px solid #4F000B;
-margin-right: 2rem;}
+#opening {
+	display: flex;
+	flex-wrap: nowrap;
+	border-top: 4px solid #4F000B;
+	border-bottom: 2px solid #4F000B;
+	margin-right: 2rem;}
 
 #opening img { padding: 5px;
 height: 100%; width: auto;}
