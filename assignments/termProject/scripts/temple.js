@@ -81,19 +81,19 @@ function populateTempleWrite(templeFile) {
 
         if(cityNumber === '5879348') {
             myTempleImage.setAttribute("src", "images/Temple_AnchorageAK_200.jpg"), ("alt", "image of the Anchorage Alaska temple ");
-            cityID = 5879348;
+            cityID = 5879348;     getWeather(cityID);
         }
         else if(cityNumber === '5586437') {
             myTempleImage.setAttribute("src", "images/Temple_BoiseID_200.jpg"), ("alt", "image of the Boise Idaho temple ");
-            cityID = 5586437;
+            cityID = 5586437;     getWeather(cityID);
         }
         else if(cityNumber === '5596475') {
             myTempleImage.setAttribute("src", "images/Temple_IdahoFallsID_200.jpg"), ("alt", "image of the Idaho Falls ID temple ");
-            cityID = 5596475;
+            cityID = 5596475;    getWeather(cityID);
         }
         else{
             myTempleImage.setAttribute("src", "images/Temple_LaieHI_200.jpg"), ("alt", "image of the Laie Hawaii temple ");
-            cityID = 5850027;
+            cityID = 5850027;    getWeather(cityID);
             }
 
         myArticle.appendChild(templeName);
@@ -112,6 +112,6 @@ function populateTempleWrite(templeFile) {
         section.appendChild(myArticle);
     }
     /*  Call the next function to get the weather   */
-  getWeather(cityID);   }
+   }
      
 }
