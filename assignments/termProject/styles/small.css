@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6{
 		color:#4F000B;
 	border: 1px outset #4F000B;}
 
-	.navbar .icon { display:none;}
+	.icon { display:none;}
 
 .dropdown {
 	float: left;
@@ -102,45 +102,13 @@ h1,h2,h3,h4,h5,h6{
 
 .dropdown:hover .dropdown-Content { display: block;}
 
-@media screen and (max-width: 600px) {
-	.navbar a:not(:first-child), .dropdown .dropbtn 
-	{display:none;}
-
-	.navbar a.icon { 
-		float:right;
-		display:block;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.navbar.responsive {position: relative;}
-	.navbar.responsive .icon {
-		position:absolute;
-		right:0;
-		top:0;
-		font-size: 15px;	}
-
-	.navbar.responsive a {
-		float: none;
-		display: block;
-		text-align: left;		}
-		
-	.navbar.responsive .dropdown {float: none;}
-	.navbar.responsive .dropdown-Content {position: relative;}
-	.navbar.responsive .dropdown .dropbtn {
-		display: block;
-		width: 100%;
-		text-align: left;
-	}
-	.hideSmall {display:none;}
-}
 
 /* ----------------------------------- */
 /* --------- HTML Elements ----------- */
 /* ----------------------------------- */
 /* Styling for all HTML Elements */
 body {
-	width: 100%; 	}
+	width: 100%;	}
 
 /* True for all headings */
 h1, h2, h3 ,h4, h5, h6{
@@ -149,10 +117,10 @@ h1, h2, h3 ,h4, h5, h6{
  main { 
 	 padding:0 2rem;
 	 background-color: #F4D35E;
-	 width: 100%;
 	 margin: 0; 
 	 font-size:14px;}
-
+	
+ p { margin: 0;}
 main>h1 {margin-top: 0; padding-top: 2rem;}
 footer {color: #ffffff; padding-left: 30px; padding-top: 15px;}
 
@@ -167,10 +135,10 @@ h6{ font-size: 1rem; }
 header {width:100%;}
 .fltRight {
 	float:right;
-	height: 75%;
-	width: auto;
-	margin: 10px;
+	margin: 2rem;
 	border-radius: 5px;}
+
+p:nth-last-child(1) {padding-bottom: 1rem;}
 
 /* List Styles */
 ul{ color: #000000;}
@@ -489,8 +457,11 @@ fieldset {
 /* ------& FT Missionary PAGE ---------- */
 /* ------------------------------------- */
 
-#reception {
-	display:flex;
+.reception {
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content: center;
+	flex-grow: initial;
 
 }
 

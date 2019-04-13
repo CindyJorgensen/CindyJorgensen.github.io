@@ -26,19 +26,21 @@
             <div class="tagline"> "Providing services to those who provide services for others."</div>
         </header>
         <div id="myTopNav" class="navbar">
-            <a href="index.html">Home Page</a>
-            <a href="reservations.html">Reservations</a>
-            <div class="dropdown">
-                <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-Content">
-                        <a href="services.html">Services</a>
-                        <a href="reception.html">Reception</a>
-                        <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
-                    </div>
-                </div>  
-            <a class="active" href="contactus.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
+                <a href="index.html">Home Page</a>
+                <a href="temple.html">Temple</a>
+                <a href="reservations.html">Reservations</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-Content">
+                            <a href="services.html">Services</a>
+                            <a href="reception.html">Reception</a>
+                            <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
+                        </div>
+                    </div>  
+                <a class="active" href="contactus.html">Contact</a>
+                <a href="citereferences.html">Cited Works</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         <main>
             <h1>Contact Us</h1>
             <div>
@@ -54,7 +56,7 @@
                             <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
                             <label for="fullName">Please enter your full name:<br> 
                             <input class="lawn" type="text" id="fullName" name="fullName" minlength="5" pattern=[A-Za-z].{5,} required>
-                            <span class="description">(must be at least 5 characters)</span></label>
+                            <div class="description">(must be at least 5 characters)</div></label>
                         </div>  
     <br>
                         <div>
@@ -98,42 +100,49 @@
                             <input type="submit" value="submit">
                         </div>
                     </fieldset>
-                </form>        
+                </form>  
+                <p>All information received from this form is used only for its intended purpose. We do not sell or give away any information that our patrons provide us.</p>      
+                <br>
         </main>
-
         <footer class="swatch3">
                 <!--    <div class="navbar">
-                        <a href="index.html">Home Page</a>
-                        <a href="temple.html">Temples</a>
-                        <a href="styleguide.html">Planning Document</a>
-                        <a href="citereferences.html">Cite References</a>
-                    </div> -->
-                    <address  onLoad="currentDate()" >
-                            <div class="contactMe, clearfix">
-                                                    <!--The div element for the map -->
+                                <a href="index.html">Home Page</a>
+                                <a href="temple.html">Temples</a>
+                                <a href="styleguide.html">Planning Document</a>
+                                <a href="citereferences.html">Cite References</a>
+                            </div> -->
+                <address onLoad="currentDate()">
+                    <div class="contactMe, clearfix">
+                        <!--The div element for the map -->
         
-                                <div class="nested1"><b>Temple Inn & Suites</b></div>
-                                <div class="mapouter gmap_canvas">
-                                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed"> </iframe><a href="https://www.emojilib.com"></a>
-                                    </div> 
-                                <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>4800 Montgomery Lane #300 </div>
-                                <div class="nested3">Bethesda, MD 20814  </div>
-                                <div class="nested4"><i class="fa fa-phone" style="font-size:24px"></i></div>
-                                <div class="nested5">208-555-6677  </div>
-                                <div class="nested6"><i class="fa fa-envelope-o" style="font-size:24px"></i> </div>
-                                <div class="nested7"><a href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
-                            </div>
-                        </address>
-                    <br>
-                    <div class="centerText">
-                    &copy; 2019 - Cindy Jorgensen - Location: Alaska - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+                        <div class="nested1"><b>Temple Inn & Suites</b></div>
+                        <div class="mapouter gmap_canvas">
+                            <iframe id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            </iframe><a href="https://www.emojilib.com"></a>
+                        </div>
+                        <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>4800 Montgomery Lane #300
+                        </div>
+                        <div class="nested3">Bethesda, MD 20814 </div>
+                        <div class="nested4"><i class="fa fa-phone" style="font-size:24px"></i></div>
+                        <div class="nested5">208-555-6677 </div>
+                        <div class="nested6"><i class="fa fa-envelope-o" style="font-size:24px"></i> </div>
+                        <div class="nested7"><a
+                                href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
                     </div>
-                    <div id="date"></div>
-                </footer>
+                </address>
+                <br>
+                <div class="centerText">
+                    &copy; 2019 - Cindy Jorgensen - Location: Alaska - <a href="http://www.byui.edu/online">BYU-Idaho Online
+                        Learning</a>
+                </div>
+                <div id="date"></div>
+            </footer>
+            <script src="scripts/currentdate.js"> </script>
+            <script src="scripts/hamburger.js"> </script>
+            <script src="scripts/temple.js"></script>
+            <script src="scripts/button.js"></script>
         
-                <script src="scripts/currentdate.js"> </script>
-                <script src="scripts/hamburger.js"> </script>
-                <script src="scripts/temple.js"></script>
-                <script src="scripts/button.js"></script>
-            </body>
+        </body>
+        
         </html>
