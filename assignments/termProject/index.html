@@ -1,142 +1,161 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Home Page | Temple Inn Suites</title>
 
-        <!-- This the normalize.css file link that must be first before any other links!-->
-        <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home Page | Temple Inn Suites</title>
+    <meta name="description" content="Final Term Project for Cindy Jorgensen in CIT 230:Web Front-End Development
+    at Brigham Young University-Idaho.">
 
-        <!-- This is the link to the CSS file that will be used to format the css files-->
-        <link href="styles/small.css" type="text/css" rel="stylesheet" />
-        <link href="styles/medium.css" type="text/css" rel="stylesheet" />
-        <link href="styles/large.css" type="text/css" rel="stylesheet" />
+    <!-- This the normalize.css file link that must be first before any other links!-->
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
 
-        <!-- This is the link to the icon imagees used. -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- This is the link to the CSS file that will be used to format the css files-->
+    <link href="styles/small.css" type="text/css" rel="stylesheet" />
+    <link href="styles/medium.css" type="text/css" rel="stylesheet" />
+    <link href="styles/large.css" type="text/css" rel="stylesheet" />
+
+    <!-- This is the link to the icon imagees used. -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-    </head>
+</head>
 
-    <body onload="myFunction()">
-            <header id="swatch3" class="clearfix">
-                <div class="box">
-                    <img id="temple" class="centerIMG" src="images/TempleInnSuitesLogo.png" alt="temple icon">
+<body onload="myFunction()">
+    <header id="swatch3" class="clearfix">
+        <div class="box">
+            <img id="temple" class="centerIMG" src="images/TempleInnSuitesLogo.png" alt="temple icon">
+        </div>
+        <div class="tagline"> "Providing services to those who provide services for others."</div>
+    </header>
+    <div id="myTopNav" class="navbar">
+        <a class="active" href="index.html">Home Page</a>
+        <a href="temple.html">Temple</a>
+        <a href="reservations.html">Reservations</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-Content">
+                <a href="services.html">Services</a>
+                <a href="reception.html">Reception</a>
+                <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
+            </div>
+        </div>
+        <a href="contactus.html">Contact</a>
+        <a href="citereferences.html">Cited Works</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <main>
+        <h1 class="centerText">Grand Opening</h1>
+        <h2 class="centerText"> Now open in Houston, Texas</h2>
+        <div id="opening">
+            <img src="images/INDEX_Temple_Houston.jpg" alt="Houston Temple exterior">
+            <img src="images/INDEX_Temple_Houston(2).jpg" alt="Houston Temple exterior">
+            <img src="images/INDEX_Temple_Houston(room1).jpg" alt="room in the Houston Temple">
+            <img src="images/INDEX_Temple_Houston(room2).jpg" alt="another room in Houston Temple">
+            <img src="images/INDEX_Temple_Houston(room3).jpg" alt="baptism font in Houston Temple">
+        </div>
+        <div>
+            <p>We are excited to annouce the <strong>opening of our newest Temple Inn & Suites in Houston,
+                    Texas</strong>. Our mission to ensure that our accomodations provide you with the comfort and
+                convenience and are treated like you treat your guests. It is our pleasure to provide a quality
+                specialized services to our guest for all their needs.</p>
+            <p>Our Houston Inn & Suites features:
+                <ul>
+                    <li>200 guest rooms with kitchenette units</li>
+
+                    <li>3 reception rooms</li>
+                    <li>2 meeting rooms</li>
+                    <li>On-premise restaurant</li>
+                    <li>Continental breakfast served every morning (5 AM - 9 AM)</li>
+                    <li>5 long-term suites
+                        <div>Featuring:</div>
+                        <ul>
+                            <li>2 bedrooms</li>
+                            <li>2 bathrooms</li>
+                            <li>Living Room</li>
+                            <li>Dining Area</li>
+                            <li>Fully stocked kitchen</li>
+                            <li>Weekly maid service</li>
+                            <li>Washer & Dryer</li>
+                            <li>All units are on ground floor</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>Let us be your home away from when you are providing service to others.</p>
+                <p>Join our rewards program and you will earn one night free.</p> <br>
+
+
+                <button class="ctaButton" name="callToAction" type="button" onclick="openForm()">Join our rewards
+                    program and get a <em>free</em> night. <br> Click here!</button>
+        </div>
+        <!-- This is the pop-up CALL TO ACTION form that will appear when the button is clicked.-->
+        <div id="rewards" class="form-popup">
+            <form action="reservations.html" class="formBox">
+                <h1 class="formText">Sign Up</h1>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="John.Doe@email.com" required>
+
+                <button type="submit" class="popUpBtn">Sign Up</button>
+                <button type="submit" class="popUpBtn cancel" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="swatch3">
+        <address onLoad="currentDate()">
+            <div class="contactMe, clearfix">
+                <!--The div element for the map -->
+
+                <div class="nested1"><b>Temple Inn & Suites</b></div>
+                <div class="mapouter gmap_canvas">
+                    <iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe><a href="https://www.emojilib.com"></a>
                 </div>
-                <div class="tagline"> "Providing services to those who provide services for others."</div>
-            </header>
-            <div id="myTopNav" class="navbar">
-                    <a class="active" href="index.html">Home Page</a>
-                    <a href="temple.html">Temple</a>
-                    <a href="reservations.html">Reservations</a>
-                    <div class="dropdown">
-                        <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
-                            <div class="dropdown-Content">
-                                <a href="services.html">Services</a>
-                                <a href="reception.html">Reception</a>
-                                <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
-                            </div>
-                        </div>  
-                    <a href="contactus.html">Contact</a>
-                    <a href="citereferences.html">Cited Works</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-                </div>
-        <main>
-            <h1 class="centerText">Grand Opening</h1>
-            <h2 class="centerText"> Now open in Houston, Texas</h2>
-            <div id="opening">
-                <img src="images/INDEX_Temple_Houston.jpg" alt="Houston Temple exterior">
-                <img src="images/INDEX_Temple_Houston(2).jpg" alt="Houston Temple exterior">
-                <img src="images/INDEX_Temple_Houston(room1).jpg" alt="room in the Houston Temple">
-                <img src="images/INDEX_Temple_Houston(room2).jpg" alt="another room in Houston Temple">
-                <img src="images/INDEX_Temple_Houston(room3).jpg" alt="baptism font in Houston Temple">
+                <!--For modern browsers-->
+                <div>
+                    <i class="material-icons">
+                        location_on</i>
+                    4800 Montgomery Lane #300 </div>
+                <div>Bethesda, MD 20814 </div>
+                <div>
+                    <!--For modern browsers-->
+
+                    <i class="material-icons">
+                        call
+                    </i></div>
+                <div>208-555-6677 </div>
+                <div>
+                    <!--For modern browsers-->
+
+                    <i class="material-icons">
+                        mail_outline
+                    </i></div>
+                <div><a href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
             </div>
-            <div>
-                <p>We are excited to annouce the <strong>opening of our newest Temple Inn & Suites in Houston, Texas</strong>. Our mission to ensure that our accomodations provide you with the comfort and convenience and are treated like you treat your guests. It is our pleasure to provide a quality specialized services to our guest for all their needs.</p>
-                <p>Our Houston Inn & Suites features:
-                    <ul>
-                        <li>200 guest rooms with kitchenette units</li>
-    
-                        <li>3 reception rooms</li>
-                        <li>2 meeting rooms</li>
-                        <li>On-premise restaurant</li>
-                        <li>Continental breakfast served every morning (5 AM - 9 AM)</li>
-                            <li>5 long-term suites
-                                <div>Featuring:</div>
-                                <ul>
-                                    <li>2 bedrooms</li>
-                                    <li>2 bathrooms</li>
-                                    <li>Living Room</li>
-                                    <li>Dining Area</li>
-                                    <li>Fully stocked kitchen</li>
-                                    <li>Weekly maid service</li>
-                                    <li>Washer & Dryer</li>
-                                    <li>All units are on ground floor</li>
-                                </ul>
-                            </li>
-                    </ul>
+        </address>
+        <br>
+        <div class="centerText">
+            &copy; 2019 - Cindy Jorgensen - Location: Alaska - <a href="http://www.byui.edu/online">BYU-Idaho Online
+                Learning</a>
+        </div>
+        <div id="date"></div>
+    </footer>
 
-            <p>Let us be your home away from when you are providing service to others.</p>
-            <p>Join our rewards program and you will earn one night free.</p> <br>
-           
-                        
-            <button class="ctaButton" name="callToAction" type="button" onclick="openForm()">Join our rewards program and get a <em>free</em> night. <br> Click here!</button>
-            </div>
-            <!-- This is the pop-up CALL TO ACTION form that will appear when the button is clicked.-->
-            <div id="rewards" class="form-popup">
-                <form action="reservations.html" class="formBox">
-                    <h1 class="formText">Sign Up</h1>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
+    <script src="scripts/currentdate.js"> </script>
+    <script src="scripts/hamburger.js"> </script>
+    <script src="scripts/temple.js"></script>
+    <script src="scripts/button.js"></script>
 
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+</body>
 
-                    <label for="emailAddress">Email Address</label>
-                    <input type="email" id="emailAddress" name="emailAddress" placeholder="John.Doe@email.com" required>
-
-                    <button type="submit" class="popUpBtn">Sign Up</button>
-                    <button type="submit" class="popUpBtn cancel" onclick="closeForm()">Cancel</button>
-                </form>
-            </div>
-
-        </main>
-
-        <footer class="swatch3">
-                <!--    <div class="navbar">
-                        <a href="index.html">Home Page</a>
-                        <a href="temple.html">Temples</a>
-                        <a href="styleguide.html">Planning Document</a>
-                        <a href="citereferences.html">Cite References</a>
-                    </div> -->
-                    <address  onLoad="currentDate()" >
-                            <div class="contactMe, clearfix">
-                                                    <!--The div element for the map -->
-        
-                                <div class="nested1"><b>Temple Inn & Suites</b></div>
-                                <div class="mapouter gmap_canvas">
-                                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed"> </iframe><a href="https://www.emojilib.com"></a>
-                                    </div> 
-                                <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>4800 Montgomery Lane #300 </div>
-                                <div class="nested3">Bethesda, MD 20814  </div>
-                                <div class="nested4"><i class="fa fa-phone" style="font-size:24px"></i></div>
-                                <div class="nested5">208-555-6677  </div>
-                                <div class="nested6"><i class="fa fa-envelope-o" style="font-size:24px"></i> </div>
-                                <div class="nested7"><a href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
-                            </div>
-                        </address>
-                    <br>
-                    <div class="centerText">
-                    &copy; 2019 - Cindy Jorgensen - Location: Alaska - <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
-                    </div>
-                    <div id="date"></div>
-                </footer>
-        
-                <script src="scripts/currentdate.js"> </script>
-                <script src="scripts/hamburger.js"> </script>
-                <script src="scripts/temple.js"></script>
-                <script src="scripts/button.js"></script>
-        
-            </body>
-        </html>
+</html>

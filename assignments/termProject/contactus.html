@@ -1,148 +1,168 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Home Page | Temple Inn Suites</title>
 
-        <!-- This the normalize.css file link that must be first before any other links!-->
-        <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Contact Us | Temple Inn Suites</title>
+    <meta name="description" content="Final Term Project for Cindy Jorgensen in CIT 230:Web Front-End Development
+    at Brigham Young University-Idaho.">
 
-        <!-- This is the link to the CSS file that will be used to format the css files-->
-        <link href="styles/small.css" type="text/css" rel="stylesheet" />
-        <link href="styles/medium.css" type="text/css" rel="stylesheet" />
-        <link href="styles/large.css" type="text/css" rel="stylesheet" />
+    <!-- This the normalize.css file link that must be first before any other links!-->
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
 
-        <!-- This is the link to the icon imagees used. -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- This is the link to the CSS file that will be used to format the css files-->
+    <link href="styles/small.css" type="text/css" rel="stylesheet" />
+    <link href="styles/medium.css" type="text/css" rel="stylesheet" />
+    <link href="styles/large.css" type="text/css" rel="stylesheet" />
 
-    </head>
+    <!-- This is the link to the icon imagees used. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <body>
-        <header id="swatch3" class="clearfix">
-            <div class="box">
-                <img id="temple" class="centerIMG" src="images/TempleInnSuitesLogo.png" alt="temple icon">
+</head>
+
+<body>
+    <header id="swatch3" class="clearfix">
+        <div class="box">
+            <img id="temple" class="centerIMG" src="images/TempleInnSuitesLogo.png" alt="temple icon">
+        </div>
+        <div class="tagline"> "Providing services to those who provide services for others."</div>
+    </header>
+    <div id="myTopNav" class="navbar">
+        <a href="index.html">Home Page</a>
+        <a href="temple.html">Temple</a>
+        <a href="reservations.html">Reservations</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-Content">
+                <a href="services.html">Services</a>
+                <a href="reception.html">Reception</a>
+                <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
             </div>
-            <div class="tagline"> "Providing services to those who provide services for others."</div>
-        </header>
-        <div id="myTopNav" class="navbar">
-                <a href="index.html">Home Page</a>
-                <a href="temple.html">Temple</a>
-                <a href="reservations.html">Reservations</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-Content">
-                            <a href="services.html">Services</a>
-                            <a href="reception.html">Reception</a>
-                            <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
-                        </div>
-                    </div>  
-                <a class="active" href="contactus.html">Contact</a>
-                <a href="citereferences.html">Cited Works</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
-        <main>
-            <h1>Contact Us</h1>
-            <div>
-                <p>We are a specialized hotel chain that caters to patrons that are near The Church of Jesus Christ of Latter-day Saints temples around the world. We are a owner-operated company that caters to temple workers, patrons, and their families by providing specialized services and accomodations that meet their needs.</p>
-                <p>Our hotel accomodations and services are available to <strong>anyone willing to abide by the terms and policies outlined in our terms and conditions.</strong></p>
-            </div>
+        </div>
+        <a class="active" href="contactus.html">Contact</a>
+        <a href="citereferences.html">Cited Works</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <main>
+        <h1>Contact Us</h1>
+        <div>
+            <p>We are a specialized hotel chain that caters to patrons that are near The Church of Jesus Christ of
+                Latter-day Saints temples around the world. We are a owner-operated company that caters to temple
+                workers, patrons, and their families by providing specialized services and accomodations that meet their
+                needs.</p>
+            <p>Our hotel accomodations and services are available to <strong>anyone willing to abide by the terms and
+                    policies outlined in our terms and conditions.</strong></p>
+        </div>
 
-                <form action="thankyou_contact.html" method="get"> 
-                    <h2 class="centerText">Contact Request Submission Form</h2>
-                    <fieldset> 
-                        <legend>Personal Information:</legend>
-                        <div>
-                            <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
-                            <label for="fullName">Please enter your full name:<br> 
-                            <input class="lawn" type="text" id="fullName" name="fullName" minlength="5" pattern=[A-Za-z].{5,} required>
-                            <div class="description">(must be at least 5 characters)</div></label>
-                        </div>  
-    <br>
-                        <div>
-                            <!-- email using input of type email and use a placeholder to provide a demo email. -->
-                            <label for="emailAddress">Please enter your email address:</label> <br>
-                            <input class="lawn" type="email" id="emailAddress" name="emailAddress" placeholder="yourname@example.com">
-                        </div>
-                        <br>       
-                        <div>
-                        <!-- phone number using input of type tel and is required. -->
-                            <label for="contactNumber">Contact number <span class="description">(format: ###-###-####)</span>:</label><br>
-                            <input  class="lawn" type="tel" id="contactNumber" name="contactNumber" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####" required>
-                        </div>
- 
-                    </fieldset>
-                    <br>
-                    <fieldset> 
-                        <legend>Purpose of Contact:</legend>
-                        <div>
-                        <!-- This will allow customer to choose the specific services they desire to have quoted. Which will provide the employee an idea of what they will need to provide adequate quote. -->
-                            <label for="serviceType">Choose service type:</label><br>
-                            <select id="serviceType" name="serviceType">
-                                    <option selected disabled value="">Select purpose...</option>
-                                    <option value="Problem">Problem during recent visit</option>
-                                    <option value="Suggestion">Suggestion</option>
-                                    <option value="Accessibilty">Accessibilty</option>
-                                    <option value="Question">Question</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <div>
-                        <!-- additional information or comments using a textarea -->
-                            <label for="comments">Comments, questions and additional Information:</label> <br>  
-                            <textarea id="comments" name="comments" rows="4" cols="25" form="contactForm"></textarea>
-                        </div>
-                        <br>   
-                        <div>
-                        <!-- form submission button using input of type submit-->
-                            <input type="submit" value="submit">
-                        </div>
-                    </fieldset>
-                </form>  
-                <p>All information received from this form is used only for its intended purpose. We do not sell or give away any information that our patrons provide us.</p>      
-                <br>
-        </main>
-        <footer class="swatch3">
-                <!--    <div class="navbar">
-                                <a href="index.html">Home Page</a>
-                                <a href="temple.html">Temples</a>
-                                <a href="styleguide.html">Planning Document</a>
-                                <a href="citereferences.html">Cite References</a>
-                            </div> -->
-                <address onLoad="currentDate()">
-                    <div class="contactMe, clearfix">
-                        <!--The div element for the map -->
-        
-                        <div class="nested1"><b>Temple Inn & Suites</b></div>
-                        <div class="mapouter gmap_canvas">
-                            <iframe id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed">
-                            </iframe><a href="https://www.emojilib.com"></a>
-                        </div>
-                        <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>4800 Montgomery Lane #300
-                        </div>
-                        <div class="nested3">Bethesda, MD 20814 </div>
-                        <div class="nested4"><i class="fa fa-phone" style="font-size:24px"></i></div>
-                        <div class="nested5">208-555-6677 </div>
-                        <div class="nested6"><i class="fa fa-envelope-o" style="font-size:24px"></i> </div>
-                        <div class="nested7"><a
-                                href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
-                    </div>
-                </address>
-                <br>
-                <div class="centerText">
-                    &copy; 2019 - Cindy Jorgensen - Location: Alaska - <a href="http://www.byui.edu/online">BYU-Idaho Online
-                        Learning</a>
+        <form action="thankyou_contact.html" method="get">
+            <h2 class="centerText">Contact Request Submission Form</h2>
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <div>
+                    <!-- full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern. -->
+                    <label for="fullName">Please enter your full name:<br>
+                        <input class="lawn" type="text" id="fullName" name="fullName" minlength="5"
+                            pattern=[A-Za-z].{5,} required>
+                        <div class="description">(must be at least 5 characters)</div>
+                    </label>
                 </div>
-                <div id="date"></div>
-            </footer>
-            <script src="scripts/currentdate.js"> </script>
-            <script src="scripts/hamburger.js"> </script>
-            <script src="scripts/temple.js"></script>
-            <script src="scripts/button.js"></script>
-        
-        </body>
-        
-        </html>
+                <br>
+                <div>
+                    <!-- email using input of type email and use a placeholder to provide a demo email. -->
+                    <label for="emailAddress">Please enter your email address:</label> <br>
+                    <input class="lawn" type="email" id="emailAddress" name="emailAddress"
+                        placeholder="yourname@example.com">
+                </div>
+                <br>
+                <div>
+                    <!-- phone number using input of type tel and is required. -->
+                    <label for="contactNumber">Contact number <span class="description">(format:
+                            ###-###-####)</span>:</label><br>
+                    <input class="lawn" type="tel" id="contactNumber" name="contactNumber"
+                        pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" placeholder="###-###-####" required>
+                </div>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Purpose of Contact:</legend>
+                <div>
+                    <!-- This will allow customer to choose the specific services they desire to have quoted. Which will provide the employee an idea of what they will need to provide adequate quote. -->
+                    <label for="serviceType">Choose service type:</label><br>
+                    <select id="serviceType" name="serviceType">
+                        <option selected disabled value="">Select purpose...</option>
+                        <option value="Problem">Problem during recent visit</option>
+                        <option value="Suggestion">Suggestion</option>
+                        <option value="Accessibilty">Accessibilty</option>
+                        <option value="Question">Question</option>
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <div>
+                    <!-- additional information or comments using a textarea -->
+                    <label for="comments">Comments, questions and additional Information:</label> <br>
+                    <textarea id="comments" name="comments" rows="4" cols="25" form="contactForm"></textarea>
+                </div>
+                <br>
+                <div>
+                    <!-- form submission button using input of type submit-->
+                    <input type="submit" value="submit">
+                </div>
+            </fieldset>
+        </form>
+        <p>All information received from this form is used only for its intended purpose. We do not sell or give away
+            any information that our patrons provide us.</p>
+        <br>
+    </main>
+    <footer class="swatch3">
+        <address onLoad="currentDate()">
+            <div class="contactMe, clearfix">
+                <!--The div element for the map -->
+
+                <div class="nested1"><b>Temple Inn & Suites</b></div>
+                <div class="mapouter gmap_canvas">
+                    <iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe><a href="https://www.emojilib.com"></a>
+                </div>
+                <!--For modern browsers-->
+                <div>
+                    <i class="material-icons">
+                        location_on</i>
+                    4800 Montgomery Lane #300 </div>
+                <div>Bethesda, MD 20814 </div>
+                <div>
+                    <!--For modern browsers-->
+
+                    <i class="material-icons">
+                        call
+                    </i></div>
+                <div>208-555-6677 </div>
+                <div>
+                    <!--For modern browsers-->
+
+                    <i class="material-icons">
+                        mail_outline
+                    </i></div>
+                <div><a href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
+            </div>
+        </address>
+        <br>
+        <div class="centerText">
+            &copy; 2019 - Cindy Jorgensen - Location: Alaska - <a href="http://www.byui.edu/online">BYU-Idaho Online
+                Learning</a>
+        </div>
+        <div id="date"></div>
+    </footer>
+
+    <script src="scripts/currentdate.js"> </script>
+    <script src="scripts/hamburger.js"> </script>
+    <script src="scripts/temple.js"></script>
+    <script src="scripts/button.js"></script>
+
+</body>
+
+</html>

@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Reception Page | Temple Inn Suites</title>
+    <meta name="description" content="Final Term Project for Cindy Jorgensen in CIT 230:Web Front-End Development
+    at Brigham Young University-Idaho.">
 
     <!-- This the normalize.css file link that must be first before any other links!-->
     <link href="styles/normalize.css" type="text/css" rel="stylesheet" />
@@ -27,21 +29,21 @@
         <div class="tagline"> "Providing services to those who provide services for others."</div>
     </header>
     <div id="myTopNav" class="navbar">
-            <a href="index.html">Home Page</a>
-            <a href="temple.html">Temple</a>
-            <a href="reservations.html">Reservations</a>
-            <div class="dropdown">
-                <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-Content">
-                        <a href="services.html">Services</a>
-                        <a class="active" href="reception.html">Reception</a>
-                        <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
-                    </div>
-                </div>  
-            <a href="contactus.html">Contact</a>
-            <a href="citereferences.html">Cited Works</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="index.html">Home Page</a>
+        <a href="temple.html">Temple</a>
+        <a href="reservations.html">Reservations</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-Content">
+                <a href="services.html">Services</a>
+                <a class="active" href="reception.html">Reception</a>
+                <a href="fullTimeTempleMissionary.html">Full-Time Temple Missonary</a>
+            </div>
         </div>
+        <a href="contactus.html">Contact</a>
+        <a href="citereferences.html">Cited Works</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
     <main>
 
         <h1 class="centerText">Helping to make your dreams come true...</h1>
@@ -90,12 +92,6 @@
         <p>It is our pleasure to help you create memories that will last a lifetime.</p><br>
     </main>
     <footer class="swatch3">
-        <!--    <div class="navbar">
-                        <a href="index.html">Home Page</a>
-                        <a href="temple.html">Temples</a>
-                        <a href="styleguide.html">Planning Document</a>
-                        <a href="citereferences.html">Cite References</a>
-                    </div> -->
         <address onLoad="currentDate()">
             <div class="contactMe, clearfix">
                 <!--The div element for the map -->
@@ -106,14 +102,26 @@
                         src="https://maps.google.com/maps?q=800%20Montgomery%20Lane%20%23300%2C%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed">
                     </iframe><a href="https://www.emojilib.com"></a>
                 </div>
-                <div class="nested2"><i class="fa fa-map-marker" style="font-size:24px"></i>4800 Montgomery Lane #300
-                </div>
-                <div class="nested3">Bethesda, MD 20814 </div>
-                <div class="nested4"><i class="fa fa-phone" style="font-size:24px"></i></div>
-                <div class="nested5">208-555-6677 </div>
-                <div class="nested6"><i class="fa fa-envelope-o" style="font-size:24px"></i> </div>
-                <div class="nested7"><a
-                        href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
+                <!--For modern browsers-->
+                <div>
+                    <i class="material-icons">
+                        location_on</i>
+                    4800 Montgomery Lane #300 </div>
+                <div>Bethesda, MD 20814 </div>
+                <div>
+                    <!--For modern browsers-->
+
+                    <i class="material-icons">
+                        call
+                    </i></div>
+                <div>208-555-6677 </div>
+                <div>
+                    <!--For modern browsers-->
+
+                    <i class="material-icons">
+                        mail_outline
+                    </i></div>
+                <div><a href="mailto:reservations@templeinnsuites.com">reservations@templeinnsuites.com</a> </div>
             </div>
         </address>
         <br>
@@ -123,6 +131,7 @@
         </div>
         <div id="date"></div>
     </footer>
+
     <script src="scripts/currentdate.js"> </script>
     <script src="scripts/hamburger.js"> </script>
     <script src="scripts/temple.js"></script>
