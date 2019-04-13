@@ -1,4 +1,3 @@
-function getTempleInformation(cityID) {
 /* -------------------------------------------------- *
  *                                                    *
  *           TEMPLE INFORMATION                       *
@@ -38,8 +37,6 @@ function populateTempleWrite(templeFile) {
         var closureListTitle = document.createElement('h3'); /* Title for list */
         var myTempleClosure = document.createElement('ul'); /* Temple closures will be entered here */
         var myTempleImage = document.createElement('img');
-
-
 
         templeName.textContent = templeFile[i].name;
         templeStreet.textContent = templeFile[i].address;
@@ -81,19 +78,19 @@ function populateTempleWrite(templeFile) {
 
         if(cityNumber === '5879348') {
             myTempleImage.setAttribute("src", "images/Temple_AnchorageAK_200.jpg"), ("alt", "image of the Anchorage Alaska temple ");
-            cityID = 5879348;     getWeather(cityID);
+            cityID = 5879348;
         }
         else if(cityNumber === '5586437') {
             myTempleImage.setAttribute("src", "images/Temple_BoiseID_200.jpg"), ("alt", "image of the Boise Idaho temple ");
-            cityID = 5586437;     getWeather(cityID);
+            cityID = 5586437;
         }
         else if(cityNumber === '5596475') {
             myTempleImage.setAttribute("src", "images/Temple_IdahoFallsID_200.jpg"), ("alt", "image of the Idaho Falls ID temple ");
-            cityID = 5596475;    getWeather(cityID);
+            cityID = 5596475;
         }
         else{
             myTempleImage.setAttribute("src", "images/Temple_LaieHI_200.jpg"), ("alt", "image of the Laie Hawaii temple ");
-            cityID = 5850027;    getWeather(cityID);
+            cityID = 5850027;
             }
 
         myArticle.appendChild(templeName);
@@ -112,6 +109,7 @@ function populateTempleWrite(templeFile) {
         section.appendChild(myArticle);
     }
     /*  Call the next function to get the weather   */
+        getWeather(cityID);
    }
      
-}
+
