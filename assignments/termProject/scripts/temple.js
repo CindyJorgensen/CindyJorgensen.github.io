@@ -109,7 +109,7 @@ function populateTempleWrite(templeFile) {
         section.appendChild(myArticle);
     }
     /*  Call the next function to get the weather   */
-        getWeather(cityID);
+    /*    getWeather(cityID);*/
    }
      
 
